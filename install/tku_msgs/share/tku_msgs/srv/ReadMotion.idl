@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tku_msgs/srv/ReadMotion.srv
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module srv {
+    struct ReadMotion_Request {
+      boolean read;
+
+      string name;
+
+      int16 readstate;
+    };
+    struct ReadMotion_Response {
+      int16 vectorcnt;
+
+      sequence<int16> motionstate;
+
+      sequence<int16> id;
+
+      sequence<int16> motionlist;
+
+      sequence<int16> relativedata;
+
+      sequence<int16> absolutedata;
+    };
+  };
+};

@@ -1,0 +1,7 @@
+
+int16 vectorcnt
+int16[] motionstate
+int16[] id
+int16[] motionlist
+int16[] relativedata
+int16[] absolutedata
