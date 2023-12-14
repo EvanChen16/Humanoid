@@ -1,0 +1,1 @@
+/home/iclab/python/src/usb_cam/launch/camera_config.py
