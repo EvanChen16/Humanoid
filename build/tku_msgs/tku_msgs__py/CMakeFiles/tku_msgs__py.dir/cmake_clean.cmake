@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c"
   "../rosidl_generator_py/tku_msgs/msg/_callback.py"
   "../rosidl_generator_py/tku_msgs/msg/_callback_s.c"
+  "../rosidl_generator_py/tku_msgs/msg/_camera.py"
+  "../rosidl_generator_py/tku_msgs/msg/_camera_s.c"
   "../rosidl_generator_py/tku_msgs/msg/_color_array.py"
   "../rosidl_generator_py/tku_msgs/msg/_color_array_s.c"
   "../rosidl_generator_py/tku_msgs/msg/_color_data.py"

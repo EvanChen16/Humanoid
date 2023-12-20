@@ -1,0 +1,959 @@
+[0.000000] (-) TimerEvent: {}
+[0.000163] (motionpackage) JobQueued: {'identifier': 'motionpackage', 'dependencies': OrderedDict()}
+[0.000184] (tku_msgs) JobQueued: {'identifier': 'tku_msgs', 'dependencies': OrderedDict()}
+[0.000196] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.000208] (tku_libs) JobQueued: {'identifier': 'tku_libs', 'dependencies': OrderedDict([('tku_msgs', '/home/iclab/Desktop/ros2/install/tku_msgs')])}
+[0.000219] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict([('tku_msgs', '/home/iclab/Desktop/ros2/install/tku_msgs')])}
+[0.000243] (tku_msgs) JobStarted: {'identifier': 'tku_msgs'}
+[0.042573] (motionpackage) JobStarted: {'identifier': 'motionpackage'}
+[0.094700] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.099429] (-) TimerEvent: {}
+[0.137088] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'cmake'}
+[0.138002] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'build'}
+[0.138044] (tku_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/tku_msgs', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/tku_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S1MQG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/tku_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.199532] (-) TimerEvent: {}
+[0.299861] (-) TimerEvent: {}
+[0.400148] (-) TimerEvent: {}
+[0.413949] (tku_msgs) StdoutLine: {'line': b'[  0%] Built target tku_msgs__cpp\n'}
+[0.414526] (tku_msgs) StdoutLine: {'line': b'[ 12%] Built target tku_msgs__rosidl_generator_c\n'}
+[0.414634] (tku_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_tku_msgs\n'}
+[0.414712] (tku_msgs) StdoutLine: {'line': b'[ 24%] Built target tku_msgs__rosidl_typesupport_cpp\n'}
+[0.414847] (tku_msgs) StdoutLine: {'line': b'[ 36%] Built target tku_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.414982] (tku_msgs) StdoutLine: {'line': b'[ 49%] Built target tku_msgs__rosidl_typesupport_introspection_c\n'}
+[0.415155] (tku_msgs) StdoutLine: {'line': b'[ 62%] Built target tku_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.415247] (tku_msgs) StdoutLine: {'line': b'[ 74%] Built target tku_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.415335] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs__rosidl_typesupport_c\n'}
+[0.415451] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs\n'}
+[0.415538] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs__py\n'}
+[0.415787] (tku_msgs) StdoutLine: {'line': b'[ 98%] Built target tku_msgs__rosidl_generator_py\n'}
+[0.415871] (tku_msgs) StdoutLine: {'line': b'[ 98%] Built target tku_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.415942] (tku_msgs) StdoutLine: {'line': b'[ 99%] Built target tku_msgs__rosidl_typesupport_c__pyext\n'}
+[0.416075] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.416162] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[0.416328] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[0.416596] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/web_video_server', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S1MQG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.419646] (tku_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.420073] (tku_msgs) StdoutLine: {'line': b'writing tku_msgs.egg-info/PKG-INFO\n'}
+[0.420171] (tku_msgs) StdoutLine: {'line': b'writing dependency_links to tku_msgs.egg-info/dependency_links.txt\n'}
+[0.420249] (tku_msgs) StdoutLine: {'line': b'writing top-level names to tku_msgs.egg-info/top_level.txt\n'}
+[0.422879] (tku_msgs) StdoutLine: {'line': b"reading manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[0.423545] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[0.448839] (tku_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_tku_msgs_egg\n'}
+[0.457730] (tku_msgs) CommandEnded: {'returncode': 0}
+[0.497305] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server\n'}
+[0.500220] (-) TimerEvent: {}
+[0.504754] (web_video_server) CommandEnded: {'returncode': 0}
+[0.533985] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'install'}
+[0.540533] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iclab/Desktop/ros2/build/web_video_server'], 'cwd': '/home/iclab/Desktop/ros2/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S1MQG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.546602] (web_video_server) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.546809] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/lib/web_video_server/web_video_server\n'}
+[0.547034] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server\n'}
+[0.547174] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/h264_streamer.h\n'}
+[0.547259] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp8_streamer.h\n'}
+[0.547376] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/image_streamer.h\n'}
+[0.547454] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/web_video_server.h\n'}
+[0.547557] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/png_streamers.h\n'}
+[0.547708] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/libav_streamer.h\n'}
+[0.547782] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp9_streamer.h\n'}
+[0.547888] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/ros_compressed_streamer.h\n'}
+[0.547967] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/multipart_stream.h\n'}
+[0.548047] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/jpeg_streamers.h\n'}
+[0.548197] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server\n'}
+[0.548279] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server\n'}
+[0.548360] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh\n'}
+[0.548440] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv\n'}
+[0.548522] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.sh\n'}
+[0.548607] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.dsv\n'}
+[0.548696] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.bash\n'}
+[0.548782] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.sh\n'}
+[0.548877] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.zsh\n'}
+[0.548950] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.dsv\n'}
+[0.549024] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.dsv\n'}
+[0.549098] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/packages/web_video_server\n'}
+[0.549170] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake\n'}
+[0.549244] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake\n'}
+[0.549384] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.xml\n'}
+[0.549957] (web_video_server) CommandEnded: {'returncode': 0}
+[0.600310] (-) TimerEvent: {}
+[0.691774] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 0}
+[0.700396] (-) TimerEvent: {}
+[0.753538] (motionpackage) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motionpackage', 'build', '--build-base', '/home/iclab/Desktop/ros2/build/motionpackage/build', 'install', '--record', '/home/iclab/Desktop/ros2/build/motionpackage/install.log', '--single-version-externally-managed'], 'cwd': '/home/iclab/Desktop/ros2/src/motionpackage', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'iclab', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/iclab', 'OLDPWD': '/home/iclab', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1865', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'iclab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.S1MQG2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.145', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/iclab/Desktop/ros2/build/motionpackage', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/iclab/Desktop/ros2/build/motionpackage/prefix_override:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial'}, 'shell': False}
+[0.790035] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'install'}
+[0.790388] (tku_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iclab/Desktop/ros2/build/tku_msgs'], 'cwd': '/home/iclab/Desktop/ros2/build/tku_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S1MQG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/tku_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.796729] (tku_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.796960] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/ament_index/resource_index/rosidl_interfaces/tku_msgs\n'}
+[0.797084] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.797184] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.797280] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/check_sector.h\n'}
+[0.797374] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/add.h\n'}
+[0.797468] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/read_motion.h\n'}
+[0.797568] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/camera_info.h\n'}
+[0.797651] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/save_hsv.h\n'}
+[0.797752] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/build_model.h\n'}
+[0.797850] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/send_hand_speed.h\n'}
+[0.797956] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/hsv_info.h\n'}
+[0.798043] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.798145] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__functions.c\n'}
+[0.798260] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__struct.h\n'}
+[0.798365] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__functions.h\n'}
+[0.798473] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__type_support.h\n'}
+[0.798576] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__functions.h\n'}
+[0.798675] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__functions.h\n'}
+[0.798785] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__type_support.h\n'}
+[0.798899] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__struct.h\n'}
+[0.799007] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__struct.h\n'}
+[0.799116] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__functions.c\n'}
+[0.799216] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__type_support.h\n'}
+[0.799357] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__functions.c\n'}
+[0.799451] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__functions.c\n'}
+[0.799555] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__struct.h\n'}
+[0.799667] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__functions.h\n'}
+[0.799767] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__functions.c\n'}
+[0.799834] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__type_support.h\n'}
+[0.799925] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__type_support.h\n'}
+[0.799995] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__struct.h\n'}
+[0.800101] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__struct.h\n'}
+[0.800208] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__type_support.h\n'}
+[0.800325] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__functions.c\n'}
+[0.800412] (-) TimerEvent: {}
+[0.800557] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__functions.h\n'}
+[0.800675] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__type_support.h\n'}
+[0.800780] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__functions.c\n'}
+[0.800871] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__functions.h\n'}
+[0.800937] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__functions.c\n'}
+[0.801011] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__functions.h\n'}
+[0.801069] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__struct.h\n'}
+[0.801127] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__functions.h\n'}
+[0.801214] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__type_support.h\n'}
+[0.801315] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__struct.h\n'}
+[0.801422] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.801528] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/object_list.h\n'}
+[0.801612] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/callback.h\n'}
+[0.801722] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/save_motion.h\n'}
+[0.801822] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/single_motor_data.h\n'}
+[0.801915] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sensor_set.h\n'}
+[0.802009] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/color_array.h\n'}
+[0.802102] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/draw_image.h\n'}
+[0.802195] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.802281] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/camera.h\n'}
+[0.802363] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sensor_package.h\n'}
+[0.802419] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/head_package.h\n'}
+[0.802475] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/label_model_object_list.h\n'}
+[0.802548] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/interface_send2_sector.h\n'}
+[0.802610] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/pi_dpackage.h\n'}
+[0.802672] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/button_color_form.h\n'}
+[0.802760] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/color_data.h\n'}
+[0.802833] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/save_motion_vector.h\n'}
+[0.802947] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sand_hand_speed.h\n'}
+[0.803069] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/parametermessage.h\n'}
+[0.803195] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/hsv_value.h\n'}
+[0.803323] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.803449] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__struct.h\n'}
+[0.803571] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__functions.h\n'}
+[0.803682] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__functions.h\n'}
+[0.803801] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__type_support.h\n'}
+[0.803917] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__functions.h\n'}
+[0.804019] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__type_support.h\n'}
+[0.804111] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__functions.c\n'}
+[0.804203] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__functions.h\n'}
+[0.804314] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__struct.h\n'}
+[0.804412] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__type_support.h\n'}
+[0.804517] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__type_support.h\n'}
+[0.804618] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__functions.c\n'}
+[0.804718] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__struct.h\n'}
+[0.804818] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__functions.c\n'}
+[0.804915] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__functions.c\n'}
+[0.805016] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__struct.h\n'}
+[0.805125] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__functions.c\n'}
+[0.805210] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__struct.h\n'}
+[0.805312] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__type_support.h\n'}
+[0.805405] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__functions.h\n'}
+[0.805509] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__functions.h\n'}
+[0.805606] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__struct.h\n'}
+[0.805720] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__functions.h\n'}
+[0.805858] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__type_support.h\n'}
+[0.805979] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__struct.h\n'}
+[0.806094] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__type_support.h\n'}
+[0.806177] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__struct.h\n'}
+[0.806280] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__type_support.h\n'}
+[0.806363] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__functions.h\n'}
+[0.806483] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__functions.h\n'}
+[0.806601] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__struct.h\n'}
+[0.806706] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__struct.h\n'}
+[0.806841] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__functions.c\n'}
+[0.806969] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__functions.h\n'}
+[0.807075] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__type_support.h\n'}
+[0.807172] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__type_support.h\n'}
+[0.807328] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__functions.h\n'}
+[0.807399] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__type_support.h\n'}
+[0.807462] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__struct.h\n'}
+[0.807521] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__functions.c\n'}
+[0.807582] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__functions.c\n'}
+[0.807643] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__functions.c\n'}
+[0.807747] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__struct.h\n'}
+[0.807845] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__functions.c\n'}
+[0.807947] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__type_support.h\n'}
+[0.808034] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__functions.h\n'}
+[0.808114] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__functions.h\n'}
+[0.808201] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__type_support.h\n'}
+[0.808270] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__type_support.h\n'}
+[0.808342] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__functions.c\n'}
+[0.808408] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__functions.c\n'}
+[0.808498] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__functions.c\n'}
+[0.808563] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__functions.h\n'}
+[0.808661] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__functions.c\n'}
+[0.808767] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__functions.h\n'}
+[0.808845] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__struct.h\n'}
+[0.808919] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__struct.h\n'}
+[0.809025] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__type_support.h\n'}
+[0.809131] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__functions.h\n'}
+[0.809237] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__struct.h\n'}
+[0.809318] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__type_support.h\n'}
+[0.809439] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__functions.h\n'}
+[0.809559] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__functions.h\n'}
+[0.809699] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__functions.h\n'}
+[0.809803] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__functions.c\n'}
+[0.809908] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__type_support.h\n'}
+[0.809999] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__struct.h\n'}
+[0.810092] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__struct.h\n'}
+[0.810185] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__functions.h\n'}
+[0.810277] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__struct.h\n'}
+[0.810376] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__functions.c\n'}
+[0.810474] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__struct.h\n'}
+[0.810563] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__functions.c\n'}
+[0.810647] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__type_support.h\n'}
+[0.810712] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__type_support.h\n'}
+[0.810775] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__struct.h\n'}
+[0.810857] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__functions.c\n'}
+[0.810915] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__functions.c\n'}
+[0.810984] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__functions.c\n'}
+[0.811051] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__type_support.h\n'}
+[0.811124] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/walkingmessage.h\n'}
+[0.811190] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/library_path.sh\n'}
+[0.811264] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/library_path.dsv\n'}
+[0.811342] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_generator_c.so\n'}
+[0.811413] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.811488] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.811564] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.811635] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__rosidl_typesupport_fastrtps_c.h\n'}
+[0.811705] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__rosidl_typesupport_fastrtps_c.h\n'}
+[0.811773] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__rosidl_typesupport_fastrtps_c.h\n'}
+[0.811842] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.811906] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__rosidl_typesupport_fastrtps_c.h\n'}
+[0.811971] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812039] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812110] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812182] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.812246] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.812316] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.812385] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812451] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812517] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812593] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812663] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812719] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812776] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812839] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812899] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__rosidl_typesupport_fastrtps_c.h\n'}
+[0.812964] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813025] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813086] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813150] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813216] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813277] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813339] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813402] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813461] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813517] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813579] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__rosidl_typesupport_fastrtps_c.h\n'}
+[0.813634] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.813689] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.813743] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.813824] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.813906] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__type_support.c\n'}
+[0.813988] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__type_support.c\n'}
+[0.814070] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__type_support.c\n'}
+[0.814154] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__rosidl_typesupport_introspection_c.h\n'}
+[0.814242] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__rosidl_typesupport_introspection_c.h\n'}
+[0.814327] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__rosidl_typesupport_introspection_c.h\n'}
+[0.814414] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__rosidl_typesupport_introspection_c.h\n'}
+[0.814501] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__type_support.c\n'}
+[0.814582] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__type_support.c\n'}
+[0.814644] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__type_support.c\n'}
+[0.814714] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__type_support.c\n'}
+[0.814775] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__rosidl_typesupport_introspection_c.h\n'}
+[0.814836] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__rosidl_typesupport_introspection_c.h\n'}
+[0.814897] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__rosidl_typesupport_introspection_c.h\n'}
+[0.814963] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__type_support.c\n'}
+[0.815026] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__rosidl_typesupport_introspection_c.h\n'}
+[0.815088] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.815148] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.815214] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.815299] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__type_support.c\n'}
+[0.815367] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__type_support.c\n'}
+[0.815432] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__type_support.c\n'}
+[0.815499] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__rosidl_typesupport_introspection_c.h\n'}
+[0.815566] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_introspection_c.h\n'}
+[0.815629] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__rosidl_typesupport_introspection_c.h\n'}
+[0.815692] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__type_support.c\n'}
+[0.815758] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__rosidl_typesupport_introspection_c.h\n'}
+[0.815823] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__type_support.c\n'}
+[0.815883] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__rosidl_typesupport_introspection_c.h\n'}
+[0.815948] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__rosidl_typesupport_introspection_c.h\n'}
+[0.816013] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__rosidl_typesupport_introspection_c.h\n'}
+[0.816076] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__rosidl_typesupport_introspection_c.h\n'}
+[0.816137] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__rosidl_typesupport_introspection_c.h\n'}
+[0.816196] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__rosidl_typesupport_introspection_c.h\n'}
+[0.816257] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__rosidl_typesupport_introspection_c.h\n'}
+[0.816316] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__rosidl_typesupport_introspection_c.h\n'}
+[0.816377] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__type_support.c\n'}
+[0.816437] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__type_support.c\n'}
+[0.816496] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__type_support.c\n'}
+[0.816557] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__rosidl_typesupport_introspection_c.h\n'}
+[0.816631] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__rosidl_typesupport_introspection_c.h\n'}
+[0.816694] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__type_support.c\n'}
+[0.816770] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__type_support.c\n'}
+[0.816856] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__rosidl_typesupport_introspection_c.h\n'}
+[0.816939] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__rosidl_typesupport_introspection_c.h\n'}
+[0.817024] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__type_support.c\n'}
+[0.817104] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__type_support.c\n'}
+[0.817189] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__type_support.c\n'}
+[0.817266] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__rosidl_typesupport_introspection_c.h\n'}
+[0.817343] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__type_support.c\n'}
+[0.817421] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__type_support.c\n'}
+[0.817498] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__type_support.c\n'}
+[0.817577] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__type_support.c\n'}
+[0.817661] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__type_support.c\n'}
+[0.817745] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__rosidl_typesupport_introspection_c.h\n'}
+[0.817831] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__type_support.c\n'}
+[0.817911] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__type_support.c\n'}
+[0.817974] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__rosidl_typesupport_introspection_c.h\n'}
+[0.818031] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__rosidl_typesupport_introspection_c.h\n'}
+[0.818088] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.818144] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_c.so\n'}
+[0.818199] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.818254] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.818308] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/read_motion.hpp\n'}
+[0.818372] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/camera_info.hpp\n'}
+[0.818431] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/check_sector.hpp\n'}
+[0.818491] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/add.hpp\n'}
+[0.818551] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/build_model.hpp\n'}
+[0.818613] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/save_hsv.hpp\n'}
+[0.818676] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/send_hand_speed.hpp\n'}
+[0.818745] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.818816] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__traits.hpp\n'}
+[0.818886] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__builder.hpp\n'}
+[0.818954] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__builder.hpp\n'}
+[0.819034] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__struct.hpp\n'}
+[0.819105] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__struct.hpp\n'}
+[0.819172] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__struct.hpp\n'}
+[0.819243] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__traits.hpp\n'}
+[0.819321] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__builder.hpp\n'}
+[0.819390] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__traits.hpp\n'}
+[0.819467] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__builder.hpp\n'}
+[0.819539] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__traits.hpp\n'}
+[0.819612] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__builder.hpp\n'}
+[0.819680] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__struct.hpp\n'}
+[0.819747] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__traits.hpp\n'}
+[0.819814] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__builder.hpp\n'}
+[0.819881] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__struct.hpp\n'}
+[0.819949] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__traits.hpp\n'}
+[0.820018] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__struct.hpp\n'}
+[0.820092] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__struct.hpp\n'}
+[0.820170] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__traits.hpp\n'}
+[0.820243] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__builder.hpp\n'}
+[0.820314] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__traits.hpp\n'}
+[0.820388] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__builder.hpp\n'}
+[0.820461] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__struct.hpp\n'}
+[0.820537] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/hsv_info.hpp\n'}
+[0.820611] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.820681] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/button_color_form.hpp\n'}
+[0.820756] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/draw_image.hpp\n'}
+[0.820816] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/save_motion.hpp\n'}
+[0.820875] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/callback.hpp\n'}
+[0.820933] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/color_data.hpp\n'}
+[0.820992] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/walkingmessage.hpp\n'}
+[0.821052] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sensor_set.hpp\n'}
+[0.821109] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/head_package.hpp\n'}
+[0.821171] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/parametermessage.hpp\n'}
+[0.821232] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/camera.hpp\n'}
+[0.821289] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/pi_dpackage.hpp\n'}
+[0.821348] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/object_list.hpp\n'}
+[0.821406] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/save_motion_vector.hpp\n'}
+[0.821468] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/color_array.hpp\n'}
+[0.821537] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sand_hand_speed.hpp\n'}
+[0.821593] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/sensor_package.hpp\n'}
+[0.821652] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/interface_send2_sector.hpp\n'}
+[0.821714] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/label_model_object_list.hpp\n'}
+[0.821800] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/single_motor_data.hpp\n'}
+[0.821888] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/hsv_value.hpp\n'}
+[0.821974] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.822058] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__traits.hpp\n'}
+[0.822144] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__builder.hpp\n'}
+[0.822231] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__traits.hpp\n'}
+[0.822316] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__struct.hpp\n'}
+[0.822404] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__struct.hpp\n'}
+[0.822489] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__builder.hpp\n'}
+[0.822583] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__traits.hpp\n'}
+[0.822660] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__builder.hpp\n'}
+[0.822733] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__traits.hpp\n'}
+[0.822805] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__builder.hpp\n'}
+[0.822877] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__builder.hpp\n'}
+[0.822948] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__builder.hpp\n'}
+[0.823018] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__traits.hpp\n'}
+[0.823090] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__builder.hpp\n'}
+[0.823160] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__traits.hpp\n'}
+[0.823231] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__builder.hpp\n'}
+[0.823310] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__traits.hpp\n'}
+[0.823382] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__struct.hpp\n'}
+[0.823455] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__struct.hpp\n'}
+[0.823527] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__struct.hpp\n'}
+[0.823599] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__traits.hpp\n'}
+[0.823672] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__builder.hpp\n'}
+[0.823760] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__builder.hpp\n'}
+[0.823819] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__struct.hpp\n'}
+[0.823877] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__struct.hpp\n'}
+[0.823937] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__builder.hpp\n'}
+[0.823995] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__struct.hpp\n'}
+[0.824056] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__traits.hpp\n'}
+[0.824125] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__struct.hpp\n'}
+[0.824184] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__traits.hpp\n'}
+[0.824242] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__traits.hpp\n'}
+[0.824301] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__traits.hpp\n'}
+[0.824360] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__traits.hpp\n'}
+[0.824417] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__traits.hpp\n'}
+[0.824476] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__builder.hpp\n'}
+[0.824536] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__traits.hpp\n'}
+[0.824597] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__builder.hpp\n'}
+[0.824659] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__builder.hpp\n'}
+[0.824721] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__traits.hpp\n'}
+[0.824782] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__builder.hpp\n'}
+[0.824852] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__struct.hpp\n'}
+[0.824941] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__builder.hpp\n'}
+[0.825029] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__struct.hpp\n'}
+[0.825115] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__builder.hpp\n'}
+[0.825198] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__traits.hpp\n'}
+[0.825281] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__builder.hpp\n'}
+[0.825376] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__builder.hpp\n'}
+[0.825463] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__struct.hpp\n'}
+[0.825545] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__struct.hpp\n'}
+[0.825627] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__struct.hpp\n'}
+[0.825709] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__traits.hpp\n'}
+[0.825775] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__struct.hpp\n'}
+[0.825845] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__struct.hpp\n'}
+[0.825912] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__traits.hpp\n'}
+[0.825983] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__struct.hpp\n'}
+[0.826054] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__struct.hpp\n'}
+[0.826123] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__traits.hpp\n'}
+[0.826194] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__builder.hpp\n'}
+[0.826262] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__struct.hpp\n'}
+[0.826331] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__struct.hpp\n'}
+[0.826407] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.826478] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.826547] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.826625] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826689] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/dds_fastrtps\n'}
+[0.826756] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826824] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826891] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.826960] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827025] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827090] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827159] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827223] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.827302] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.827362] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.827427] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/dds_fastrtps\n'}
+[0.827491] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827558] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827620] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827695] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827775] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827852] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.827929] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828003] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828079] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828159] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828241] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828320] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828397] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828484] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828561] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828636] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828713] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828789] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828845] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828908] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.828972] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.829034] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs\n'}
+[0.829093] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv\n'}
+[0.829153] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail\n'}
+[0.829217] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__type_support.cpp\n'}
+[0.829281] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__type_support.cpp\n'}
+[0.829343] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__type_support.cpp\n'}
+[0.829403] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/send_hand_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829462] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829518] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__type_support.cpp\n'}
+[0.829574] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/build_model__type_support.cpp\n'}
+[0.829630] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/read_motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829686] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829743] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/save_hsv__type_support.cpp\n'}
+[0.829807] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__type_support.cpp\n'}
+[0.829887] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/camera_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829965] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/hsv_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830048] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/check_sector__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830134] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830236] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/srv/detail/add__type_support.cpp\n'}
+[0.830323] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg\n'}
+[0.830413] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail\n'}
+[0.830503] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__type_support.cpp\n'}
+[0.830601] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_set__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830691] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830780] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.830869] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__type_support.cpp\n'}
+[0.830958] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831058] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831145] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__type_support.cpp\n'}
+[0.831232] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831341] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/label_model_object_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831434] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831523] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831613] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__type_support.cpp\n'}
+[0.831703] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/parametermessage__type_support.cpp\n'}
+[0.831780] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/hsv_value__type_support.cpp\n'}
+[0.831842] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831901] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.831958] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/pi_dpackage__type_support.cpp\n'}
+[0.832016] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/camera__type_support.cpp\n'}
+[0.832077] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.832141] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/callback__type_support.cpp\n'}
+[0.832201] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__type_support.cpp\n'}
+[0.832260] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.832322] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__type_support.cpp\n'}
+[0.832383] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__type_support.cpp\n'}
+[0.832444] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.832505] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion__type_support.cpp\n'}
+[0.832574] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sand_hand_speed__type_support.cpp\n'}
+[0.832652] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/color_array__type_support.cpp\n'}
+[0.832741] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/interface_send2_sector__type_support.cpp\n'}
+[0.832821] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/single_motor_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.832904] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.832983] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.833060] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/head_package__type_support.cpp\n'}
+[0.833197] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/walkingmessage__type_support.cpp\n'}
+[0.833281] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/sensor_package__type_support.cpp\n'}
+[0.833372] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/object_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.833456] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.833536] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/save_motion_vector__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.833618] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/include/tku_msgs/tku_msgs/msg/detail/draw_image__type_support.cpp\n'}
+[0.833699] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.833771] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_typesupport_cpp.so\n'}
+[0.833846] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/pythonpath.sh\n'}
+[0.833920] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/pythonpath.dsv\n'}
+[0.833993] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs-0.0.0-py3.10.egg-info\n'}
+[0.834065] (tku_msgs) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.834135] (tku_msgs) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.834203] (tku_msgs) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.834272] (tku_msgs) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.834342] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs\n'}
+[0.834410] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv\n'}
+[0.834480] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_hsv_info.py\n'}
+[0.834550] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_build_model_s.c\n'}
+[0.834619] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_build_model.py\n'}
+[0.834686] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_check_sector.py\n'}
+[0.834753] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_hsv_info_s.c\n'}
+[0.834820] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_save_hsv.py\n'}
+[0.834896] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_read_motion.py\n'}
+[0.834962] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_send_hand_speed.py\n'}
+[0.835033] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_check_sector_s.c\n'}
+[0.835094] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_camera_info.py\n'}
+[0.835151] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_read_motion_s.c\n'}
+[0.835209] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_save_hsv_s.c\n'}
+[0.835283] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_camera_info_s.c\n'}
+[0.835346] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_add_s.c\n'}
+[0.835406] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_add.py\n'}
+[0.835471] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/_send_hand_speed_s.c\n'}
+[0.835529] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv/__init__.py\n'}
+[0.835589] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.835659] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.835720] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg\n'}
+[0.835763] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_object_list.py\n'}
+[0.835841] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_head_package_s.c\n'}
+[0.835923] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_camera_s.c\n'}
+[0.836005] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_label_model_object_list_s.c\n'}
+[0.836086] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_hsv_value_s.c\n'}
+[0.836168] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_color_array.py\n'}
+[0.836251] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_parametermessage_s.c\n'}
+[0.836329] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sensor_set.py\n'}
+[0.836412] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_camera.py\n'}
+[0.836492] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sand_hand_speed_s.c\n'}
+[0.836565] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sensor_package_s.c\n'}
+[0.836641] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_single_motor_data_s.c\n'}
+[0.836718] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_draw_image_s.c\n'}
+[0.836788] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_save_motion_s.c\n'}
+[0.836859] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_object_list_s.c\n'}
+[0.836937] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_interface_send2_sector_s.c\n'}
+[0.837008] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_button_color_form_s.c\n'}
+[0.837080] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sensor_package.py\n'}
+[0.837150] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_head_package.py\n'}
+[0.837231] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_label_model_object_list.py\n'}
+[0.837301] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_color_data.py\n'}
+[0.837374] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_callback.py\n'}
+[0.837452] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_save_motion_vector.py\n'}
+[0.837531] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_button_color_form.py\n'}
+[0.837606] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_color_data_s.c\n'}
+[0.837680] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_walkingmessage.py\n'}
+[0.837751] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_callback_s.c\n'}
+[0.837813] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_walkingmessage_s.c\n'}
+[0.837877] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_pi_dpackage_s.c\n'}
+[0.837940] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_interface_send2_sector.py\n'}
+[0.838001] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_save_motion.py\n'}
+[0.838061] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sensor_set_s.c\n'}
+[0.838122] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_draw_image.py\n'}
+[0.838167] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_color_array_s.c\n'}
+[0.838202] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_single_motor_data.py\n'}
+[0.838238] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/__init__.py\n'}
+[0.838298] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_hsv_value.py\n'}
+[0.838360] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_pi_dpackage.py\n'}
+[0.838417] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_save_motion_vector_s.c\n'}
+[0.838476] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_sand_hand_speed.py\n'}
+[0.838534] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg/_parametermessage.py\n'}
+[0.838596] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/libtku_msgs__rosidl_generator_py.so\n'}
+[0.838663] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.838720] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.838803] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.838884] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/__init__.py\n'}
+[0.838968] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.840851] (tku_msgs) StdoutLine: {'line': b"Listing '/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs'...\n"}
+[0.841019] (tku_msgs) StdoutLine: {'line': b"Listing '/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/msg'...\n"}
+[0.841101] (tku_msgs) StdoutLine: {'line': b"Listing '/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/srv'...\n"}
+[0.844539] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.844784] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.845060] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs/tku_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.845337] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/lib/libtku_msgs__rosidl_generator_py.so\n'}
+[0.845507] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ButtonColorForm.idl\n'}
+[0.845582] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ColorArray.idl\n'}
+[0.845649] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ColorData.idl\n'}
+[0.845739] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/DrawImage.idl\n'}
+[0.845881] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/HSVValue.idl\n'}
+[0.845995] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/LabelModelObjectList.idl\n'}
+[0.846097] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ObjectList.idl\n'}
+[0.846189] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Camera.idl\n'}
+[0.846256] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Callback.idl\n'}
+[0.846356] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/HeadPackage.idl\n'}
+[0.846459] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/InterfaceSend2Sector.idl\n'}
+[0.846563] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Parametermessage.idl\n'}
+[0.846665] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/PIDpackage.idl\n'}
+[0.846757] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SandHandSpeed.idl\n'}
+[0.846850] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SaveMotion.idl\n'}
+[0.846948] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SaveMotionVector.idl\n'}
+[0.847055] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SensorPackage.idl\n'}
+[0.847168] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SensorSet.idl\n'}
+[0.847278] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SingleMotorData.idl\n'}
+[0.847408] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Walkingmessage.idl\n'}
+[0.847487] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/BuildModel.idl\n'}
+[0.847566] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/HSVInfo.idl\n'}
+[0.847674] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SaveHSV.idl\n'}
+[0.847772] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/Add.idl\n'}
+[0.847836] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CameraInfo.idl\n'}
+[0.847891] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/ReadMotion.idl\n'}
+[0.847946] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CheckSector.idl\n'}
+[0.848009] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SendHandSpeed.idl\n'}
+[0.848076] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ButtonColorForm.msg\n'}
+[0.848182] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ColorArray.msg\n'}
+[0.848250] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ColorData.msg\n'}
+[0.848317] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/DrawImage.msg\n'}
+[0.848436] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/HSVValue.msg\n'}
+[0.848529] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/LabelModelObjectList.msg\n'}
+[0.848597] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/ObjectList.msg\n'}
+[0.848697] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Camera.msg\n'}
+[0.848763] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Callback.msg\n'}
+[0.848853] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/HeadPackage.msg\n'}
+[0.848934] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/InterfaceSend2Sector.msg\n'}
+[0.849028] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Parametermessage.msg\n'}
+[0.849107] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/PIDpackage.msg\n'}
+[0.849215] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SandHandSpeed.msg\n'}
+[0.849309] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SaveMotion.msg\n'}
+[0.849410] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SaveMotionVector.msg\n'}
+[0.849516] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SensorPackage.msg\n'}
+[0.849614] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SensorSet.msg\n'}
+[0.849691] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/SingleMotorData.msg\n'}
+[0.849770] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/msg/Walkingmessage.msg\n'}
+[0.849880] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/BuildModel.srv\n'}
+[0.849965] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/BuildModel_Request.msg\n'}
+[0.850046] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/BuildModel_Response.msg\n'}
+[0.850118] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/HSVInfo.srv\n'}
+[0.850191] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/HSVInfo_Request.msg\n'}
+[0.850263] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/HSVInfo_Response.msg\n'}
+[0.850335] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SaveHSV.srv\n'}
+[0.850442] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SaveHSV_Request.msg\n'}
+[0.850536] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SaveHSV_Response.msg\n'}
+[0.850610] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/Add.srv\n'}
+[0.850712] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/Add_Request.msg\n'}
+[0.850785] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/Add_Response.msg\n'}
+[0.850879] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CameraInfo.srv\n'}
+[0.850958] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CameraInfo_Request.msg\n'}
+[0.851039] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CameraInfo_Response.msg\n'}
+[0.851121] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/ReadMotion.srv\n'}
+[0.851183] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/ReadMotion_Request.msg\n'}
+[0.851255] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/ReadMotion_Response.msg\n'}
+[0.851367] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CheckSector.srv\n'}
+[0.851456] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CheckSector_Request.msg\n'}
+[0.851558] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/CheckSector_Response.msg\n'}
+[0.851618] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SendHandSpeed.srv\n'}
+[0.851706] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SendHandSpeed_Request.msg\n'}
+[0.851799] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/srv/SendHandSpeed_Response.msg\n'}
+[0.851905] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/ament_index/resource_index/package_run_dependencies/tku_msgs\n'}
+[0.851995] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/ament_index/resource_index/parent_prefix_path/tku_msgs\n'}
+[0.852112] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/ament_prefix_path.sh\n'}
+[0.852217] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/ament_prefix_path.dsv\n'}
+[0.852326] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/path.sh\n'}
+[0.852429] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/environment/path.dsv\n'}
+[0.852533] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/local_setup.bash\n'}
+[0.852614] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/local_setup.sh\n'}
+[0.852689] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/local_setup.zsh\n'}
+[0.852765] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/local_setup.dsv\n'}
+[0.852840] (tku_msgs) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.dsv\n'}
+[0.852918] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/ament_index/resource_index/packages/tku_msgs\n'}
+[0.852991] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_generator_cExport.cmake\n'}
+[0.853069] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.853140] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.853204] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.853281] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.853360] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.853438] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.853515] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.853592] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.853671] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.853766] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.853830] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.853897] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.853962] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.854027] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.854091] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.854155] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/export_tku_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.854248] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.854442] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.854519] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.854597] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.854791] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.854964] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.855208] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.855435] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgsConfig.cmake\n'}
+[0.855516] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/cmake/tku_msgsConfig-version.cmake\n'}
+[0.855598] (tku_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.xml\n'}
+[0.855673] (tku_msgs) CommandEnded: {'returncode': 0}
+[0.900593] (-) TimerEvent: {}
+[0.962201] (motionpackage) StdoutLine: {'line': b'running egg_info\n'}
+[0.962797] (motionpackage) StdoutLine: {'line': b'writing ../../build/motionpackage/motionpackage.egg-info/PKG-INFO\n'}
+[0.962980] (motionpackage) StdoutLine: {'line': b'writing dependency_links to ../../build/motionpackage/motionpackage.egg-info/dependency_links.txt\n'}
+[0.963084] (motionpackage) StdoutLine: {'line': b'writing entry points to ../../build/motionpackage/motionpackage.egg-info/entry_points.txt\n'}
+[0.963228] (motionpackage) StdoutLine: {'line': b'writing requirements to ../../build/motionpackage/motionpackage.egg-info/requires.txt\n'}
+[0.963286] (motionpackage) StdoutLine: {'line': b'writing top-level names to ../../build/motionpackage/motionpackage.egg-info/top_level.txt\n'}
+[0.964670] (motionpackage) StdoutLine: {'line': b"reading manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[0.965236] (motionpackage) StdoutLine: {'line': b"writing manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[0.965422] (motionpackage) StdoutLine: {'line': b'running build\n'}
+[0.965494] (motionpackage) StdoutLine: {'line': b'running build_py\n'}
+[0.965585] (motionpackage) StdoutLine: {'line': b'running install\n'}
+[0.965755] (motionpackage) StdoutLine: {'line': b'running install_lib\n'}
+[0.966598] (motionpackage) StdoutLine: {'line': b'running install_data\n'}
+[0.966899] (motionpackage) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.968009] (motionpackage) StdoutLine: {'line': b"removing '/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.968227] (motionpackage) StdoutLine: {'line': b'Copying ../../build/motionpackage/motionpackage.egg-info to /home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info\n'}
+[0.968795] (motionpackage) StdoutLine: {'line': b'running install_scripts\n'}
+[0.983071] (motionpackage) StdoutLine: {'line': b'Installing motion script to /home/iclab/Desktop/ros2/install/motionpackage/lib/motionpackage\n'}
+[0.983354] (motionpackage) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/ros2/build/motionpackage/install.log'\n"}
+[1.000680] (-) TimerEvent: {}
+[1.003378] (motionpackage) CommandEnded: {'returncode': 0}
+[1.064799] (motionpackage) JobEnded: {'identifier': 'motionpackage', 'rc': 0}
+[1.100758] (-) TimerEvent: {}
+[1.201122] (-) TimerEvent: {}
+[1.301559] (-) TimerEvent: {}
+[1.316839] (tku_msgs) JobEnded: {'identifier': 'tku_msgs', 'rc': 0}
+[1.317777] (tku_libs) JobStarted: {'identifier': 'tku_libs'}
+[1.382230] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[1.401775] (-) TimerEvent: {}
+[1.502199] (-) TimerEvent: {}
+[1.602511] (-) TimerEvent: {}
+[1.675441] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[1.676111] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[1.676423] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/usb_cam', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1865'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.S1MQG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[1.702614] (-) TimerEvent: {}
+[1.714389] (usb_cam) StdoutLine: {'line': b'[ 14%] Built target gtest\n'}
+[1.715668] (usb_cam) StdoutLine: {'line': b'[ 28%] Built target usb_cam_node_exe\n'}
+[1.717285] (usb_cam) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[1.717750] (usb_cam) StdoutLine: {'line': b'[ 57%] Built target usb_cam\n'}
+[1.727700] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target usb_cam_node\x1b[0m\n'}
+[1.737145] (usb_cam) StdoutLine: {'line': b'[ 71%] Built target test_usb_cam_utils\n'}
+[1.738789] (usb_cam) StdoutLine: {'line': b'[ 85%] Built target test_pixel_formats\n'}
+[1.745522] (usb_cam) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o\x1b[0m\n'}
+[1.802743] (-) TimerEvent: {}
+[1.902977] (-) TimerEvent: {}
+[1.974649] (tku_libs) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/tku_libs', 'build', '--build-base', '/home/iclab/Desktop/ros2/build/tku_libs/build', 'install', '--record', '/home/iclab/Desktop/ros2/build/tku_libs/install.log', '--single-version-externally-managed'], 'cwd': '/home/iclab/Desktop/ros2/src/tku_libs', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'iclab', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/iclab', 'OLDPWD': '/home/iclab', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1865', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'iclab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/iclab:@/tmp/.ICE-unix/1675,unix/iclab:/tmp/.ICE-unix/1675', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f6157fa5_b872_4180_96a9_61ee091c0f8e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.S1MQG2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.145', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/iclab/Desktop/ros2/build/tku_libs', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/iclab/Desktop/ros2/build/tku_libs/prefix_override:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial'}, 'shell': False}
+[2.003116] (-) TimerEvent: {}
+[2.103353] (-) TimerEvent: {}
+[2.155741] (tku_libs) StdoutLine: {'line': b'running egg_info\n'}
+[2.156256] (tku_libs) StdoutLine: {'line': b'writing ../../build/tku_libs/tku_libs.egg-info/PKG-INFO\n'}
+[2.156355] (tku_libs) StdoutLine: {'line': b'writing dependency_links to ../../build/tku_libs/tku_libs.egg-info/dependency_links.txt\n'}
+[2.156504] (tku_libs) StdoutLine: {'line': b'writing entry points to ../../build/tku_libs/tku_libs.egg-info/entry_points.txt\n'}
+[2.156607] (tku_libs) StdoutLine: {'line': b'writing requirements to ../../build/tku_libs/tku_libs.egg-info/requires.txt\n'}
+[2.156652] (tku_libs) StdoutLine: {'line': b'writing top-level names to ../../build/tku_libs/tku_libs.egg-info/top_level.txt\n'}
+[2.157796] (tku_libs) StdoutLine: {'line': b"reading manifest file '../../build/tku_libs/tku_libs.egg-info/SOURCES.txt'\n"}
+[2.158281] (tku_libs) StdoutLine: {'line': b"writing manifest file '../../build/tku_libs/tku_libs.egg-info/SOURCES.txt'\n"}
+[2.158339] (tku_libs) StdoutLine: {'line': b'running build\n'}
+[2.158378] (tku_libs) StdoutLine: {'line': b'running build_py\n'}
+[2.158550] (tku_libs) StdoutLine: {'line': b'running install\n'}
+[2.158738] (tku_libs) StdoutLine: {'line': b'running install_lib\n'}
+[2.159556] (tku_libs) StdoutLine: {'line': b'running install_data\n'}
+[2.159889] (tku_libs) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.160960] (tku_libs) StdoutLine: {'line': b"removing '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages/tku_libs-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.161154] (tku_libs) StdoutLine: {'line': b'Copying ../../build/tku_libs/tku_libs.egg-info to /home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages/tku_libs-0.0.0-py3.10.egg-info\n'}
+[2.161558] (tku_libs) StdoutLine: {'line': b'running install_scripts\n'}
+[2.174952] (tku_libs) StdoutLine: {'line': b'Installing aaa script to /home/iclab/Desktop/ros2/install/tku_libs/lib/tku_libs\n'}
+[2.175100] (tku_libs) StdoutLine: {'line': b'Installing bbb script to /home/iclab/Desktop/ros2/install/tku_libs/lib/tku_libs\n'}
+[2.175212] (tku_libs) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/ros2/build/tku_libs/install.log'\n"}
+[2.194586] (tku_libs) CommandEnded: {'returncode': 0}
+[2.203439] (-) TimerEvent: {}
+[2.246486] (tku_libs) JobEnded: {'identifier': 'tku_libs', 'rc': 0}
+[2.303547] (-) TimerEvent: {}
+[2.403823] (-) TimerEvent: {}
+[2.504114] (-) TimerEvent: {}
+[2.604460] (-) TimerEvent: {}
+[2.704732] (-) TimerEvent: {}
+[2.805050] (-) TimerEvent: {}
+[2.905311] (-) TimerEvent: {}
+[3.005643] (-) TimerEvent: {}
+[3.105934] (-) TimerEvent: {}
+[3.206232] (-) TimerEvent: {}
+[3.306488] (-) TimerEvent: {}
+[3.406788] (-) TimerEvent: {}
+[3.507098] (-) TimerEvent: {}
+[3.607374] (-) TimerEvent: {}
+[3.707644] (-) TimerEvent: {}
+[3.746260] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.746461] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbrightness_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.746508] (usb_cam) StderrLine: {'line': b'  223 |     \x1b[01;31m\x1b[Kbrightness_\x1b[m\x1b[K = msg.brightness;\n'}
+[3.746550] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.754014] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:224:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrast_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.754140] (usb_cam) StderrLine: {'line': b'  224 |     \x1b[01;31m\x1b[Kcontrast_\x1b[m\x1b[K = msg.contrast;\n'}
+[3.754180] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.762648] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:225:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksaturation_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.762752] (usb_cam) StderrLine: {'line': b'  225 |     \x1b[01;31m\x1b[Ksaturation_\x1b[m\x1b[K = msg.saturation;\n'}
+[3.762793] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.771076] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:226:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksharpness_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.771176] (usb_cam) StderrLine: {'line': b'  226 |     \x1b[01;31m\x1b[Ksharpness_\x1b[m\x1b[K = msg.sharpness;\n'}
+[3.771216] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.771260] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:226:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksharpness\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.771302] (usb_cam) StderrLine: {'line': b'  226 |     sharpness_ = msg.\x1b[01;31m\x1b[Ksharpness\x1b[m\x1b[K;\n'}
+[3.771338] (usb_cam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.776261] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgain_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.776366] (usb_cam) StderrLine: {'line': b'  227 |     \x1b[01;31m\x1b[Kgain_\x1b[m\x1b[K = msg.gain;\n'}
+[3.776405] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.776439] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kgain\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.776475] (usb_cam) StderrLine: {'line': b'  227 |     gain_ = msg.\x1b[01;31m\x1b[Kgain\x1b[m\x1b[K;\n'}
+[3.776509] (usb_cam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.791593] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_white_balance_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.791758] (usb_cam) StderrLine: {'line': b'  228 |     \x1b[01;31m\x1b[Kauto_white_balance_\x1b[m\x1b[K = msg.auto_white_balance;\n'}
+[3.791801] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.791840] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kauto_white_balance\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautowhitebalance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.791893] (usb_cam) StderrLine: {'line': b'  228 |     auto_white_balance_ = msg.\x1b[01;31m\x1b[Kauto_white_balance\x1b[m\x1b[K;\n'}
+[3.791929] (usb_cam) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.791964] (usb_cam) StderrLine: {'line': b'      |                               \x1b[32m\x1b[Kautowhitebalance\x1b[m\x1b[K\n'}
+[3.803729] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:229:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwhite_balance_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.803875] (usb_cam) StderrLine: {'line': b'  229 |     \x1b[01;31m\x1b[Kwhite_balance_\x1b[m\x1b[K = msg.white_balance;\n'}
+[3.803917] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.803952] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:229:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kwhite_balance\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kwhitebalance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.803990] (usb_cam) StderrLine: {'line': b'  229 |     white_balance_ = msg.\x1b[01;31m\x1b[Kwhite_balance\x1b[m\x1b[K;\n'}
+[3.804035] (usb_cam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.804069] (usb_cam) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kwhitebalance\x1b[m\x1b[K\n'}
+[3.807705] (-) TimerEvent: {}
+[3.815393] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:230:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_exposure_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.815523] (usb_cam) StderrLine: {'line': b'  230 |     \x1b[01;31m\x1b[Kauto_exposure_\x1b[m\x1b[K = msg.auto_exposure;\n'}
+[3.815564] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.815610] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:230:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kauto_exposure\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautoexposure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.815648] (usb_cam) StderrLine: {'line': b'  230 |     auto_exposure_ = msg.\x1b[01;31m\x1b[Kauto_exposure\x1b[m\x1b[K;\n'}
+[3.815682] (usb_cam) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.815716] (usb_cam) StderrLine: {'line': b'      |                          \x1b[32m\x1b[Kautoexposure\x1b[m\x1b[K\n'}
+[3.823690] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:231:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kexposure_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.823821] (usb_cam) StderrLine: {'line': b'  231 |     \x1b[01;31m\x1b[Kexposure_\x1b[m\x1b[K = msg.exposure;\n'}
+[3.823860] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.823896] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:231:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kexposure\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautoexposure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.823943] (usb_cam) StderrLine: {'line': b'  231 |     exposure_ = msg.\x1b[01;31m\x1b[Kexposure\x1b[m\x1b[K;\n'}
+[3.823977] (usb_cam) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.824011] (usb_cam) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Kautoexposure\x1b[m\x1b[K\n'}
+[3.832617] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:232:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kauto_focus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.832780] (usb_cam) StderrLine: {'line': b'  232 |     \x1b[01;31m\x1b[Kauto_focus_\x1b[m\x1b[K = msg.autofocus;\n'}
+[3.832825] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.832862] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:232:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kautofocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.832902] (usb_cam) StderrLine: {'line': b'  232 |     auto_focus_ = msg.\x1b[01;31m\x1b[Kautofocus\x1b[m\x1b[K;\n'}
+[3.832939] (usb_cam) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.839732] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfocus_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.840036] (usb_cam) StderrLine: {'line': b'  233 |     \x1b[01;31m\x1b[Kfocus_\x1b[m\x1b[K = msg.focus;\n'}
+[3.840083] (usb_cam) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.840122] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kfocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.840164] (usb_cam) StderrLine: {'line': b'  233 |     focus_ = msg.\x1b[01;31m\x1b[Kfocus\x1b[m\x1b[K;\n'}
+[3.840211] (usb_cam) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.840250] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:252:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kauto_exposure\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautoexposure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.840290] (usb_cam) StderrLine: {'line': b'  252 |     //     /\x1b[01;31m\x1b[K/ RCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Setting \'saturation\' to %d", msg.saturation);\n'}
+[3.840329] (usb_cam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.840366] (usb_cam) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kautoexposure\x1b[m\x1b[K\n'}
+[3.840794] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.840934] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.840973] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.841009] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40\x1b[m\x1b[K,\n'}
+[3.841043] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.841076] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.841109] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.841145] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kexposure\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautoexposure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.841186] (usb_cam) StderrLine: {'line': b'  257 |     //     RCLCPP_INFO(this->get_logger(), "Setting \'exposure_auto\' to %\x1b[01;31m\x1b[Kd", 3);\x1b[m\x1b[K\n'}
+[3.841219] (usb_cam) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K \n'}
+[3.841252] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:259:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kexposure\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kautoexposure\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.841301] (usb_cam) StderrLine: {'line': b'  259 |     // } else {\n'}
+[3.841335] (usb_cam) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K       \n'}
+[3.841385] (usb_cam) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[Kautoexposure\x1b[m\x1b[K\n'}
+[3.841419] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:262:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kautofocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.841456] (usb_cam) StderrLine: {'line': b'  262 |     //     m\x1b[01;31m\x1b[K_camera->\x1b[m\x1b[Kset_v4l_parameter("exposure_auto", 1);\n'}
+[3.841491] (usb_cam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.841605] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:269:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kfocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.841640] (usb_cam) StderrLine: {'line': b'  269 |     //     m_cam\x1b[01;31m\x1b[Kera->\x1b[m\x1b[Kset_v4l_parameter("focus_auto", 1);\n'}
+[3.841674] (usb_cam) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.841711] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.841743] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.841776] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.841809] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40\x1b[m\x1b[K,\n'}
+[3.841841] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.841874] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.841906] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.841940] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:270:83:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kfocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.841975] (usb_cam) StderrLine: {'line': b'  270 |     // } else {\n'}
+[3.842008] (usb_cam) StderrLine: {'line': b'      |                                                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K    \n'}
+[3.842040] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:271:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst Camera\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst struct tku_msgs::msg::Camera_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kfocus\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.842074] (usb_cam) StderrLine: {'line': b'  271 |     //     RCLCPP_INFO(this->get_logger(), "Setting \'focus_aut\x1b[01;31m\x1b[Ko\' to\x1b[m\x1b[K %d", 0);\n'}
+[3.842107] (usb_cam) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.907812] (-) TimerEvent: {}
+[4.008112] (-) TimerEvent: {}
+[4.108365] (-) TimerEvent: {}
+[4.208665] (-) TimerEvent: {}
+[4.308969] (-) TimerEvent: {}
+[4.409262] (-) TimerEvent: {}
+[4.509566] (-) TimerEvent: {}
+[4.609871] (-) TimerEvent: {}
+[4.710177] (-) TimerEvent: {}
+[4.810493] (-) TimerEvent: {}
+[4.910803] (-) TimerEvent: {}
+[5.011069] (-) TimerEvent: {}
+[5.111367] (-) TimerEvent: {}
+[5.211615] (-) TimerEvent: {}
+[5.311908] (-) TimerEvent: {}
+[5.412248] (-) TimerEvent: {}
+[5.512575] (-) TimerEvent: {}
+[5.612872] (-) TimerEvent: {}
+[5.713227] (-) TimerEvent: {}
+[5.813519] (-) TimerEvent: {}
+[5.849802] (usb_cam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1\n'}
+[5.849975] (usb_cam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2\n'}
+[5.850059] (usb_cam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.851520] (usb_cam) CommandEnded: {'returncode': 2}
+[5.913709] (-) TimerEvent: {}
+[5.939517] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 2}
+[5.950074] (-) EventReactorShutdown: {}

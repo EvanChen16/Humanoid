@@ -1,0 +1,37 @@
+[0.273s] Invoking command in '/home/iclab/Desktop/ros2/build/usb_cam': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8
+[0.312s] [ 14%] Built target usb_cam_node_exe
+[0.313s] [ 28%] Built target gtest
+[0.314s] [ 42%] Built target gtest_main
+[0.314s] [ 57%] Built target usb_cam
+[0.324s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.332s] [ 71%] Built target test_usb_cam_utils
+[0.334s] [ 85%] Built target test_pixel_formats
+[0.341s] [ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[2.135s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[2.135s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_param_callback[m[K’ is not a member of ‘[01m[Kusb_cam::UsbCamNode[m[K’
+[2.136s]    61 |   "/Camera_Topic", 1, std::bind(&UsbCamNode::[01;31m[Kcamera_param_callback[m[K, this, _1));
+[2.136s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.136s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:75:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[2.136s]    61 |   "/Camera_Topic", 1, std::bind(&UsbCamNode::camera_param_callback, this, [01;31m[K_1[m[K));
+[2.136s]       |                                                                           [01;31m[K^~[m[K
+[2.136s]       |                                                                           [32m[Kstd::placeholders::_1[m[K
+[2.136s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:20[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.136s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.136s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.137s] [01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[2.137s]   225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[2.137s]       |                                  [01;36m[K^~[m[K
+[2.163s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K At global scope:
+[2.163s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:221:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’
+[2.163s]   221 | void [01;31m[KUsbCamNode[m[K::camera_param_callback(const tku_msgs::msg::Camera &msg) {
+[2.163s]       |      [01;31m[K^~~~~~~~~~[m[K
+[2.163s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:221:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’
+[2.163s] In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.163s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:57:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass usb_cam::UsbCamNode[m[K’ defined here
+[2.163s]    57 | class [01;36m[KUsbCamNode[m[K : public rclcpp::Node
+[2.163s]       |       [01;36m[K^~~~~~~~~~[m[K
+[2.850s] gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+[2.850s] gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+[2.850s] gmake: *** [Makefile:146: all] Error 2
+[2.852s] Invoked command in '/home/iclab/Desktop/ros2/build/usb_cam' returned '2': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8

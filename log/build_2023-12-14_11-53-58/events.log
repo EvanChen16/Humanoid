@@ -1,0 +1,647 @@
+[0.000000] (-) TimerEvent: {}
+[0.000097] (motionpackage) JobQueued: {'identifier': 'motionpackage', 'dependencies': OrderedDict()}
+[0.000140] (tku_msgs) JobQueued: {'identifier': 'tku_msgs', 'dependencies': OrderedDict()}
+[0.000167] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.000177] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.000187] (tku_libs) JobQueued: {'identifier': 'tku_libs', 'dependencies': OrderedDict([('tku_msgs', '/home/iclab/Desktop/ros2/install/tku_msgs')])}
+[0.000433] (tku_msgs) JobStarted: {'identifier': 'tku_msgs'}
+[0.046821] (motionpackage) JobStarted: {'identifier': 'motionpackage'}
+[0.099781] (-) TimerEvent: {}
+[0.106023] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.149348] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.193518] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'cmake'}
+[0.193914] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'build'}
+[0.194329] (tku_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/tku_msgs', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/tku_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1727,unix/iclab:/tmp/.ICE-unix/1727'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/553c2dd0_2637_4528_b83d_6c6e5eb29611'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HGLLF2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/tku_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.199845] (-) TimerEvent: {}
+[0.300055] (-) TimerEvent: {}
+[0.400602] (-) TimerEvent: {}
+[0.456665] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[0.457103] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[0.457448] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/usb_cam', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1727,unix/iclab:/tmp/.ICE-unix/1727'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/553c2dd0_2637_4528_b83d_6c6e5eb29611'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HGLLF2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.459426] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.459544] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.459634] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.459712] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.459791] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.460179] (tku_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.461514] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[0.462108] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[0.462522] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/ros2/build/web_video_server', '--', '-j8', '-l8'], 'cwd': '/home/iclab/Desktop/ros2/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1727,unix/iclab:/tmp/.ICE-unix/1727'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/553c2dd0_2637_4528_b83d_6c6e5eb29611'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HGLLF2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.500710] (-) TimerEvent: {}
+[0.501122] (usb_cam) StdoutLine: {'line': b'[ 14%] Built target gtest\n'}
+[0.503729] (usb_cam) StdoutLine: {'line': b'[ 28%] Built target usb_cam\n'}
+[0.504538] (usb_cam) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[0.508655] (usb_cam) StdoutLine: {'line': b'[ 57%] Built target usb_cam_node_exe\n'}
+[0.517393] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target usb_cam_node\x1b[0m\n'}
+[0.527296] (usb_cam) StdoutLine: {'line': b'[ 71%] Built target test_usb_cam_utils\n'}
+[0.531888] (usb_cam) StdoutLine: {'line': b'[ 85%] Built target test_pixel_formats\n'}
+[0.537143] (usb_cam) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o\x1b[0m\n'}
+[0.545086] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server\n'}
+[0.552886] (web_video_server) CommandEnded: {'returncode': 0}
+[0.582068] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'install'}
+[0.588796] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iclab/Desktop/ros2/build/web_video_server'], 'cwd': '/home/iclab/Desktop/ros2/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'iclab'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/iclab'), ('OLDPWD', '/home/iclab'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'lzh_TW'), ('SYSTEMD_EXEC_PID', '1909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/iclab:@/tmp/.ICE-unix/1727,unix/iclab:/tmp/.ICE-unix/1727'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'lzh_TW'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/553c2dd0_2637_4528_b83d_6c6e5eb29611'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'lzh_TW'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.HGLLF2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.155'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'lzh_TW'), ('LC_IDENTIFICATION', 'lzh_TW'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/iclab/Desktop/ros2/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble')]), 'shell': False}
+[0.594636] (web_video_server) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.594821] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/lib/web_video_server/web_video_server\n'}
+[0.594927] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server\n'}
+[0.595087] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/h264_streamer.h\n'}
+[0.595173] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp8_streamer.h\n'}
+[0.595243] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/image_streamer.h\n'}
+[0.595310] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/web_video_server.h\n'}
+[0.595380] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/png_streamers.h\n'}
+[0.595449] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/libav_streamer.h\n'}
+[0.595523] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp9_streamer.h\n'}
+[0.595599] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/ros_compressed_streamer.h\n'}
+[0.595683] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/multipart_stream.h\n'}
+[0.595759] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/jpeg_streamers.h\n'}
+[0.595836] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server\n'}
+[0.595951] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server\n'}
+[0.596094] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh\n'}
+[0.596176] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv\n'}
+[0.596251] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.sh\n'}
+[0.596326] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.dsv\n'}
+[0.596399] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.bash\n'}
+[0.596474] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.sh\n'}
+[0.596546] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.zsh\n'}
+[0.596611] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.dsv\n'}
+[0.596678] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.dsv\n'}
+[0.596743] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/packages/web_video_server\n'}
+[0.596807] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake\n'}
+[0.596874] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake\n'}
+[0.596973] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.xml\n'}
+[0.597524] (web_video_server) CommandEnded: {'returncode': 0}
+[0.600798] (-) TimerEvent: {}
+[0.701120] (-) TimerEvent: {}
+[0.765752] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.776933] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 0}
+[0.784405] (motionpackage) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motionpackage', 'build', '--build-base', '/home/iclab/Desktop/ros2/build/motionpackage/build', 'install', '--record', '/home/iclab/Desktop/ros2/build/motionpackage/install.log', '--single-version-externally-managed'], 'cwd': '/home/iclab/Desktop/ros2/src/motionpackage', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_GB:en', 'USER': 'iclab', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/ros2/install/usb_cam/lib:/home/iclab/Desktop/ros2/install/tku_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/iclab', 'OLDPWD': '/home/iclab', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'lzh_TW', 'SYSTEMD_EXEC_PID': '1909', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/ros2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'iclab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/iclab:@/tmp/.ICE-unix/1727,unix/iclab:/tmp/.ICE-unix/1727', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'lzh_TW', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/553c2dd0_2637_4528_b83d_6c6e5eb29611', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_GB.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'lzh_TW', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.HGLLF2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.155', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'lzh_TW', 'LC_IDENTIFICATION': 'lzh_TW', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/iclab/Desktop/ros2/build/motionpackage', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/iclab/Desktop/ros2/build/motionpackage/prefix_override:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/serial'}, 'shell': False}
+[0.801224] (-) TimerEvent: {}
+[0.901544] (-) TimerEvent: {}
+[0.933603] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.981519] (motionpackage) StdoutLine: {'line': b'running egg_info\n'}
+[0.982134] (motionpackage) StdoutLine: {'line': b'writing ../../build/motionpackage/motionpackage.egg-info/PKG-INFO\n'}
+[0.982305] (motionpackage) StdoutLine: {'line': b'writing dependency_links to ../../build/motionpackage/motionpackage.egg-info/dependency_links.txt\n'}
+[0.982396] (motionpackage) StdoutLine: {'line': b'writing entry points to ../../build/motionpackage/motionpackage.egg-info/entry_points.txt\n'}
+[0.982475] (motionpackage) StdoutLine: {'line': b'writing requirements to ../../build/motionpackage/motionpackage.egg-info/requires.txt\n'}
+[0.982557] (motionpackage) StdoutLine: {'line': b'writing top-level names to ../../build/motionpackage/motionpackage.egg-info/top_level.txt\n'}
+[0.983763] (motionpackage) StdoutLine: {'line': b"reading manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[0.984315] (motionpackage) StdoutLine: {'line': b"writing manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[0.984442] (motionpackage) StdoutLine: {'line': b'running build\n'}
+[0.984519] (motionpackage) StdoutLine: {'line': b'running build_py\n'}
+[0.984657] (motionpackage) StdoutLine: {'line': b'running install\n'}
+[0.984869] (motionpackage) StdoutLine: {'line': b'running install_lib\n'}
+[0.985640] (motionpackage) StdoutLine: {'line': b'running install_data\n'}
+[0.985957] (motionpackage) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.987251] (motionpackage) StdoutLine: {'line': b"removing '/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.987489] (motionpackage) StdoutLine: {'line': b'Copying ../../build/motionpackage/motionpackage.egg-info to /home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info\n'}
+[0.987933] (motionpackage) StdoutLine: {'line': b'running install_scripts\n'}
+[1.001659] (-) TimerEvent: {}
+[1.002182] (motionpackage) StdoutLine: {'line': b'Installing motion script to /home/iclab/Desktop/ros2/install/motionpackage/lib/motionpackage\n'}
+[1.002475] (motionpackage) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/ros2/build/motionpackage/install.log'\n"}
+[1.022133] (motionpackage) CommandEnded: {'returncode': 0}
+[1.093698] (motionpackage) JobEnded: {'identifier': 'motionpackage', 'rc': 0}
+[1.103026] (-) TimerEvent: {}
+[1.169221] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.184911] (tku_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.200720] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.200928] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.201007] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.203087] (-) TimerEvent: {}
+[1.220697] (tku_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.226042] (tku_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.226796] (tku_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.227700] (tku_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.275506] (tku_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.277313] (tku_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/iclab/Desktop/ros2/build/tku_msgs\n'}
+[1.296145] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.303196] (-) TimerEvent: {}
+[1.303444] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.312921] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_tku_msgs\n'}
+[1.403298] (-) TimerEvent: {}
+[1.503627] (-) TimerEvent: {}
+[1.563606] (tku_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.564131] (tku_msgs) StdoutLine: {'line': b'writing tku_msgs.egg-info/PKG-INFO\n'}
+[1.564323] (tku_msgs) StdoutLine: {'line': b'writing dependency_links to tku_msgs.egg-info/dependency_links.txt\n'}
+[1.564457] (tku_msgs) StdoutLine: {'line': b'writing top-level names to tku_msgs.egg-info/top_level.txt\n'}
+[1.566983] (tku_msgs) StdoutLine: {'line': b"reading manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[1.567790] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[1.588958] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_tku_msgs_egg\n'}
+[1.603722] (-) TimerEvent: {}
+[1.705003] (-) TimerEvent: {}
+[1.806912] (-) TimerEvent: {}
+[1.908613] (-) TimerEvent: {}
+[2.010489] (-) TimerEvent: {}
+[2.110806] (-) TimerEvent: {}
+[2.211128] (-) TimerEvent: {}
+[2.311408] (-) TimerEvent: {}
+[2.411684] (-) TimerEvent: {}
+[2.511941] (-) TimerEvent: {}
+[2.612236] (-) TimerEvent: {}
+[2.712519] (-) TimerEvent: {}
+[2.812806] (-) TimerEvent: {}
+[2.913115] (-) TimerEvent: {}
+[2.952726] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktku_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.952998] (usb_cam) StderrLine: {'line': b'   40 | rclcpp::Publisher<\x1b[01;31m\x1b[Ktku_msgs\x1b[m\x1b[K::msg::Camera>::SharedPtr m_camera_publisher;\n'}
+[2.953101] (usb_cam) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.953178] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.953261] (usb_cam) StderrLine: {'line': b'   40 | rclcpp::Publisher<tku_msgs::msg::Camera\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr m_camera_publisher;\n'}
+[2.953338] (usb_cam) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.953413] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Km_camera_publisher\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.953497] (usb_cam) StderrLine: {'line': b'   40 | rclcpp::Publisher<tku_msgs::msg::Camera>::SharedPtr \x1b[01;31m\x1b[Km_camera_publisher\x1b[m\x1b[K;\n'}
+[2.953558] (usb_cam) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.991596] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.991893] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_camera_publisher\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Km_image_publisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.992045] (usb_cam) StderrLine: {'line': b'   61 |   \x1b[01;31m\x1b[Km_camera_publisher\x1b[m\x1b[K = this->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10);\n'}
+[2.992179] (usb_cam) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.992304] (usb_cam) StderrLine: {'line': b'      |   \x1b[32m\x1b[Km_image_publisher\x1b[m\x1b[K\n'}
+[3.004748] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktku_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.005021] (usb_cam) StderrLine: {'line': b'   61 |   m_camera_publisher = this->create_publisher<\x1b[01;31m\x1b[Ktku_msgs\x1b[m\x1b[K::msg::Camera>("Camera_Topic", 10);\n'}
+[3.005155] (usb_cam) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.005325] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[3.005455] (usb_cam) StderrLine: {'line': b'   61 |   m_camera_publisher = this->\x1b[01;31m\x1b[Kcreate_publisher<tku_msgs::msg::Camera>\x1b[m\x1b[K("Camera_Topic", 10);\n'}
+[3.005576] (usb_cam) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.005786] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kusb_cam::UsbCamNode::create_publisher<<expression error> >(const char [13], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.005923] (usb_cam) StderrLine: {'line': b'   61 |   m_camera_publisher = \x1b[01;31m\x1b[Kthis->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10)\x1b[m\x1b[K;\n'}
+[3.006042] (usb_cam) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.006273] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.006400] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.006520] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.006641] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.006764] (usb_cam) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[3.006861] (usb_cam) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.006985] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.007109] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.007214] (usb_cam) StderrLine: {'line': b'   61 |   m_camera_publisher = \x1b[01;31m\x1b[Kthis->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10)\x1b[m\x1b[K;\n'}
+[3.007310] (usb_cam) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.013214] (-) TimerEvent: {}
+[3.053232] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target tku_msgs__cpp\n'}
+[3.069274] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.070281] (tku_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.074503] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid usb_cam::UsbCamNode::assign_params(const std::vector<rclcpp::Parameter>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.075256] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:222:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktku_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.075774] (usb_cam) StderrLine: {'line': b'  222 |   \x1b[01;31m\x1b[Ktku_msgs\x1b[m\x1b[K::msg::Camera msg;\n'}
+[3.076290] (usb_cam) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.078358] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.079122] (usb_cam) StderrLine: {'line': b'  223 |   \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K.brightness = m_parameters.brightness;\n'}
+[3.079894] (usb_cam) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.080428] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[3.080772] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[3.081120] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:35\x1b[m\x1b[K,\n'}
+[3.081566] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.082553] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.083168] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.083574] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.084089] (usb_cam) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[3.084604] (usb_cam) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.085060] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:20\x1b[m\x1b[K,\n'}
+[3.085498] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:7\x1b[m\x1b[K,\n'}
+[3.085961] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:37\x1b[m\x1b[K,\n'}
+[3.086687] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.087170] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.087611] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.088003] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.088397] (usb_cam) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[3.088867] (usb_cam) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.089361] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[3.089779] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[3.090208] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[3.090692] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[3.091090] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[3.091490] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:31\x1b[m\x1b[K,\n'}
+[3.092149] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27\x1b[m\x1b[K,\n'}
+[3.092707] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45\x1b[m\x1b[K,\n'}
+[3.093144] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45\x1b[m\x1b[K,\n'}
+[3.093571] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.093991] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.095564] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.096090] (usb_cam) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[3.096569] (usb_cam) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.097001] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:20\x1b[m\x1b[K,\n'}
+[3.097387] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7\x1b[m\x1b[K,\n'}
+[3.097834] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:46\x1b[m\x1b[K,\n'}
+[3.098350] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.098862] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.099394] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.099817] (usb_cam) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[3.100173] (usb_cam) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.100755] (usb_cam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:22\x1b[m\x1b[K,\n'}
+[3.101286] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7\x1b[m\x1b[K,\n'}
+[3.101754] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:46\x1b[m\x1b[K,\n'}
+[3.102158] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38\x1b[m\x1b[K,\n'}
+[3.103839] (usb_cam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34\x1b[m\x1b[K:\n'}
+[3.104312] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.104784] (usb_cam) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[3.105267] (usb_cam) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.105777] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.106318] (usb_cam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:231:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Km_camera_publisher\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Km_image_publisher\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.106833] (usb_cam) StderrLine: {'line': b'  231 |   \x1b[01;31m\x1b[Km_camera_publisher\x1b[m\x1b[K->publish(msg);\n'}
+[3.107276] (usb_cam) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.107784] (usb_cam) StderrLine: {'line': b'      |   \x1b[32m\x1b[Km_image_publisher\x1b[m\x1b[K\n'}
+[3.113318] (-) TimerEvent: {}
+[3.213848] (-) TimerEvent: {}
+[3.314291] (-) TimerEvent: {}
+[3.414627] (-) TimerEvent: {}
+[3.470749] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_generator_c\x1b[0m\n'}
+[3.493039] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/button_color_form__functions.c.o\x1b[0m\n'}
+[3.498127] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.c.o\x1b[0m\n'}
+[3.501741] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_data__functions.c.o\x1b[0m\n'}
+[3.503992] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/hsv_value__functions.c.o\x1b[0m\n'}
+[3.510165] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.c.o\x1b[0m\n'}
+[3.514748] (-) TimerEvent: {}
+[3.567898] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__functions.c.o\x1b[0m\n'}
+[3.583786] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.c.o\x1b[0m\n'}
+[3.596873] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera__functions.c.o\x1b[0m\n'}
+[3.615877] (-) TimerEvent: {}
+[3.625039] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/callback__functions.c.o\x1b[0m\n'}
+[3.647300] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/head_package__functions.c.o\x1b[0m\n'}
+[3.651153] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parametermessage__functions.c.o\x1b[0m\n'}
+[3.653123] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface_send2_sector__functions.c.o\x1b[0m\n'}
+[3.667864] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/pi_dpackage__functions.c.o\x1b[0m\n'}
+[3.714099] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion__functions.c.o\x1b[0m\n'}
+[3.715959] (-) TimerEvent: {}
+[3.722805] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sand_hand_speed__functions.c.o\x1b[0m\n'}
+[3.739116] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_package__functions.c.o\x1b[0m\n'}
+[3.747398] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion_vector__functions.c.o\x1b[0m\n'}
+[3.755058] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_set__functions.c.o\x1b[0m\n'}
+[3.797639] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/single_motor_data__functions.c.o\x1b[0m\n'}
+[3.807830] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/walkingmessage__functions.c.o\x1b[0m\n'}
+[3.816069] (-) TimerEvent: {}
+[3.828214] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/build_model__functions.c.o\x1b[0m\n'}
+[3.855604] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/hsv_info__functions.c.o\x1b[0m\n'}
+[3.865701] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.c.o\x1b[0m\n'}
+[3.911363] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/add__functions.c.o\x1b[0m\n'}
+[3.916162] (-) TimerEvent: {}
+[3.920097] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/camera_info__functions.c.o\x1b[0m\n'}
+[3.947907] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/read_motion__functions.c.o\x1b[0m\n'}
+[3.961633] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.c.o\x1b[0m\n'}
+[3.972567] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o\x1b[0m\n'}
+[4.016272] (-) TimerEvent: {}
+[4.060545] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libtku_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.096502] (tku_msgs) StdoutLine: {'line': b'[ 15%] Built target tku_msgs__rosidl_generator_c\n'}
+[4.108830] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.109340] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.116372] (-) TimerEvent: {}
+[4.117705] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.216475] (-) TimerEvent: {}
+[4.316935] (-) TimerEvent: {}
+[4.417313] (-) TimerEvent: {}
+[4.442888] (usb_cam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1\n'}
+[4.444259] (usb_cam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2\n'}
+[4.444743] (usb_cam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.446718] (usb_cam) CommandEnded: {'returncode': 2}
+[4.520300] (-) TimerEvent: {}
+[4.620626] (-) TimerEvent: {}
+[4.696174] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.721177] (-) TimerEvent: {}
+[4.735646] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[4.745823] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_array__type_support.cpp.o\x1b[0m\n'}
+[4.763356] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 2}
+[4.787782] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_data__type_support.cpp.o\x1b[0m\n'}
+[4.821289] (-) TimerEvent: {}
+[4.923007] (-) TimerEvent: {}
+[5.023417] (-) TimerEvent: {}
+[5.131215] (-) TimerEvent: {}
+[5.139551] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/draw_image__type_support.cpp.o\x1b[0m\n'}
+[5.152479] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[5.231373] (-) TimerEvent: {}
+[5.331677] (-) TimerEvent: {}
+[5.378947] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[5.431785] (-) TimerEvent: {}
+[5.505990] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/object_list__type_support.cpp.o\x1b[0m\n'}
+[5.527146] (tku_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera__type_support.cpp.o\x1b[0m\n'}
+[5.531887] (-) TimerEvent: {}
+[5.632317] (-) TimerEvent: {}
+[5.732817] (-) TimerEvent: {}
+[5.821949] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.832918] (-) TimerEvent: {}
+[5.844228] (tku_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/callback__type_support.cpp.o\x1b[0m\n'}
+[5.868268] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[5.868505] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/head_package__type_support.cpp.o\x1b[0m\n'}
+[5.875669] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[5.887192] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[5.933027] (-) TimerEvent: {}
+[5.940058] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[6.002723] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.031740] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_array__type_support.cpp.o\x1b[0m\n'}
+[6.033112] (-) TimerEvent: {}
+[6.075647] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[6.133225] (-) TimerEvent: {}
+[6.155593] (tku_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_data__type_support.cpp.o\x1b[0m\n'}
+[6.200656] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_array__type_support.cpp.o\x1b[0m\n'}
+[6.215827] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_data__type_support.cpp.o\x1b[0m\n'}
+[6.226033] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/draw_image__type_support.cpp.o\x1b[0m\n'}
+[6.233327] (-) TimerEvent: {}
+[6.254572] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[6.271906] (tku_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[6.333439] (-) TimerEvent: {}
+[6.342465] (tku_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[6.371684] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[6.378688] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/object_list__type_support.cpp.o\x1b[0m\n'}
+[6.428499] (tku_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/camera__type_support.cpp.o\x1b[0m\n'}
+[6.433554] (-) TimerEvent: {}
+[6.466164] (tku_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/callback__type_support.cpp.o\x1b[0m\n'}
+[6.507509] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/head_package__type_support.cpp.o\x1b[0m\n'}
+[6.533679] (-) TimerEvent: {}
+[6.566855] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[6.603684] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_array__type_support.cpp.o\x1b[0m\n'}
+[6.616435] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[6.625072] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[6.640045] (-) TimerEvent: {}
+[6.670356] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[6.702033] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/draw_image__type_support.cpp.o\x1b[0m\n'}
+[6.717429] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[6.727554] (tku_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion__type_support.cpp.o\x1b[0m\n'}
+[6.740171] (-) TimerEvent: {}
+[6.757399] (tku_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion__type_support.cpp.o\x1b[0m\n'}
+[6.766742] (tku_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[6.771850] (tku_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[6.815469] (tku_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[6.817768] (tku_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[6.840280] (-) TimerEvent: {}
+[6.852049] (tku_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[6.912419] (tku_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[6.940393] (-) TimerEvent: {}
+[6.943323] (tku_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/build_model__type_support.cpp.o\x1b[0m\n'}
+[6.989762] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[7.022632] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[7.030876] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/add__type_support.cpp.o\x1b[0m\n'}
+[7.040503] (-) TimerEvent: {}
+[7.062215] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.074605] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/camera_info__type_support.cpp.o\x1b[0m\n'}
+[7.086924] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/button_color_form__type_support.c.o\x1b[0m\n'}
+[7.094383] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[7.103287] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/read_motion__type_support.cpp.o\x1b[0m\n'}
+[7.122895] (tku_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_data__type_support.cpp.o\x1b[0m\n'}
+[7.140621] (-) TimerEvent: {}
+[7.148075] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[7.157368] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_array__type_support.c.o\x1b[0m\n'}
+[7.158597] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/draw_image__type_support.cpp.o\x1b[0m\n'}
+[7.180277] (tku_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/check_sector__type_support.cpp.o\x1b[0m\n'}
+[7.196259] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_array__type_support_c.cpp.o\x1b[0m\n'}
+[7.202807] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/button_color_form__type_support_c.cpp.o\x1b[0m\n'}
+[7.212218] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_data__type_support.c.o\x1b[0m\n'}
+[7.221059] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[7.240732] (-) TimerEvent: {}
+[7.281042] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[7.289046] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/draw_image__type_support.c.o\x1b[0m\n'}
+[7.299789] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.340840] (-) TimerEvent: {}
+[7.347586] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/hsv_value__type_support.c.o\x1b[0m\n'}
+[7.405565] (tku_msgs) StdoutLine: {'line': b'[ 41%] Built target tku_msgs__rosidl_typesupport_c\n'}
+[7.410157] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/label_model_object_list__type_support.c.o\x1b[0m\n'}
+[7.440961] (-) TimerEvent: {}
+[7.444037] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_data__type_support_c.cpp.o\x1b[0m\n'}
+[7.452689] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[7.511065] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/object_list__type_support.c.o\x1b[0m\n'}
+[7.541082] (-) TimerEvent: {}
+[7.603057] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/camera__type_support.c.o\x1b[0m\n'}
+[7.634914] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/draw_image__type_support_c.cpp.o\x1b[0m\n'}
+[7.637007] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/callback__type_support.c.o\x1b[0m\n'}
+[7.638133] (tku_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[7.641324] (-) TimerEvent: {}
+[7.644448] (tku_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[7.679513] (tku_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[7.698386] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/head_package__type_support.c.o\x1b[0m\n'}
+[7.741443] (-) TimerEvent: {}
+[7.782977] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[7.797422] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/interface_send2_sector__type_support.c.o\x1b[0m\n'}
+[7.809102] (tku_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/object_list__type_support.cpp.o\x1b[0m\n'}
+[7.841555] (-) TimerEvent: {}
+[7.852239] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/hsv_value__type_support_c.cpp.o\x1b[0m\n'}
+[7.941674] (-) TimerEvent: {}
+[7.942900] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/parametermessage__type_support.c.o\x1b[0m\n'}
+[8.011871] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/build_model__type_support.cpp.o\x1b[0m\n'}
+[8.025018] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/pi_dpackage__type_support.c.o\x1b[0m\n'}
+[8.041786] (-) TimerEvent: {}
+[8.052016] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/label_model_object_list__type_support_c.cpp.o\x1b[0m\n'}
+[8.064376] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera__type_support.cpp.o\x1b[0m\n'}
+[8.075405] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sand_hand_speed__type_support.c.o\x1b[0m\n'}
+[8.096217] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[8.141905] (-) TimerEvent: {}
+[8.173872] (tku_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion__type_support.c.o\x1b[0m\n'}
+[8.183993] (tku_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[8.242025] (-) TimerEvent: {}
+[8.299937] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/object_list__type_support_c.cpp.o\x1b[0m\n'}
+[8.342144] (-) TimerEvent: {}
+[8.344621] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion_vector__type_support.c.o\x1b[0m\n'}
+[8.352406] (tku_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[8.427115] (tku_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/add__type_support.cpp.o\x1b[0m\n'}
+[8.442266] (-) TimerEvent: {}
+[8.442727] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_package__type_support.c.o\x1b[0m\n'}
+[8.457268] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera__type_support_c.cpp.o\x1b[0m\n'}
+[8.494257] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/callback__type_support.cpp.o\x1b[0m\n'}
+[8.542390] (-) TimerEvent: {}
+[8.546210] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_set__type_support.c.o\x1b[0m\n'}
+[8.571681] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/single_motor_data__type_support.c.o\x1b[0m\n'}
+[8.611179] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/callback__type_support_c.cpp.o\x1b[0m\n'}
+[8.620125] (tku_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/walkingmessage__type_support.c.o\x1b[0m\n'}
+[8.642509] (-) TimerEvent: {}
+[8.700190] (tku_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/build_model__type_support.c.o\x1b[0m\n'}
+[8.725831] (tku_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/head_package__type_support_c.cpp.o\x1b[0m\n'}
+[8.737358] (tku_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/hsv_info__type_support.c.o\x1b[0m\n'}
+[8.742260] (tku_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/object_list__type_support.cpp.o\x1b[0m\n'}
+[8.742917] (-) TimerEvent: {}
+[8.753535] (tku_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera__type_support.cpp.o\x1b[0m\n'}
+[8.785786] (tku_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/save_hsv__type_support.c.o\x1b[0m\n'}
+[8.823007] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/camera_info__type_support.cpp.o\x1b[0m\n'}
+[8.843015] (-) TimerEvent: {}
+[8.858155] (tku_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/add__type_support.c.o\x1b[0m\n'}
+[8.906012] (tku_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/camera_info__type_support.c.o\x1b[0m\n'}
+[8.921713] (tku_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/read_motion__type_support.cpp.o\x1b[0m\n'}
+[8.944760] (-) TimerEvent: {}
+[8.956440] (tku_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/read_motion__type_support.c.o\x1b[0m\n'}
+[8.991356] (tku_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/head_package__type_support.cpp.o\x1b[0m\n'}
+[9.055034] (-) TimerEvent: {}
+[9.063913] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/check_sector__type_support.c.o\x1b[0m\n'}
+[9.123911] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/send_hand_speed__type_support.c.o\x1b[0m\n'}
+[9.133223] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[9.146901] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/interface_send2_sector__type_support_c.cpp.o\x1b[0m\n'}
+[9.155147] (-) TimerEvent: {}
+[9.161169] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/check_sector__type_support.cpp.o\x1b[0m\n'}
+[9.167178] (tku_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libtku_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.255255] (-) TimerEvent: {}
+[9.274328] (tku_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/parametermessage__type_support_c.cpp.o\x1b[0m\n'}
+[9.290530] (tku_msgs) StdoutLine: {'line': b'[ 63%] Built target tku_msgs__rosidl_typesupport_introspection_c\n'}
+[9.291832] (tku_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/callback__type_support.cpp.o\x1b[0m\n'}
+[9.303983] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/head_package__type_support.cpp.o\x1b[0m\n'}
+[9.334547] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[9.355375] (-) TimerEvent: {}
+[9.455848] (-) TimerEvent: {}
+[9.467629] (tku_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[9.501859] (tku_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[9.555960] (-) TimerEvent: {}
+[9.641347] (tku_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[9.656078] (-) TimerEvent: {}
+[9.660565] (tku_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[9.756043] (tku_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/pi_dpackage__type_support_c.cpp.o\x1b[0m\n'}
+[9.756772] (-) TimerEvent: {}
+[9.801748] (tku_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[9.826511] (tku_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.856913] (-) TimerEvent: {}
+[9.884027] (tku_msgs) StdoutLine: {'line': b'[ 67%] Built target tku_msgs__rosidl_typesupport_cpp\n'}
+[9.895389] (tku_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[9.937963] (tku_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[9.947936] (tku_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sand_hand_speed__type_support_c.cpp.o\x1b[0m\n'}
+[9.967169] (-) TimerEvent: {}
+[9.975538] (tku_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion__type_support.cpp.o\x1b[0m\n'}
+[10.067284] (-) TimerEvent: {}
+[10.163297] (tku_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[10.167384] (-) TimerEvent: {}
+[10.235105] (tku_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion__type_support.cpp.o\x1b[0m\n'}
+[10.241487] (tku_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion__type_support_c.cpp.o\x1b[0m\n'}
+[10.267534] (-) TimerEvent: {}
+[10.342703] (tku_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[10.367646] (-) TimerEvent: {}
+[10.414765] (tku_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[10.461249] (tku_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion_vector__type_support_c.cpp.o\x1b[0m\n'}
+[10.467748] (-) TimerEvent: {}
+[10.519615] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[10.561637] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[10.567863] (-) TimerEvent: {}
+[10.679017] (-) TimerEvent: {}
+[10.783020] (-) TimerEvent: {}
+[10.785393] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_package__type_support_c.cpp.o\x1b[0m\n'}
+[10.821211] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[10.883171] (-) TimerEvent: {}
+[10.887641] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[10.921995] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_set__type_support_c.cpp.o\x1b[0m\n'}
+[10.983285] (-) TimerEvent: {}
+[10.999482] (tku_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[11.074402] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[11.083405] (-) TimerEvent: {}
+[11.091106] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/build_model__type_support.cpp.o\x1b[0m\n'}
+[11.183526] (-) TimerEvent: {}
+[11.251716] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[11.283650] (-) TimerEvent: {}
+[11.285465] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/single_motor_data__type_support_c.cpp.o\x1b[0m\n'}
+[11.335441] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[11.379313] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/add__type_support.cpp.o\x1b[0m\n'}
+[11.383748] (-) TimerEvent: {}
+[11.443602] (tku_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/walkingmessage__type_support_c.cpp.o\x1b[0m\n'}
+[11.483874] (-) TimerEvent: {}
+[11.495421] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/camera_info__type_support.cpp.o\x1b[0m\n'}
+[11.583985] (-) TimerEvent: {}
+[11.669476] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/read_motion__type_support.cpp.o\x1b[0m\n'}
+[11.684104] (-) TimerEvent: {}
+[11.741583] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/build_model__type_support_c.cpp.o\x1b[0m\n'}
+[11.765129] (tku_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[11.784231] (-) TimerEvent: {}
+[11.831537] (tku_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/build_model__type_support.cpp.o\x1b[0m\n'}
+[11.860806] (tku_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/hsv_info__type_support_c.cpp.o\x1b[0m\n'}
+[11.884352] (-) TimerEvent: {}
+[11.903889] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/check_sector__type_support.cpp.o\x1b[0m\n'}
+[11.975091] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/save_hsv__type_support_c.cpp.o\x1b[0m\n'}
+[11.984466] (-) TimerEvent: {}
+[12.026648] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[12.084582] (-) TimerEvent: {}
+[12.164661] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/add__type_support_c.cpp.o\x1b[0m\n'}
+[12.184701] (-) TimerEvent: {}
+[12.270015] (tku_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/camera_info__type_support_c.cpp.o\x1b[0m\n'}
+[12.272036] (tku_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[12.284812] (-) TimerEvent: {}
+[12.340673] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/check_sector__type_support_c.cpp.o\x1b[0m\n'}
+[12.359244] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/read_motion__type_support_c.cpp.o\x1b[0m\n'}
+[12.384928] (-) TimerEvent: {}
+[12.471794] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp.o\x1b[0m\n'}
+[12.485041] (-) TimerEvent: {}
+[12.519153] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[12.542864] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.585163] (-) TimerEvent: {}
+[12.685703] (-) TimerEvent: {}
+[12.764040] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/add__type_support.cpp.o\x1b[0m\n'}
+[12.773766] (tku_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/camera_info__type_support.cpp.o\x1b[0m\n'}
+[12.777629] (tku_msgs) StdoutLine: {'line': b'[ 84%] Built target tku_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.783127] (tku_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/read_motion__type_support.cpp.o\x1b[0m\n'}
+[12.785808] (-) TimerEvent: {}
+[12.789184] (tku_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/check_sector__type_support.cpp.o\x1b[0m\n'}
+[12.791853] (tku_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[12.885929] (-) TimerEvent: {}
+[12.913647] (tku_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.986053] (-) TimerEvent: {}
+[13.025741] (tku_msgs) StdoutLine: {'line': b'[ 85%] Built target tku_msgs__rosidl_typesupport_fastrtps_c\n'}
+[13.086176] (-) TimerEvent: {}
+[13.186557] (-) TimerEvent: {}
+[13.258015] (tku_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.286663] (-) TimerEvent: {}
+[13.321706] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs__rosidl_typesupport_introspection_cpp\n'}
+[13.335629] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs\n'}
+[13.350328] (tku_msgs) StdoutLine: {'line': b'[ 86%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[13.386807] (-) TimerEvent: {}
+[13.487037] (-) TimerEvent: {}
+[13.587316] (-) TimerEvent: {}
+[13.687556] (-) TimerEvent: {}
+[13.787809] (-) TimerEvent: {}
+[13.888068] (-) TimerEvent: {}
+[13.988329] (-) TimerEvent: {}
+[14.088585] (-) TimerEvent: {}
+[14.188841] (-) TimerEvent: {}
+[14.289119] (-) TimerEvent: {}
+[14.389361] (-) TimerEvent: {}
+[14.489595] (-) TimerEvent: {}
+[14.589883] (-) TimerEvent: {}
+[14.690121] (-) TimerEvent: {}
+[14.790364] (-) TimerEvent: {}
+[14.890580] (-) TimerEvent: {}
+[14.990891] (-) TimerEvent: {}
+[15.091163] (-) TimerEvent: {}
+[15.191412] (-) TimerEvent: {}
+[15.291657] (-) TimerEvent: {}
+[15.391901] (-) TimerEvent: {}
+[15.492146] (-) TimerEvent: {}
+[15.592442] (-) TimerEvent: {}
+[15.675465] (tku_msgs) StdoutLine: {'line': b'[ 86%] Built target tku_msgs__py\n'}
+[15.686262] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_generator_py\x1b[0m\n'}
+[15.692522] (-) TimerEvent: {}
+[15.712938] (tku_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c.o\x1b[0m\n'}
+[15.713165] (tku_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_hsv_value_s.c.o\x1b[0m\n'}
+[15.713249] (tku_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_draw_image_s.c.o\x1b[0m\n'}
+[15.713746] (tku_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_data_s.c.o\x1b[0m\n'}
+[15.713903] (tku_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_object_list_s.c.o\x1b[0m\n'}
+[15.714070] (tku_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c.o\x1b[0m\n'}
+[15.717077] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_array_s.c.o\x1b[0m\n'}
+[15.717240] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_s.c.o\x1b[0m\n'}
+[15.792649] (-) TimerEvent: {}
+[15.852022] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_callback_s.c.o\x1b[0m\n'}
+[15.852276] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_interface_send2_sector_s.c.o\x1b[0m\n'}
+[15.852386] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_head_package_s.c.o\x1b[0m\n'}
+[15.856776] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_parametermessage_s.c.o\x1b[0m\n'}
+[15.858830] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sand_hand_speed_s.c.o\x1b[0m\n'}
+[15.861905] (tku_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_pi_dpackage_s.c.o\x1b[0m\n'}
+[15.892761] (-) TimerEvent: {}
+[15.920664] (tku_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_vector_s.c.o\x1b[0m\n'}
+[15.931823] (tku_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_s.c.o\x1b[0m\n'}
+[15.987313] (tku_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_package_s.c.o\x1b[0m\n'}
+[15.989279] (tku_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_set_s.c.o\x1b[0m\n'}
+[15.992853] (-) TimerEvent: {}
+[15.996682] (tku_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_single_motor_data_s.c.o\x1b[0m\n'}
+[15.999578] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_build_model_s.c.o\x1b[0m\n'}
+[16.000277] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_walkingmessage_s.c.o\x1b[0m\n'}
+[16.023478] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_hsv_info_s.c.o\x1b[0m\n'}
+[16.092977] (-) TimerEvent: {}
+[16.121178] (tku_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c.o\x1b[0m\n'}
+[16.127704] (tku_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_add_s.c.o\x1b[0m\n'}
+[16.164503] (tku_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_camera_info_s.c.o\x1b[0m\n'}
+[16.164865] (tku_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_check_sector_s.c.o\x1b[0m\n'}
+[16.167152] (tku_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_read_motion_s.c.o\x1b[0m\n'}
+[16.169504] (tku_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c.o\x1b[0m\n'}
+[16.193087] (-) TimerEvent: {}
+[16.293467] (-) TimerEvent: {}
+[16.318090] (tku_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/libtku_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.367364] (tku_msgs) StdoutLine: {'line': b'[ 98%] Built target tku_msgs__rosidl_generator_py\n'}
+[16.374523] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[16.374714] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[16.374783] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[16.384162] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.384576] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.388148] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.393565] (-) TimerEvent: {}
+[16.493874] (-) TimerEvent: {}
+[16.539823] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.568788] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.594006] (-) TimerEvent: {}
+[16.620986] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.624278] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.649508] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_c__pyext\n'}
+[16.651979] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[16.660581] (tku_msgs) JobEnded: {'identifier': 'tku_msgs', 'rc': 'SIGINT'}
+[16.671105] (tku_libs) JobSkipped: {'identifier': 'tku_libs'}
+[16.671175] (-) EventReactorShutdown: {}

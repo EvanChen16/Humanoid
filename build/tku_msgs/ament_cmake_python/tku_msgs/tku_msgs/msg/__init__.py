@@ -1,5 +1,6 @@
 from tku_msgs.msg._button_color_form import ButtonColorForm  # noqa: F401
 from tku_msgs.msg._callback import Callback  # noqa: F401
+from tku_msgs.msg._camera import Camera  # noqa: F401
 from tku_msgs.msg._color_array import ColorArray  # noqa: F401
 from tku_msgs.msg._color_data import ColorData  # noqa: F401
 from tku_msgs.msg._draw_image import DrawImage  # noqa: F401

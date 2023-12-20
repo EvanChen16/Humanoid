@@ -73,6 +73,7 @@ CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/DrawImage.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/HSVValue.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/LabelModelObjectList.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/ObjectList.msg
+CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/Camera.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/Callback.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/HeadPackage.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/msg/InterfaceSend2Sector.msg

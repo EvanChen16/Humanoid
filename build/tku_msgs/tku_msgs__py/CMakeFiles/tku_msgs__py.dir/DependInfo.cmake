@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_callback.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_callback_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_camera.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_camera_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_color_array.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_color_array_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_color_data.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"

@@ -1,0 +1,429 @@
+[0.281s] Invoking command in '/home/iclab/Desktop/ros2/build/usb_cam': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8
+[0.322s] [ 14%] Built target usb_cam
+[0.323s] [ 28%] Built target gtest_main
+[0.324s] [ 42%] Built target gtest
+[0.327s] [ 57%] Built target usb_cam_node_exe
+[0.334s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.341s] [ 71%] Built target test_usb_cam_utils
+[0.345s] [ 85%] Built target test_pixel_formats
+[0.349s] [ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[2.167s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[2.168s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_param_callback[m[K’ is not a member of ‘[01m[Kusb_cam::UsbCamNode[m[K’
+[2.168s]    61 |   "/Camera_Topic", 1, std::bind(&UsbCamNode::[01;31m[Kcamera_param_callback[m[K, this, std::placeholders::_1));
+[2.168s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.196s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In function ‘[01m[Kvoid usb_cam::camera_param_callback(tku_msgs::msg::Camera_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.196s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:222:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kbrightness[m[K’
+[2.196s]   222 |     if (msg.[01;31m[Kbrightness[m[K >= 0) {
+[2.196s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.196s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.197s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.197s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.197s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.197s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.197s]   223 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.197s]       |                     [01;31m[K^~~~[m[K
+[2.197s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.197s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.197s]   223 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.197s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.197s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.197s]   223 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.197s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.197s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.198s]   223 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.198s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.198s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.198s]   223 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.198s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.198s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.198s]   223 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.198s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.198s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.198s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.198s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.198s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.198s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.198s]   223 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.199s]       |                     [01;31m[K^~~~[m[K
+[2.199s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.199s]   223 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'brightness' to %d", msg.brightness);
+[2.199s]       |                     [01;31m[K^~~~[m[K
+[2.199s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kbrightness[m[K’
+[2.199s]   223 |         RCLCPP_INFO(this->get_logger(), "Setting 'brightness' to %d", msg.[01;31m[Kbrightness[m[K);
+[2.199s]       |                                                                           [01;31m[K^~~~~~~~~~[m[K
+[2.202s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:224:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.202s]   224 |         [01;31m[Km_camera[m[K->set_v4l_parameter("brightness", msg.brightness);
+[2.202s]       |         [01;31m[K^~~~~~~~[m[K
+[2.202s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:224:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kbrightness[m[K’
+[2.202s]   224 |         m_camera->set_v4l_parameter("brightness", msg.[01;31m[Kbrightness[m[K);
+[2.202s]       |                                                       [01;31m[K^~~~~~~~~~[m[K
+[2.202s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcontrast[m[K’
+[2.202s]   227 |     if (msg.[01;31m[Kcontrast[m[K >= 0) {
+[2.202s]       |             [01;31m[K^~~~~~~~[m[K
+[2.203s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.203s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.203s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.203s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.203s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.203s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.203s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.203s]   228 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.203s]       |                     [01;31m[K^~~~[m[K
+[2.203s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.203s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.203s]   228 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.203s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.203s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.203s]   228 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.204s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.204s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.204s]   228 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.204s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.204s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.204s]   228 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.204s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.204s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.204s]   228 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.204s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.204s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.204s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.204s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.204s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.205s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.205s]   228 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.205s]       |                     [01;31m[K^~~~[m[K
+[2.205s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.205s]   228 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'contrast' to %d", msg.contrast);
+[2.205s]       |                     [01;31m[K^~~~[m[K
+[2.205s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:228:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcontrast[m[K’
+[2.205s]   228 |         RCLCPP_INFO(this->get_logger(), "Setting 'contrast' to %d", msg.[01;31m[Kcontrast[m[K);
+[2.205s]       |                                                                         [01;31m[K^~~~~~~~[m[K
+[2.209s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:229:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.209s]   229 |         [01;31m[Km_camera[m[K->set_v4l_parameter("contrast", msg.contrast);
+[2.209s]       |         [01;31m[K^~~~~~~~[m[K
+[2.209s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:229:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kcontrast[m[K’
+[2.209s]   229 |         m_camera->set_v4l_parameter("contrast", msg.[01;31m[Kcontrast[m[K);
+[2.209s]       |                                                     [01;31m[K^~~~~~~~[m[K
+[2.209s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:232:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ksaturation[m[K’
+[2.209s]   232 |     if (msg.[01;31m[Ksaturation[m[K >= 0) {
+[2.209s]       |             [01;31m[K^~~~~~~~~~[m[K
+[2.210s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.210s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.210s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.210s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.210s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.210s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.210s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.210s]   233 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.210s]       |                     [01;31m[K^~~~[m[K
+[2.210s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.210s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.210s]   233 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.210s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.210s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.210s]   233 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.210s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.210s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.210s]   233 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.211s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.211s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.211s]   233 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.211s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.211s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.211s]   233 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.211s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.211s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.211s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.211s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.211s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.211s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.211s]   233 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.211s]       |                     [01;31m[K^~~~[m[K
+[2.212s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.212s]   233 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'saturation' to %d", msg.saturation);
+[2.212s]       |                     [01;31m[K^~~~[m[K
+[2.212s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:233:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ksaturation[m[K’
+[2.212s]   233 |         RCLCPP_INFO(this->get_logger(), "Setting 'saturation' to %d", msg.[01;31m[Ksaturation[m[K);
+[2.212s]       |                                                                           [01;31m[K^~~~~~~~~~[m[K
+[2.215s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:234:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.215s]   234 |         [01;31m[Km_camera[m[K->set_v4l_parameter("saturation", msg.saturation);
+[2.215s]       |         [01;31m[K^~~~~~~~[m[K
+[2.215s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:234:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Ksaturation[m[K’
+[2.215s]   234 |         m_camera->set_v4l_parameter("saturation", msg.[01;31m[Ksaturation[m[K);
+[2.215s]       |                                                       [01;31m[K^~~~~~~~~~[m[K
+[2.215s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:239:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kauto_exposure[m[K’
+[2.215s]   239 |     if (msg.[01;31m[Kauto_exposure[m[K) {
+[2.215s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.215s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.215s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.216s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.216s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.216s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.216s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.216s]   240 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.216s]       |                     [01;31m[K^~~~[m[K
+[2.216s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.216s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.216s]   240 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.216s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.216s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.216s]   240 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.216s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.216s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.216s]   240 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.216s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.217s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.217s]   240 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.217s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.217s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.217s]   240 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.217s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.217s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.217s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.217s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.217s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.217s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.217s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.217s]   240 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.217s]       |                     [01;31m[K^~~~[m[K
+[2.217s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:240:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.217s]   240 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 3);
+[2.218s]       |                     [01;31m[K^~~~[m[K
+[2.220s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:241:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.220s]   241 |         [01;31m[Km_camera[m[K->set_v4l_parameter("exposure_auto", 3);
+[2.220s]       |         [01;31m[K^~~~~~~~[m[K
+[2.220s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.220s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.220s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.220s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.221s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.221s]   243 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.221s]       |                     [01;31m[K^~~~[m[K
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.221s]   243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.221s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.221s]   243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.221s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.221s]   243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.221s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.221s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.221s]   243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.222s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.222s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.222s]   243 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.222s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.222s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.222s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.222s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.222s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.222s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.222s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.222s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.222s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.222s]   243 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.222s]       |                     [01;31m[K^~~~[m[K
+[2.222s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:243:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.222s]   243 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure_auto' to %d", 1);
+[2.222s]       |                     [01;31m[K^~~~[m[K
+[2.223s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.223s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.223s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.223s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.223s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.223s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.223s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.223s]   244 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.223s]       |                     [01;31m[K^~~~[m[K
+[2.223s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.223s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.223s]   244 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.223s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.223s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.223s]   244 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.223s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.224s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.224s]   244 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.224s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.224s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.224s]   244 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.224s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.224s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.224s]   244 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.224s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.224s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.224s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.224s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.224s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.224s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.224s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.224s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.224s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.224s]   244 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.225s]       |                     [01;31m[K^~~~[m[K
+[2.225s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.225s]   244 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'exposure' to %d", msg.exposure);
+[2.225s]       |                     [01;31m[K^~~~[m[K
+[2.225s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:244:73:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kexposure[m[K’
+[2.225s]   244 |         RCLCPP_INFO(this->get_logger(), "Setting 'exposure' to %d", msg.[01;31m[Kexposure[m[K);
+[2.225s]       |                                                                         [01;31m[K^~~~~~~~[m[K
+[2.225s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:245:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.226s]   245 |         [01;31m[Km_camera[m[K->set_v4l_parameter("exposure_auto", 1);
+[2.226s]       |         [01;31m[K^~~~~~~~[m[K
+[2.226s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:246:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kexposure[m[K’
+[2.226s]   246 |         m_camera->set_v4l_parameter("exposure_absolute", msg.[01;31m[Kexposure[m[K);
+[2.226s]       |                                                              [01;31m[K^~~~~~~~[m[K
+[2.226s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:249:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kautofocus[m[K’
+[2.226s]   249 |     if (msg.[01;31m[Kautofocus[m[K) {
+[2.226s]       |             [01;31m[K^~~~~~~~~[m[K
+[2.226s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.226s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.226s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.226s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.226s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.226s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.227s]   250 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.227s]       |                     [01;31m[K^~~~[m[K
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.227s]   250 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.227s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.227s]   250 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.227s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.227s]   250 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.227s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.227s]   250 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.227s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.227s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.228s]   250 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.228s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.228s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.228s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.228s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.228s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.228s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.228s]   250 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.228s]       |                     [01;31m[K^~~~[m[K
+[2.228s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:250:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.228s]   250 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 1);
+[2.228s]       |                     [01;31m[K^~~~[m[K
+[2.232s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:251:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.232s]   251 |         [01;31m[Km_camera[m[K->set_auto_focus(1);
+[2.232s]       |         [01;31m[K^~~~~~~~[m[K
+[2.232s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.232s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.232s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.232s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.232s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.233s]   254 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.233s]       |                     [01;31m[K^~~~[m[K
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.233s]   254 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.233s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.233s]   254 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.233s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.233s]   254 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.233s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:9:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.233s]   254 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.233s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.233s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.234s]   254 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.234s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.234s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.234s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.234s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.234s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.234s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.234s]   254 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.234s]       |                     [01;31m[K^~~~[m[K
+[2.234s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:254:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.234s]   254 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_auto' to %d", 0);
+[2.234s]       |                     [01;31m[K^~~~[m[K
+[2.237s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:255:9:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera[m[K’ was not declared in this scope
+[2.237s]   255 |         [01;31m[Km_camera[m[K->set_v4l_parameter("focus_auto", 0);
+[2.238s]       |         [01;31m[K^~~~~~~~[m[K
+[2.238s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:256:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kfocus[m[K’
+[2.238s]   256 |         if (msg.[01;31m[Kfocus[m[K >= 0) {
+[2.238s]       |                 [01;31m[K^~~~~[m[K
+[2.238s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.238s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.238s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.238s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.238s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.238s]   257 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.238s]       |                         [01;31m[K^~~~[m[K
+[2.238s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.238s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.239s]   257 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.239s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.239s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.239s]   257 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.239s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.239s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.239s]   257 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.239s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.239s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.239s]   257 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.239s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.239s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.239s]   257 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.239s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.239s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.240s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:40[m[K,
+[2.240s]                  from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+[2.240s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+[2.240s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.240s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.240s]   257 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.240s]       |                         [01;31m[K^~~~[m[K
+[2.240s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.240s]   257 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Setting 'focus_absolute' to %d", msg.focus);
+[2.240s]       |                         [01;31m[K^~~~[m[K
+[2.240s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:257:83:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kfocus[m[K’
+[2.240s]   257 |             RCLCPP_INFO(this->get_logger(), "Setting 'focus_absolute' to %d", msg.[01;31m[Kfocus[m[K);
+[2.240s]       |                                                                                   [01;31m[K^~~~~[m[K
+[2.240s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:258:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr[m[K’ {aka ‘[01m[Kconst class std::shared_ptr<tku_msgs::msg::Camera_<std::allocator<void> > >[m[K’} has no member named ‘[01m[Kfocus[m[K’
+[2.240s]   258 |             m_camera->set_v4l_parameter("focus_absolute", msg.[01;31m[Kfocus[m[K);
+[2.240s]       |                                                               [01;31m[K^~~~~[m[K
+[2.933s] gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+[2.933s] gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+[2.934s] gmake: *** [Makefile:146: all] Error 2
+[2.936s] Invoked command in '/home/iclab/Desktop/ros2/build/usb_cam' returned '2': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8

@@ -40,7 +40,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include "std_srvs/srv/set_bool.hpp"
-
+#include "tku_msgs/msg/camera.hpp"
 #include "usb_cam/usb_cam.hpp"
 
 
@@ -65,8 +65,16 @@ public:
   void assign_params(const std::vector<rclcpp::Parameter> & parameters);
   void set_v4l2_params();
   void update();
+  void camera_param_callback(const tku_msgs::msg::Camera &msg);
   bool take_and_send_image();
-
+  int brightness_;
+  int contrast_;
+  int saturation_;
+  int white_balance_;
+  int exposure_;
+  bool auto_focus_;
+  bool auto_white_balance_;
+  bool auto_exposure_;
   rcl_interfaces::msg::SetParametersResult parameters_callback(
     const std::vector<rclcpp::Parameter> & parameters);
 
@@ -89,6 +97,9 @@ public:
 
   rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr m_service_capture;
   rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr m_parameters_callback_handle;
+  
+// private:
+  rclcpp::Subscription<tku_msgs::msg::Camera>::SharedPtr sub_camera_param_;
 };
 }  // namespace usb_cam
 #endif  // USB_CAM__USB_CAM_NODE_HPP_

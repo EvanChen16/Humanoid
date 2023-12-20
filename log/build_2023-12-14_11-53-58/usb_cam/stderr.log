@@ -1,0 +1,95 @@
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ktku_msgs[m[K’ was not declared in this scope
+   40 | rclcpp::Publisher<[01;31m[Ktku_msgs[m[K::msg::Camera>::SharedPtr m_camera_publisher;
+      |                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:40:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   40 | rclcpp::Publisher<tku_msgs::msg::Camera[01;31m[K>[m[K::SharedPtr m_camera_publisher;
+      |                                        [01;31m[K^[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:53:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Km_camera_publisher[m[K’
+   40 | rclcpp::Publisher<tku_msgs::msg::Camera>::SharedPtr [01;31m[Km_camera_publisher[m[K;
+      |                                                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:3:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Km_image_publisher[m[K’?
+   61 |   [01;31m[Km_camera_publisher[m[K = this->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Km_image_publisher[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ktku_msgs[m[K’ was not declared in this scope
+   61 |   m_camera_publisher = this->create_publisher<[01;31m[Ktku_msgs[m[K::msg::Camera>("Camera_Topic", 10);
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   61 |   m_camera_publisher = this->[01;31m[Kcreate_publisher<tku_msgs::msg::Camera>[m[K("Camera_Topic", 10);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kusb_cam::UsbCamNode::create_publisher<<expression error> >(const char [13], int)[m[K’
+   61 |   m_camera_publisher = [01;31m[Kthis->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   61 |   m_camera_publisher = [01;31m[Kthis->create_publisher<tku_msgs::msg::Camera>("Camera_Topic", 10)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::assign_params(const std::vector<rclcpp::Parameter>&)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:222:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktku_msgs[m[K’ has not been declared
+  222 |   [01;31m[Ktku_msgs[m[K::msg::Camera msg;
+      |   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+  223 |   [01;31m[Kmsg[m[K.brightness = m_parameters.brightness;
+      |   [01;31m[K^~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:223:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:35[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/generic_publisher.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:45[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:46[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+   31 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:7[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:46[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+   27 | namespace [01;36m[Kmsg[m[K
+      |           [01;36m[K^~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:231:3:[m[K [01;31m[Kerror: [m[K‘[01m[Km_camera_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Km_image_publisher[m[K’?
+  231 |   [01;31m[Km_camera_publisher[m[K->publish(msg);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |   [32m[Km_image_publisher[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -25,6 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HSVValue.msg"
   "msg/LabelModelObjectList.msg"
   "msg/ObjectList.msg"
+  "msg/Camera.msg"
   ##########  motionpackage/msg  ################
   "msg/Callback.msg"
   "msg/HeadPackage.msg"

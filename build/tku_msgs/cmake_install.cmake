@@ -384,6 +384,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/msg" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_adapter/tku_msgs/msg/Camera.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/msg" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_adapter/tku_msgs/msg/Callback.idl")
 endif()
 
@@ -489,6 +493,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/msg" TYPE FILE FILES "/home/iclab/Desktop/ros2/src/tku_msgs/msg/ObjectList.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/msg" TYPE FILE FILES "/home/iclab/Desktop/ros2/src/tku_msgs/msg/Camera.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

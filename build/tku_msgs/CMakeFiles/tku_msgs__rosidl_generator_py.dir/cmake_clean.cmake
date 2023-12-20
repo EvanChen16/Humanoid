@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c.o.d"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_callback_s.c.o"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_callback_s.c.o.d"
+  "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_s.c.o"
+  "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_s.c.o.d"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_array_s.c.o"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_array_s.c.o.d"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_data_s.c.o"

@@ -108,21 +108,21 @@
 		var imageRawTopic = new ROSLIB.Topic({
 			ros: ros,
 			name: '/camera_Topic', // Change this to the actual topic name
-			messageType: 'tku_msgs/camera'
+			messageType: 'tku_msgs/Camera'
 		});
 		var Camera = new ROSLIB.Topic({
 			ros: ros,
 			name: '/Camera_Topic',
-			messageType: 'tku_msgs/camera'
+			messageType: 'tku_msgs/Camera'
 		});
 		var CameraMsg = new ROSLIB.Message({
 			brightness: 0.5,
 			contrast: 0.5,
 			saturation: 0.5,
-			white_balance: 0.5,
-			auto_white_balance: false,
-			auto_exposure: false,
-			auto_Backlight_Compensation: false
+			whitebalance: 0.5,
+			autowhitebalance: false,
+			autoexposure: false,
+			// autoBacklightCompensation: false
 		});
 
 		var WebStart_Topic = new ROSLIB.Topic({
@@ -211,8 +211,8 @@
 		var CamContrastValue = 0;
 		var CamSaturationValue = 0;
 		var CamWhiteBalanceValue = 0;
-		var CamAuto_WhiteBalanceValue = false;
-		var CamAuto_ExposureValue = false;
+		var CamautowhitebalanceValue = false;
+		var CamautoexposureValue = false;
 
 		function enterAddress() {
 			if(connectFlag)
@@ -334,9 +334,9 @@
 					CamBrightnessValue = LoadCameraresult.brightness;
 					CamContrastValue = LoadCameraresult.contrast;
 					CamSaturationValue = LoadCameraresult.saturation;
-					CamWhiteBalanceValue = LoadCameraresult.white_balance;
-					CamAuto_WhiteBalanceValue = LoadCameraresult.auto_white_balance;
-					CamAuto_ExposureValue = LoadCameraresult.auto_exposure;
+					CamWhiteBalanceValue = LoadCameraresult.whitebalance;
+					CamautowhitebalanceValue = LoadCameraresult.autowhitebalance;
+					CamautoexposureValue = LoadCameraresult.autoexposure;
 
 					document.getElementById("CamBrightness").value = CamBrightnessValue;
 					document.getElementById("CamBrightnessValue").value = CamBrightnessValue;
@@ -346,15 +346,15 @@
 					document.getElementById("CamSaturationValue").value = CamSaturationValue;
 					document.getElementById("CamWhiteBalance").value = CamWhiteBalanceValue;
 					document.getElementById("CamWhiteBalanceValue").value = CamWhiteBalanceValue;
-					document.getElementById("AutoWhitBlance").checked = CamAuto_WhiteBalanceValue;
-					document.getElementById("AutoExposure").checked = CamAuto_ExposureValue;
+					document.getElementById("AutoWhitBlance").checked = CamautowhitebalanceValue;
+					document.getElementById("AutoExposure").checked = CamautoexposureValue;
 
 					CameraMsg.brightness = Number(CamBrightnessValue);
 					CameraMsg.contrast = Number(CamContrastValue);
 					CameraMsg.saturation = Number(CamSaturationValue);
-					CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-					CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-					CameraMsg.auto_exposure = CamAuto_ExposureValue;
+					CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+					CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+					CameraMsg.autoexposure = CamautoexposureValue;
 					Camera.publish(CameraMsg);
 				});
 				document.getElementById("Camera").style.display = "inline";
@@ -542,9 +542,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 
 		}
@@ -554,9 +554,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function showCamContrast(newValue) {
@@ -565,9 +565,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 
 		}
@@ -577,9 +577,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function showCamSaturation(newValue) {
@@ -588,9 +588,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 
 		}
@@ -600,9 +600,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function showCamWhiteBalance(newValue) {
@@ -611,9 +611,9 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 
 		}
@@ -623,37 +623,37 @@
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function changeAutoWhitBlance() {
 			if (document.getElementById("AutoWhitBlance").checked) {
-				CamAuto_WhiteBalanceValue = true;
+				CamautowhitebalanceValue = true;
 			} else {
-				CamAuto_WhiteBalanceValue = false;
+				CamautowhitebalanceValue = false;
 			}
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function changeAutoExposure() {
 			if (document.getElementById("AutoExposure").checked) {
-				CamAuto_ExposureValue = true;
+				CamautoexposureValue = true;
 			} else {
-				CamAuto_ExposureValue = false;
+				CamautoexposureValue = false;
 			}
 			CameraMsg.brightness = Number(CamBrightnessValue);
 			CameraMsg.contrast = Number(CamContrastValue);
 			CameraMsg.saturation = Number(CamSaturationValue);
-			CameraMsg.white_balance = Number(CamWhiteBalanceValue);
-			CameraMsg.auto_white_balance = CamAuto_WhiteBalanceValue;
-			CameraMsg.auto_exposure = CamAuto_ExposureValue;
+			CameraMsg.whitebalance = Number(CamWhiteBalanceValue);
+			CameraMsg.autowhitebalance = CamautowhitebalanceValue;
+			CameraMsg.autoexposure = CamautoexposureValue;
 			Camera.publish(CameraMsg);
 		}
 		function WebStart() {

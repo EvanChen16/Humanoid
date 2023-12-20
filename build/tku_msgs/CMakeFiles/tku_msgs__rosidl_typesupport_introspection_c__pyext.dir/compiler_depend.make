@@ -265,6 +265,9 @@ CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
   rosidl_generator_c/tku_msgs/msg/detail/object_list__type_support.h \
   rosidl_generator_c/tku_msgs/msg/detail/object_list__struct.h \
   rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.h \
+  rosidl_generator_c/tku_msgs/msg/detail/camera__type_support.h \
+  rosidl_generator_c/tku_msgs/msg/detail/camera__struct.h \
+  rosidl_generator_c/tku_msgs/msg/detail/camera__functions.h \
   rosidl_generator_c/tku_msgs/msg/detail/callback__type_support.h \
   rosidl_generator_c/tku_msgs/msg/detail/callback__struct.h \
   rosidl_generator_c/tku_msgs/msg/detail/callback__functions.h \
@@ -416,6 +419,8 @@ rosidl_generator_c/tku_msgs/msg/detail/callback__struct.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/callback__type_support.h:
 
+rosidl_generator_c/tku_msgs/msg/detail/camera__functions.h:
+
 rosidl_generator_c/tku_msgs/msg/detail/object_list__struct.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/object_list__type_support.h:
@@ -435,6 +440,8 @@ rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__type_support.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+rosidl_generator_c/tku_msgs/msg/detail/camera__type_support.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__struct.h:
 
@@ -971,6 +978,8 @@ rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.h:
 rosidl_generator_c/tku_msgs/msg/detail/color_data__type_support.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.h:
+
+rosidl_generator_c/tku_msgs/msg/detail/camera__struct.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/color_array__struct.h:
 

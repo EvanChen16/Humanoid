@@ -94,6 +94,10 @@ CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/object_list.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/object_list__builder.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/object_list__struct.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/object_list__traits.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/camera.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__builder.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__struct.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__traits.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/callback.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/callback__builder.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/callback__struct.hpp
@@ -197,6 +201,7 @@ rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/HSVValue.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/LabelModelObjectList.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/ObjectList.idl
+rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/Camera.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/Callback.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/HeadPackage.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/msg/InterfaceSend2Sector.idl
@@ -332,6 +337,18 @@ rosidl_generator_cpp/tku_msgs/msg/detail/object_list__struct.hpp: rosidl_generat
 
 rosidl_generator_cpp/tku_msgs/msg/detail/object_list__traits.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/detail/object_list__traits.hpp
+
+rosidl_generator_cpp/tku_msgs/msg/camera.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/camera.hpp
+
+rosidl_generator_cpp/tku_msgs/msg/detail/camera__builder.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/detail/camera__builder.hpp
+
+rosidl_generator_cpp/tku_msgs/msg/detail/camera__struct.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/detail/camera__struct.hpp
+
+rosidl_generator_cpp/tku_msgs/msg/detail/camera__traits.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/detail/camera__traits.hpp
 
 rosidl_generator_cpp/tku_msgs/msg/callback.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/callback.hpp
@@ -576,6 +593,7 @@ rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp: rosidl_gen
 tku_msgs__cpp: CMakeFiles/tku_msgs__cpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/callback.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/camera.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/color_array.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/color_data.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/button_color_form__builder.hpp
@@ -584,6 +602,9 @@ tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/button_color_form__trait
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/callback__builder.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/callback__struct.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/callback__traits.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__builder.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__struct.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/camera__traits.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/color_array__builder.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/color_array__struct.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/detail/color_array__traits.hpp

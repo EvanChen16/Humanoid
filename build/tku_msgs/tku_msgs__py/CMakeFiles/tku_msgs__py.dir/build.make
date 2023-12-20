@@ -76,6 +76,7 @@ tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_draw_ima
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_hsv_value.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_label_model_object_list.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_object_list.py
+tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_camera.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_callback.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_head_package.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_interface_send2_sector.py
@@ -105,6 +106,7 @@ tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_draw_ima
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_hsv_value_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_object_list_s.c
+tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_camera_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_callback_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_head_package_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_interface_send2_sector_s.c
@@ -146,6 +148,7 @@ rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: ros
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/HSVValue.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/LabelModelObjectList.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/ObjectList.idl
+rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/Camera.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/Callback.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/HeadPackage.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/msg/InterfaceSend2Sector.idl
@@ -227,6 +230,9 @@ rosidl_generator_py/tku_msgs/msg/_label_model_object_list.py: rosidl_generator_p
 
 rosidl_generator_py/tku_msgs/msg/_object_list.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_object_list.py
+
+rosidl_generator_py/tku_msgs/msg/_camera.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_camera.py
 
 rosidl_generator_py/tku_msgs/msg/_callback.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_callback.py
@@ -315,6 +321,9 @@ rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c: rosidl_generator_
 rosidl_generator_py/tku_msgs/msg/_object_list_s.c: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_object_list_s.c
 
+rosidl_generator_py/tku_msgs/msg/_camera_s.c: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_camera_s.c
+
 rosidl_generator_py/tku_msgs/msg/_callback_s.c: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/_callback_s.c
 
@@ -383,6 +392,8 @@ tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_button_color_form.py
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_callback.py
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_callback_s.c
+tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_camera.py
+tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_camera_s.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_color_array.py
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_color_array_s.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_color_data.py

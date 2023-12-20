@@ -1,0 +1,27 @@
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera_param_callback[m[K’ is not a member of ‘[01m[Kusb_cam::UsbCamNode[m[K’
+   61 |   "/Camera_Topic", 1, std::bind(&UsbCamNode::[01;31m[Kcamera_param_callback[m[K, this, _1));
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:75:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   61 |   "/Camera_Topic", 1, std::bind(&UsbCamNode::camera_param_callback, this, [01;31m[K_1[m[K));
+      |                                                                           [01;31m[K^~[m[K
+      |                                                                           [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/camera_info_manager/camera_info_manager/camera_info_manager.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:38[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                  [01;36m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K At global scope:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:221:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’
+  221 | void [01;31m[KUsbCamNode[m[K::camera_param_callback(const tku_msgs::msg::Camera &msg) {
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:221:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:57:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass usb_cam::UsbCamNode[m[K’ defined here
+   57 | class [01;36m[KUsbCamNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
