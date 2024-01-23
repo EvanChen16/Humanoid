@@ -542,21 +542,14 @@ function Param(options) {
  * @param callback - function with the following params:
  *  * value - the value of the param from ROS.
  */
-Param.prototype.get = function(callback) {
-  var paramClient = new Service({
-    ros : this.ros,
-    name : '/rosapi/get_param',
-    serviceType : 'rosapi/GetParam'
-  });
+Param.prototype.get = async function(callback) {
+  const rclnodejs = require('rclnodejs');
+  await rclnodejs.init();
 
-  var request = new ServiceRequest({
-    name : this.name
-  });
+  const node = rclnodejs.createNode('my_node');
+  const paramValue = node.getParameter(this.name);
 
-  paramClient.callService(request, function(result) {
-    var value = JSON.parse(result.value);
-    callback(value);
-  });
+  callback(paramValue);
 };
 
 /**

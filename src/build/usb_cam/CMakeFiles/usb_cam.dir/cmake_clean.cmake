@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/usb_cam.dir/src/tdataunit.cpp.o"
+  "CMakeFiles/usb_cam.dir/src/tdataunit.cpp.o.d"
+  "CMakeFiles/usb_cam.dir/src/tool.cpp.o"
+  "CMakeFiles/usb_cam.dir/src/tool.cpp.o.d"
   "CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o"
   "CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o.d"
   "libusb_cam.pdb"

@@ -1,0 +1,59 @@
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kfloat Tool::readvalue(std::fstream&, std::string, int)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:75:10:[m[K [01;31m[Kerror: [m[Kunused variable ‘[01m[Kequal[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Werror=unused-variable]8;;[m[K]
+   75 |     char [01;31m[Kequal[m[K;
+      |          [01;31m[K^~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K At global scope:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:125:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KTdataUnit::TdataUnit()[m[K’
+  125 | [01;31m[KTdataUnit[m[K::TdataUnit()
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:33[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:113:5:[m[K [01;36m[Knote: [m[K‘[01m[KTdataUnit::TdataUnit()[m[K’ previously defined here
+  113 |     [01;36m[KTdataUnit[m[K() { CameraParameterValue = new CameraParameter(); }
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:139:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KTdataUnit::~TdataUnit()[m[K’
+  139 | [01;31m[KTdataUnit[m[K::~TdataUnit()
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:33[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:114:5:[m[K [01;36m[Knote: [m[K‘[01m[KTdataUnit::~TdataUnit()[m[K’ previously defined here
+  114 |     [01;36m[K~[m[KTdataUnit() { delete CameraParameterValue; }
+      |     [01;36m[K^[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid TdataUnit::SaveCameraSetFile(std::string)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:146:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  146 |     std::string path = Tool[01;31m[K->[m[KgetPackagePath(location);
+      |                            [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:151:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct CameraParameter[m[K’ has no member named ‘[01m[KParameterName[m[K’
+  151 |         OutFile << CameraParameterValue->[01;31m[KParameterName[m[K << "\n";
+      |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid TdataUnit::LoadCameraSetFile(std::string)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:170:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  170 |     std::string path = Tool[01;31m[K->[m[KgetPackagePath(location);
+      |                            [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:183:48:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  183 |         CameraParameterValue->brightness = Tool[01;31m[K->[m[Kreadvalue(fin, "brightness", 0);
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:184:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  184 |         CameraParameterValue->contrast = Tool[01;31m[K->[m[Kreadvalue(fin, "contrast", 0);
+      |                                              [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:185:48:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  185 |         CameraParameterValue->saturation = Tool[01;31m[K->[m[Kreadvalue(fin, "saturation", 0);
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:186:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  186 |         CameraParameterValue->white_balance = Tool[01;31m[K->[m[Kreadvalue(fin, "white_balance", 0);
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:187:56:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  187 |         CameraParameterValue->auto_white_balance = Tool[01;31m[K->[m[Kreadvalue(fin, "auto_white_balance", 0);
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:188:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  188 |         CameraParameterValue->auto_exposure = Tool[01;31m[K->[m[Kreadvalue(fin, "auto_exposure", 0);
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:189:65:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K->[m[K’ token
+  189 |         CameraParameterValue->auto_Backlight_Compensation = Tool[01;31m[K->[m[Kreadvalue(fin, "auto_Backlight_Compensation", 0);
+      |                                                                 [01;31m[K^~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kfloat Tool::readvalue(std::fstream&, std::string, int)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:120:1:[m[K [01;31m[Kerror: [m[Kcontrol reaches end of non-void function [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Werror=return-type]8;;[m[K]
+  120 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

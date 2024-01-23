@@ -157,7 +157,7 @@ inline std::map<std::string, v4l2_capability> available_devices()
       int fd;
       // Try and open device to test access
       if ((fd = open(device_str.c_str(), O_RDONLY)) == -1) {
-        std::cerr << "Cannot open device: `" << device_str << "`, ";
+        // std::cerr << "Cannot open device: `" << device_str << "`, ";
         std::cerr << "double-check read / write permissions for device" << std::endl;
       } else {
         struct v4l2_capability device_capabilities = {};

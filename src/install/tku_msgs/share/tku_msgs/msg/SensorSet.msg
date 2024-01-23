@@ -1,0 +1,9 @@
+int32 sensor_p
+int32 sensor_i
+int32 sensor_d
+int32 roll
+int32 pitch
+int32 yaw
+int32 sup_f
+int32 nsup_f
+int32 sensor_modeset

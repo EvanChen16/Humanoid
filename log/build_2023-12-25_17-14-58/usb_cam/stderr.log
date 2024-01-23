@@ -1,0 +1,30 @@
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:40:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KTdataUnit::TdataUnit()[m[K’
+   40 | [01;31m[KTdataUnit[m[K::TdataUnit()
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:33[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:72:5:[m[K [01;36m[Knote: [m[K‘[01m[KTdataUnit::TdataUnit()[m[K’ previously defined here
+   72 |     [01;36m[KTdataUnit[m[K() { CameraParameterValue = new CameraParameter(); }
+      |     [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:54:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KTdataUnit::~TdataUnit()[m[K’
+   54 | [01;31m[KTdataUnit[m[K::~TdataUnit()
+      | [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:33[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:73:5:[m[K [01;36m[Knote: [m[K‘[01m[KTdataUnit::~TdataUnit()[m[K’ previously defined here
+   73 |     [01;36m[K~[m[KTdataUnit() { delete CameraParameterValue; }
+      |     [01;36m[K^[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid TdataUnit::SaveCameraSetFile(std::string)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:61:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool[m[K’ was not declared in this scope; did you mean ‘[01m[Kbool[m[K’?
+   61 |     std::string path = [01;31m[Ktool[m[K->getPackagePath(location);
+      |                        [01;31m[K^~~~[m[K
+      |                        [32m[Kbool[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:66:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct CameraParameter[m[K’ has no member named ‘[01m[KParameterName[m[K’
+   66 |         OutFile << CameraParameterValue->[01;31m[KParameterName[m[K << "\n";
+      |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid TdataUnit::LoadCameraSetFile(std::string)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:85:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktool[m[K’ was not declared in this scope; did you mean ‘[01m[Kbool[m[K’?
+   85 |     std::string path = [01;31m[Ktool[m[K->getPackagePath(location);
+      |                        [01;31m[K^~~~[m[K
+      |                        [32m[Kbool[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

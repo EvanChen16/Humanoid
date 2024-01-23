@@ -1,0 +1,24 @@
+[ 14%] Built target usb_cam_node_exe
+[ 42%] Built target usb_cam
+[ 42%] Built target gtest
+[ 57%] Built target gtest_main
+[35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[ 71%] Built target test_pixel_formats
+[ 85%] Built target test_usb_cam_utils
+[ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:65:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallcamerainfofunction[m[K’ is not a member of ‘[01m[Kusb_cam::UsbCamNode[m[K’
+   65 |   "/CameraInfo", std::bind(&UsbCamNode::[01;31m[Kcallcamerainfofunction[m[K, this, std::placeholders::_1, std::placeholders::_2));
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K At global scope:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool usb_cam::UsbCamNode::callcamerainfofunction(std::shared_ptr<tku_msgs::srv::CameraInfo_Request_<std::allocator<void> > >, std::shared_ptr<tku_msgs::srv::CameraInfo_Response_<std::allocator<void> > >)[m[K’
+  227 | bool [01;31m[KUsbCamNode[m[K::callcamerainfofunction(const std::shared_ptr<tku_msgs::srv::CameraInfo::Request> request,
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kbool usb_cam::UsbCamNode::callcamerainfofunction(std::shared_ptr<tku_msgs::srv::CameraInfo_Request_<std::allocator<void> > >, std::shared_ptr<tku_msgs::srv::CameraInfo_Response_<std::allocator<void> > >)[m[K’
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:58:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass usb_cam::UsbCamNode[m[K’ defined here
+   58 | class [01;36m[KUsbCamNode[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

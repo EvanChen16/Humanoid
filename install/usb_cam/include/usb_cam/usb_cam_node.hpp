@@ -27,7 +27,8 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-
+#ifndef TDATAUNIT_H
+#define TDATAUNIT_H
 #ifndef USB_CAM__USB_CAM_NODE_HPP_
 #define USB_CAM__USB_CAM_NODE_HPP_
 
@@ -42,6 +43,90 @@
 #include "std_srvs/srv/set_bool.hpp"
 #include "tku_msgs/msg/camera.hpp"
 #include "usb_cam/usb_cam.hpp"
+#include "tku_msgs/srv/camera_info.hpp"
+#include "usb_cam/tdataunit.hpp"
+
+
+
+#include <fstream>
+// #include <string>
+#include <stdlib.h>
+#include <string.h>
+// #include <usb_cam/tool.hpp>
+
+
+#ifndef TOOL_H
+#define TOOL_H
+
+#include <ament_index_cpp/get_package_share_directory.hpp>
+// #include <rclcpp/rclcpp.hpp>
+#include <sys/time.h>
+// #include <fstream>
+#include <sstream>
+#include <cmath>
+// #include <vector>
+#include <iostream>
+// #include <string>
+
+class Tool
+{
+    public:
+        Tool();
+        ~Tool();
+        std::string getPackagePath(std::string package_name);
+        float readvalue(std::fstream &fin, std::string title, int mode);
+    public:
+        std::string parameterPath;
+    private:
+        std::string packagePath;
+};
+
+class ToolInstance : public Tool
+{
+    public:
+        ToolInstance() : Tool() {}
+        ~ToolInstance() {}
+        static ToolInstance* getInstance();
+        static void deleteInstance();  // 新增這行
+
+    private:
+        static ToolInstance *m_pInstance;
+};
+
+#endif // TOOL_H
+
+
+
+
+struct CameraParameter
+{
+    std::string ParameterName;  // 新增這行
+    int  auto_exposure;
+    int  auto_white_balance;
+    int  auto_Backlight_Compensation;
+    int  brightness;
+    int  contrast;
+    int  saturation;
+    int  white_balance;
+};
+
+class TdataUnit
+{
+public:
+    TdataUnit(); //{ CameraParameterValue = new CameraParameter(); }
+    ~TdataUnit(); //{ delete CameraParameterValue; }
+    void SaveCameraSetFile(std::string location);
+    void LoadCameraSetFile(std::string location);
+
+    CameraParameter* CameraParameterValue;
+    ToolInstance* tool;  // 新增這行
+
+};
+
+extern TdataUnit* DataUnit;
+
+#endif // TDATAUNIT_H
+
 
 
 std::ostream & operator<<(std::ostream & ostr, const rclcpp::Time & tm)
@@ -59,13 +144,17 @@ class UsbCamNode : public rclcpp::Node
 public:
   explicit UsbCamNode(const rclcpp::NodeOptions & node_options);
   ~UsbCamNode();
-
+  void loadcamerasetfile();
+  void savecamerasetfile();
   void init();
   void get_params();
   void assign_params(const std::vector<rclcpp::Parameter> & parameters);
   void set_v4l2_params();
   void update();
   void camera_param_callback(const tku_msgs::msg::Camera &msg);
+  bool callcamerainfofunction(
+    const std::shared_ptr<tku_msgs::srv::CameraInfo::Request> request,
+    std::shared_ptr<tku_msgs::srv::CameraInfo::Response> response);
   bool take_and_send_image();
   int brightness_;
   int contrast_;
@@ -100,6 +189,11 @@ public:
   
 // private:
   rclcpp::Subscription<tku_msgs::msg::Camera>::SharedPtr sub_camera_param_;
+  // rclcpp::Service<tku_msgs::srv::CameraInfo>::SharedPtr srv_camera_info_;
+  rclcpp::Service<tku_msgs::srv::CameraInfo>::SharedPtr srv_camera_info_;
+
+  TdataUnit CameraSet;
+  std::string location;
 };
 }  // namespace usb_cam
 #endif  // USB_CAM__USB_CAM_NODE_HPP_

@@ -1,0 +1,51 @@
+[0.299s] Invoking command in '/home/iclab/Desktop/ros2/build/usb_cam': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8
+[0.341s] [ 14%] Built target usb_cam
+[0.343s] [ 28%] Built target gtest
+[0.343s] [ 42%] Built target gtest_main
+[0.345s] [ 57%] Built target usb_cam_node_exe
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.362s] [ 71%] Built target test_usb_cam_utils
+[0.364s] [ 85%] Built target test_pixel_formats
+[0.376s] [ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[2.455s] In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.455s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:106:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+[2.455s]   106 |     [01;31m[Knode[m[K->create_service<tku_msgs::srv::CameraInfo>("add_two_ints", &add);
+[2.455s]       |     [01;31m[K^~~~[m[K
+[2.455s]       |     [32m[KNode[m[K
+[2.455s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:106:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.455s]   106 |     node->create_service<tku_msgs::srv::CameraInfo[01;31m[K>[m[K("add_two_ints", &add);
+[2.455s]       |                                                   [01;31m[K^[m[K
+[2.455s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:106:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kadd[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::add[m[K’?
+[2.455s]   106 |  node->create_service<tku_msgs::srv::CameraInfo>("add_two_ints", &[01;31m[Kadd[m[K);
+[2.455s]       |                                                                   [01;31m[K^~~[m[K
+[2.455s]       |                                                                   [32m[Kcv::add[m[K
+[2.455s] In file included from [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:46[m[K,
+[2.456s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/formats/m420.hpp:35[m[K,
+[2.456s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam.hpp:53[m[K,
+[2.456s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:44[m[K,
+[2.456s]                  from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:34[m[K:
+[2.456s] [01m[K/usr/include/opencv4/opencv2/core.hpp:360:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::add[m[K’ declared here
+[2.456s]   360 | CV_EXPORTS_W void [01;36m[Kadd[m[K(InputArray src1, InputArray src2, OutputArray dst,
+[2.456s]       |                   [01;36m[K^~~[m[K
+[2.467s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In constructor ‘[01m[Kusb_cam::UsbCamNode::UsbCamNode(const rclcpp::NodeOptions&)[m[K’:
+[2.467s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:65:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallcamerainfofunction[m[K’ is not a member of ‘[01m[Kusb_cam::UsbCamNode[m[K’
+[2.467s]    65 |   "//CameraInfo", std::bind(&UsbCamNode::[01;31m[Kcallcamerainfofunction[m[K, this, std::placeholders::_1, std::placeholders::_2));
+[2.467s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.497s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K At global scope:
+[2.497s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:47:[m[K [01;31m[Kerror: [m[K‘[01m[Ketku_msgs[m[K’ does not name a type
+[2.497s]   227 | bool UsbCamNode::callcamerainfofunction(const [01;31m[Ketku_msgs[m[K::srv::CameraInfo::Request request,
+[2.498s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[2.498s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.498s]   227 | bool UsbCamNode::callcamerainfofunction(const etku_msgs::srv[01;31m[K::[m[KCameraInfo::Request request,
+[2.498s]       |                                                             [01;31m[K^~[m[K
+[2.498s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.498s]   227 | bool UsbCamNode::callcamerainfofunction[34m[K([m[Kconst etku_msgs::srv[01;31m[K:[m[K[32m[K:[m[KCameraInfo::Request request,
+[2.498s]       |                                        [34m[K~[m[K                    [01;31m[K^[m[K[32m[K~[m[K
+[2.498s]       |                                                             [32m[K)[m[K
+[2.498s] [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:227:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[2.498s]   227 | bool UsbCamNode::callcamerainfofunction(const etku_msgs::srv[01;31m[K::[m[KCameraInfo::Request request,
+[2.498s]       |                                                             [01;31m[K^~[m[K
+[4.766s] gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+[4.767s] gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+[4.767s] gmake: *** [Makefile:146: all] Error 2
+[4.770s] Invoked command in '/home/iclab/Desktop/ros2/build/usb_cam' returned '2': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8

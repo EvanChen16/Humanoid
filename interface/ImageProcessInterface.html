@@ -189,7 +189,7 @@
 			serviceType: 'tku_msgs/CameraInfo'
 		});
 		var LoadCamerareqrest = new ROSLIB.ServiceRequest({
-			Load: true
+			load: true
 		});
 
 		//-----
@@ -331,12 +331,14 @@
 		function CameraSetUp() {
 			if (B_SetupCamera_Flag) {
 				CameraInfoClient.callService(LoadCamerareqrest, function (LoadCameraresult) {
+					console.log("whitebalance: ", LoadCameraresult.whitebalance);  // Add this line
+					console.log("LoadCameraresult: ", LoadCameraresult);
 					CamBrightnessValue = LoadCameraresult.brightness;
 					CamContrastValue = LoadCameraresult.contrast;
 					CamSaturationValue = LoadCameraresult.saturation;
-					CamWhiteBalanceValue = LoadCameraresult.whitebalance;
-					CamautowhitebalanceValue = LoadCameraresult.autowhitebalance;
-					CamautoexposureValue = LoadCameraresult.autoexposure;
+					CamWhiteBalanceValue = LoadCameraresult.white_balance;
+					CamautowhitebalanceValue = LoadCameraresult.auto_white_balance;
+					CamautoexposureValue = LoadCameraresult.auto_exposure;
 
 					document.getElementById("CamBrightness").value = CamBrightnessValue;
 					document.getElementById("CamBrightnessValue").value = CamBrightnessValue;
