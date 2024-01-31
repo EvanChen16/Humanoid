@@ -1,1 +1,1 @@
-int16 buildingmodel
+bool buildingmodel

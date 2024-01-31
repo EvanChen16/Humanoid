@@ -20,7 +20,7 @@ extern "C"
 /// Struct defined in msg/ButtonColorForm in the package tku_msgs.
 typedef struct tku_msgs__msg__ButtonColorForm
 {
-  int16_t buildingmodel;
+  bool buildingmodel;
 } tku_msgs__msg__ButtonColorForm;
 
 // Struct for a sequence of tku_msgs__msg__ButtonColorForm.

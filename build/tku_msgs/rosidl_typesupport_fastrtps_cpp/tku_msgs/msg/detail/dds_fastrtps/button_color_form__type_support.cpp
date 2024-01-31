@@ -33,7 +33,7 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: buildingmodel
-  cdr << ros_message.buildingmodel;
+  cdr << (ros_message.buildingmodel ? true : false);
   return true;
 }
 
@@ -44,7 +44,11 @@ cdr_deserialize(
   tku_msgs::msg::ButtonColorForm & ros_message)
 {
   // Member: buildingmodel
-  cdr >> ros_message.buildingmodel;
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.buildingmodel = tmp ? true : false;
+  }
 
   return true;
 }
@@ -96,9 +100,8 @@ max_serialized_size_ButtonColorForm(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;

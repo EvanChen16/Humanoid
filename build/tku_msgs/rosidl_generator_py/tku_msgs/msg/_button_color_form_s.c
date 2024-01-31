@@ -55,8 +55,8 @@ bool tku_msgs__msg__button_color_form__convert_from_py(PyObject * _pymsg, void *
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->buildingmodel = (int16_t)PyLong_AsLong(field);
+    assert(PyBool_Check(field));
+    ros_message->buildingmodel = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -83,7 +83,7 @@ PyObject * tku_msgs__msg__button_color_form__convert_to_py(void * raw_ros_messag
   tku_msgs__msg__ButtonColorForm * ros_message = (tku_msgs__msg__ButtonColorForm *)raw_ros_message;
   {  // buildingmodel
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->buildingmodel);
+    field = PyBool_FromLong(ros_message->buildingmodel ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "buildingmodel", field);
       Py_DECREF(field);

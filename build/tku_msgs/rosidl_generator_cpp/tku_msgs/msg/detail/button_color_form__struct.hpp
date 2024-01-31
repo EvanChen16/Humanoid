@@ -38,7 +38,7 @@ struct ButtonColorForm_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->buildingmodel = 0;
+      this->buildingmodel = false;
     }
   }
 
@@ -48,18 +48,18 @@ struct ButtonColorForm_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->buildingmodel = 0;
+      this->buildingmodel = false;
     }
   }
 
   // field types and members
   using _buildingmodel_type =
-    int16_t;
+    bool;
   _buildingmodel_type buildingmodel;
 
   // setters for named parameter idiom
   Type & set__buildingmodel(
-    const int16_t & _arg)
+    const bool & _arg)
   {
     this->buildingmodel = _arg;
     return *this;

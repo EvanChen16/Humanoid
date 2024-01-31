@@ -51,7 +51,7 @@ static bool _ButtonColorForm__cdr_serialize(
   const _ButtonColorForm__ros_msg_type * ros_message = static_cast<const _ButtonColorForm__ros_msg_type *>(untyped_ros_message);
   // Field name: buildingmodel
   {
-    cdr << ros_message->buildingmodel;
+    cdr << (ros_message->buildingmodel ? true : false);
   }
 
   return true;
@@ -68,7 +68,9 @@ static bool _ButtonColorForm__cdr_deserialize(
   _ButtonColorForm__ros_msg_type * ros_message = static_cast<_ButtonColorForm__ros_msg_type *>(untyped_ros_message);
   // Field name: buildingmodel
   {
-    cdr >> ros_message->buildingmodel;
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->buildingmodel = tmp ? true : false;
   }
 
   return true;
@@ -127,9 +129,8 @@ size_t max_serialized_size_tku_msgs__msg__ButtonColorForm(
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint16_t);
-    current_alignment += array_size * sizeof(uint16_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;

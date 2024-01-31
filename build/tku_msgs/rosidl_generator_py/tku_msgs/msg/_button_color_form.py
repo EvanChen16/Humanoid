@@ -59,18 +59,18 @@ class ButtonColorForm(metaclass=Metaclass_ButtonColorForm):
     ]
 
     _fields_and_field_types = {
-        'buildingmodel': 'int16',
+        'buildingmodel': 'boolean',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.buildingmodel = kwargs.get('buildingmodel', int())
+        self.buildingmodel = kwargs.get('buildingmodel', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -119,8 +119,6 @@ class ButtonColorForm(metaclass=Metaclass_ButtonColorForm):
     def buildingmodel(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'buildingmodel' field must be of type 'int'"
-            assert value >= -32768 and value < 32768, \
-                "The 'buildingmodel' field must be an integer in [-32768, 32767]"
+                isinstance(value, bool), \
+                "The 'buildingmodel' field must be of type 'bool'"
         self._buildingmodel = value

@@ -34,7 +34,7 @@ void tku_msgs__msg__ButtonColorForm__rosidl_typesupport_introspection_c__ButtonC
 static rosidl_typesupport_introspection_c__MessageMember tku_msgs__msg__ButtonColorForm__rosidl_typesupport_introspection_c__ButtonColorForm_message_member_array[1] = {
   {
     "buildingmodel",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT16,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
