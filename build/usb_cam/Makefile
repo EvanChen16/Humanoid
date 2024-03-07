@@ -312,30 +312,6 @@ rclcpp_components/node_main_usb_cam_node_exe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/usb_cam_node_exe.dir/build.make CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.s
 .PHONY : rclcpp_components/node_main_usb_cam_node_exe.cpp.s
 
-src/tdataunit.o: src/tdataunit.cpp.o
-.PHONY : src/tdataunit.o
-
-# target to build an object file
-src/tdataunit.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usb_cam.dir/build.make CMakeFiles/usb_cam.dir/src/tdataunit.cpp.o
-.PHONY : src/tdataunit.cpp.o
-
-src/tdataunit.i: src/tdataunit.cpp.i
-.PHONY : src/tdataunit.i
-
-# target to preprocess a source file
-src/tdataunit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usb_cam.dir/build.make CMakeFiles/usb_cam.dir/src/tdataunit.cpp.i
-.PHONY : src/tdataunit.cpp.i
-
-src/tdataunit.s: src/tdataunit.cpp.s
-.PHONY : src/tdataunit.s
-
-# target to generate assembly for a file
-src/tdataunit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/usb_cam.dir/build.make CMakeFiles/usb_cam.dir/src/tdataunit.cpp.s
-.PHONY : src/tdataunit.cpp.s
-
 src/tool.o: src/tool.cpp.o
 .PHONY : src/tool.o
 
@@ -481,9 +457,6 @@ help:
 	@echo "... rclcpp_components/node_main_usb_cam_node_exe.o"
 	@echo "... rclcpp_components/node_main_usb_cam_node_exe.i"
 	@echo "... rclcpp_components/node_main_usb_cam_node_exe.s"
-	@echo "... src/tdataunit.o"
-	@echo "... src/tdataunit.i"
-	@echo "... src/tdataunit.s"
 	@echo "... src/tool.o"
 	@echo "... src/tool.i"
 	@echo "... src/tool.s"

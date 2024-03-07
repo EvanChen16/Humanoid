@@ -157,18 +157,23 @@ inline std::map<std::string, v4l2_capability> available_devices()
       int fd;
       // Try and open device to test access
       if ((fd = open(device_str.c_str(), O_RDONLY)) == -1) {
-        // std::cerr << "Cannot open device: `" << device_str << "`, ";
-        std::cerr << "double-check read / write permissions for device" << std::endl;
-      } else {
-        struct v4l2_capability device_capabilities = {};
-
-        if (xioctl(fd, VIDIOC_QUERYCAP, &device_capabilities) == -1) {
-          std::cerr << "Could not retrieve device capabilities: `" << device_str;
-          std::cerr << "`" << std::endl;
-        } else {
-          v4l2_devices[device_str] = device_capabilities;
-        }
+        // Cannot open device, output an error message and skip this device
+        std::cerr << "Cannot open device: " << device_str << ", exiting." << std::endl;
+        continue;
       }
+      struct v4l2_capability device_capabilities = {};
+
+      if (xioctl(fd, VIDIOC_QUERYCAP, &device_capabilities) == -1) {
+        std::cerr << "Could not retrieve device capabilities: `" << device_str;
+        std::cerr << "`" << std::endl;
+      } else {
+        v4l2_devices[device_str] = device_capabilities;
+        // Output the device information
+        std::cout << "Device: " << device_str << std::endl;
+        std::cout << "Device Capabilities: " << device_capabilities.capabilities << std::endl;
+      }
+      // Don't forget to close the device
+      close(fd);
     } else {
       // device doesn't exist, break
       break;

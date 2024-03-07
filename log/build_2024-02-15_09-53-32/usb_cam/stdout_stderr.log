@@ -1,0 +1,22 @@
+[ 25%] Built target usb_cam
+[ 37%] Built target gtest
+[ 50%] Built target gtest_main
+[ 62%] Built target usb_cam_node_exe
+[35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[ 75%] Built target test_pixel_formats
+[ 87%] Built target test_usb_cam_utils
+[ 93%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::init()[m[K’:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:394:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kavailable_devices[m[K’ was not declared in this scope; did you mean ‘[01m[Kusb_cam::utils::available_devices[m[K’?
+  394 |   if ([01;31m[Kavailable_devices[m[K.find(m_parameters.device_name) == available_devices.end()) {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kusb_cam::utils::available_devices[m[K
+In file included from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/usb_cam_node.hpp:45[m[K,
+                 from [01m[K/home/iclab/Desktop/ros2/src/usb_cam/src/usb_cam_node.cpp:33[m[K:
+[01m[K/home/iclab/Desktop/ros2/src/usb_cam/include/usb_cam/utils.hpp:145:47:[m[K [01;36m[Knote: [m[K‘[01m[Kusb_cam::utils::available_devices[m[K’ declared here
+  145 | inline std::map<std::string, v4l2_capability> [01;36m[Kavailable_devices[m[K()
+      |                                               [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
