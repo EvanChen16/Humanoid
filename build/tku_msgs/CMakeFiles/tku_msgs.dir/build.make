@@ -110,6 +110,9 @@ CMakeFiles/tku_msgs: rosidl_cmake/srv/CheckSector_Response.msg
 CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/srv/SendHandSpeed.srv
 CMakeFiles/tku_msgs: rosidl_cmake/srv/SendHandSpeed_Request.msg
 CMakeFiles/tku_msgs: rosidl_cmake/srv/SendHandSpeed_Response.msg
+CMakeFiles/tku_msgs: /home/iclab/Desktop/ros2/src/tku_msgs/srv/SetString.srv
+CMakeFiles/tku_msgs: rosidl_cmake/srv/SetString_Request.msg
+CMakeFiles/tku_msgs: rosidl_cmake/srv/SetString_Response.msg
 CMakeFiles/tku_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/tku_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/tku_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

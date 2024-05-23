@@ -22,7 +22,7 @@ tku_msgs__msg__Camera__init(tku_msgs__msg__Camera * msg)
   // saturation
   // whitebalance
   // autowhitebalance
-  // autoexposure
+  // auto_exposure
   return true;
 }
 
@@ -37,7 +37,7 @@ tku_msgs__msg__Camera__fini(tku_msgs__msg__Camera * msg)
   // saturation
   // whitebalance
   // autowhitebalance
-  // autoexposure
+  // auto_exposure
 }
 
 bool
@@ -66,8 +66,8 @@ tku_msgs__msg__Camera__are_equal(const tku_msgs__msg__Camera * lhs, const tku_ms
   if (lhs->autowhitebalance != rhs->autowhitebalance) {
     return false;
   }
-  // autoexposure
-  if (lhs->autoexposure != rhs->autoexposure) {
+  // auto_exposure
+  if (lhs->auto_exposure != rhs->auto_exposure) {
     return false;
   }
   return true;
@@ -91,8 +91,8 @@ tku_msgs__msg__Camera__copy(
   output->whitebalance = input->whitebalance;
   // autowhitebalance
   output->autowhitebalance = input->autowhitebalance;
-  // autoexposure
-  output->autoexposure = input->autoexposure;
+  // auto_exposure
+  output->auto_exposure = input->auto_exposure;
   return true;
 }
 

@@ -258,7 +258,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3.10" "-m" "compileall"
+        "/usr/bin/python3" "-m" "compileall"
         "/home/iclab/Desktop/ros2/install/tku_msgs/local/lib/python3.10/dist-packages/tku_msgs"
       )
 endif()
@@ -468,6 +468,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/srv" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_adapter/tku_msgs/srv/SetString.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/msg" TYPE FILE FILES "/home/iclab/Desktop/ros2/src/tku_msgs/msg/ButtonColorForm.msg")
 endif()
 
@@ -641,6 +645,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/srv" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_cmake/srv/SendHandSpeed_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/srv" TYPE FILE FILES "/home/iclab/Desktop/ros2/src/tku_msgs/srv/SetString.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/srv" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_cmake/srv/SetString_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tku_msgs/srv" TYPE FILE FILES "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_cmake/srv/SetString_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

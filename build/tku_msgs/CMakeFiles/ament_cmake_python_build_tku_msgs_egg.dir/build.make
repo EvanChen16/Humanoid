@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_tku_msgs_egg.dir/compiler_depend.mak
 include CMakeFiles/ament_cmake_python_build_tku_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_tku_msgs_egg:
-	cd /home/iclab/Desktop/ros2/build/tku_msgs/ament_cmake_python/tku_msgs && /usr/bin/python3.10 setup.py egg_info
+	cd /home/iclab/Desktop/ros2/build/tku_msgs/ament_cmake_python/tku_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_tku_msgs_egg: CMakeFiles/ament_cmake_python_build_tku_msgs_egg
 ament_cmake_python_build_tku_msgs_egg: CMakeFiles/ament_cmake_python_build_tku_msgs_egg.dir/build.make

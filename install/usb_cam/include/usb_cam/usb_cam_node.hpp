@@ -172,6 +172,8 @@ public:
     const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
     std::shared_ptr<std_srvs::srv::SetBool::Response> response);
 
+  void getFilePath();  // Add this line
+
   UsbCam * m_camera;
 
   sensor_msgs::msg::Image::SharedPtr m_image_msg;
@@ -186,14 +188,15 @@ public:
 
   rclcpp::Service<std_srvs::srv::SetBool>::SharedPtr m_service_capture;
   rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr m_parameters_callback_handle;
-  
-// private:
+
+private:
   rclcpp::Subscription<tku_msgs::msg::Camera>::SharedPtr sub_camera_param_;
-  // rclcpp::Service<tku_msgs::srv::CameraInfo>::SharedPtr srv_camera_info_;
   rclcpp::Service<tku_msgs::srv::CameraInfo>::SharedPtr srv_camera_info_;
 
   TdataUnit CameraSet;
   std::string location;
+  std::string file_path_;  // Add this line
 };
+
 }  // namespace usb_cam
 #endif  // USB_CAM__USB_CAM_NODE_HPP_

@@ -97,6 +97,7 @@ tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_camera_i
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_read_motion.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_check_sector.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py
+tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_set_string.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/__init__.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/__init__.py
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c
@@ -127,6 +128,7 @@ tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_camera_i
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_read_motion_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_check_sector_s.c
 tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c
+tku_msgs__py/CMakeFiles/tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_set_string_s.c
 
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -169,6 +171,7 @@ rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: ros
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/srv/ReadMotion.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/srv/CheckSector.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/srv/SendHandSpeed.idl
+rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/tku_msgs/srv/SetString.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -294,6 +297,9 @@ rosidl_generator_py/tku_msgs/srv/_check_sector.py: rosidl_generator_py/tku_msgs/
 rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py
 
+rosidl_generator_py/tku_msgs/srv/_set_string.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/srv/_set_string.py
+
 rosidl_generator_py/tku_msgs/msg/__init__.py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/msg/__init__.py
 
@@ -384,6 +390,9 @@ rosidl_generator_py/tku_msgs/srv/_check_sector_s.c: rosidl_generator_py/tku_msgs
 rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c
 
+rosidl_generator_py/tku_msgs/srv/_set_string_s.c: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/tku_msgs/srv/_set_string_s.c
+
 tku_msgs__py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_c.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -445,6 +454,8 @@ tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_save_hsv.py
 tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c
 tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py
 tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c
+tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_set_string.py
+tku_msgs__py: rosidl_generator_py/tku_msgs/srv/_set_string_s.c
 tku_msgs__py: tku_msgs__py/CMakeFiles/tku_msgs__py
 tku_msgs__py: tku_msgs__py/CMakeFiles/tku_msgs__py.dir/build.make
 .PHONY : tku_msgs__py

@@ -330,8 +330,13 @@ CMakeFiles/tku_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tku_msg
   rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.h \
   rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__type_support.h \
   rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__struct.h \
-  rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h
+  rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h \
+  rosidl_generator_c/tku_msgs/srv/detail/set_string__type_support.h \
+  rosidl_generator_c/tku_msgs/srv/detail/set_string__struct.h \
+  rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.h
 
+
+rosidl_generator_c/tku_msgs/srv/detail/set_string__type_support.h:
 
 rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h:
 
@@ -360,6 +365,8 @@ rosidl_generator_c/tku_msgs/srv/detail/add__type_support.h:
 rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.h:
 
 rosidl_generator_c/tku_msgs/srv/detail/save_hsv__struct.h:
+
+rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.h:
 
 rosidl_generator_c/tku_msgs/srv/detail/save_hsv__type_support.h:
 
@@ -616,6 +623,8 @@ rosidl_generator_c/tku_msgs/msg/detail/single_motor_data__struct.h:
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+rosidl_generator_c/tku_msgs/srv/detail/set_string__struct.h:
 
 rosidl_generator_c/tku_msgs/msg/detail/pi_dpackage__functions.h:
 

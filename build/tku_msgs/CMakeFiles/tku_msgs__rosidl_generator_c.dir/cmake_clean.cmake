@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.c.o.d"
   "CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o"
   "CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o.d"
+  "CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.c.o"
+  "CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.c.o.d"
   "libtku_msgs__rosidl_generator_c.pdb"
   "libtku_msgs__rosidl_generator_c.so"
   "rosidl_generator_c/tku_msgs/msg/button_color_form.h"
@@ -193,10 +195,15 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h"
   "rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__struct.h"
   "rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__type_support.h"
+  "rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.c"
+  "rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.h"
+  "rosidl_generator_c/tku_msgs/srv/detail/set_string__struct.h"
+  "rosidl_generator_c/tku_msgs/srv/detail/set_string__type_support.h"
   "rosidl_generator_c/tku_msgs/srv/hsv_info.h"
   "rosidl_generator_c/tku_msgs/srv/read_motion.h"
   "rosidl_generator_c/tku_msgs/srv/save_hsv.h"
   "rosidl_generator_c/tku_msgs/srv/send_hand_speed.h"
+  "rosidl_generator_c/tku_msgs/srv/set_string.h"
 )
 
 # Per-language clean rules from dependency scanning.

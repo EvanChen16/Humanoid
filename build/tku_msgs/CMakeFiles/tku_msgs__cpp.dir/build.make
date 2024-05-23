@@ -178,6 +178,10 @@ CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/send_hand_speed.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__builder.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__struct.hpp
 CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/set_string.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp
+CMakeFiles/tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp
 
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -222,6 +226,7 @@ rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/srv/ReadMotion.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/srv/CheckSector.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/srv/SendHandSpeed.idl
+rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: rosidl_adapter/tku_msgs/srv/SetString.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -255,7 +260,7 @@ rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/s
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/iclab/Desktop/ros2/build/tku_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/tku_msgs/msg/detail/button_color_form__builder.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/msg/detail/button_color_form__builder.hpp
@@ -590,6 +595,18 @@ rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__struct.hpp: rosidl_gen
 rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp
 
+rosidl_generator_cpp/tku_msgs/srv/set_string.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/srv/set_string.hpp
+
+rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp
+
+rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp
+
+rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp
+
 tku_msgs__cpp: CMakeFiles/tku_msgs__cpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/msg/callback.hpp
@@ -699,10 +716,14 @@ tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/save_hsv__traits.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__builder.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__struct.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/hsv_info.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/read_motion.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/save_hsv.hpp
 tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/send_hand_speed.hpp
+tku_msgs__cpp: rosidl_generator_cpp/tku_msgs/srv/set_string.hpp
 tku_msgs__cpp: CMakeFiles/tku_msgs__cpp.dir/build.make
 .PHONY : tku_msgs__cpp
 

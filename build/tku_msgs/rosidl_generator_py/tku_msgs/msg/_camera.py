@@ -62,7 +62,7 @@ class Camera(metaclass=Metaclass_Camera):
         '_saturation',
         '_whitebalance',
         '_autowhitebalance',
-        '_autoexposure',
+        '_auto_exposure',
     ]
 
     _fields_and_field_types = {
@@ -71,7 +71,7 @@ class Camera(metaclass=Metaclass_Camera):
         'saturation': 'float',
         'whitebalance': 'float',
         'autowhitebalance': 'boolean',
-        'autoexposure': 'boolean',
+        'auto_exposure': 'boolean',
     }
 
     SLOT_TYPES = (
@@ -92,7 +92,7 @@ class Camera(metaclass=Metaclass_Camera):
         self.saturation = kwargs.get('saturation', float())
         self.whitebalance = kwargs.get('whitebalance', float())
         self.autowhitebalance = kwargs.get('autowhitebalance', bool())
-        self.autoexposure = kwargs.get('autoexposure', bool())
+        self.auto_exposure = kwargs.get('auto_exposure', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -133,7 +133,7 @@ class Camera(metaclass=Metaclass_Camera):
             return False
         if self.autowhitebalance != other.autowhitebalance:
             return False
-        if self.autoexposure != other.autoexposure:
+        if self.auto_exposure != other.auto_exposure:
             return False
         return True
 
@@ -216,14 +216,14 @@ class Camera(metaclass=Metaclass_Camera):
         self._autowhitebalance = value
 
     @builtins.property
-    def autoexposure(self):
-        """Message field 'autoexposure'."""
-        return self._autoexposure
+    def auto_exposure(self):
+        """Message field 'auto_exposure'."""
+        return self._auto_exposure
 
-    @autoexposure.setter
-    def autoexposure(self, value):
+    @auto_exposure.setter
+    def auto_exposure(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'autoexposure' field must be of type 'bool'"
-        self._autoexposure = value
+                "The 'auto_exposure' field must be of type 'bool'"
+        self._auto_exposure = value

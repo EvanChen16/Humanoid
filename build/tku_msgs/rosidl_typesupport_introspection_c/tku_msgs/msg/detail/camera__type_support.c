@@ -118,14 +118,14 @@ static rosidl_typesupport_introspection_c__MessageMember tku_msgs__msg__Camera__
     NULL  // resize(index) function pointer
   },
   {
-    "autoexposure",  // name
+    "auto_exposure",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(tku_msgs__msg__Camera, autoexposure),  // bytes offset in struct
+    offsetof(tku_msgs__msg__Camera, auto_exposure),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

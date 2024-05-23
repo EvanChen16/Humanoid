@@ -42,8 +42,8 @@ cdr_serialize(
   cdr << ros_message.whitebalance;
   // Member: autowhitebalance
   cdr << (ros_message.autowhitebalance ? true : false);
-  // Member: autoexposure
-  cdr << (ros_message.autoexposure ? true : false);
+  // Member: auto_exposure
+  cdr << (ros_message.auto_exposure ? true : false);
   return true;
 }
 
@@ -72,11 +72,11 @@ cdr_deserialize(
     ros_message.autowhitebalance = tmp ? true : false;
   }
 
-  // Member: autoexposure
+  // Member: auto_exposure
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message.autoexposure = tmp ? true : false;
+    ros_message.auto_exposure = tmp ? true : false;
   }
 
   return true;
@@ -125,9 +125,9 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: autoexposure
+  // Member: auto_exposure
   {
-    size_t item_size = sizeof(ros_message.autoexposure);
+    size_t item_size = sizeof(ros_message.auto_exposure);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -199,7 +199,7 @@ max_serialized_size_Camera(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
-  // Member: autoexposure
+  // Member: auto_exposure
   {
     size_t array_size = 1;
 
@@ -215,7 +215,7 @@ max_serialized_size_Camera(
     using DataType = tku_msgs::msg::Camera;
     is_plain =
       (
-      offsetof(DataType, autoexposure) +
+      offsetof(DataType, auto_exposure) +
       last_member_size
       ) == ret_val;
   }

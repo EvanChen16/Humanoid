@@ -1,0 +1,117 @@
+[0.519s] Invoking command in '/home/iclab/Desktop/ros2/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/web_video_server -- -j8 -l8
+[0.544s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.656s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.708s] -- Found async_web_server_cpp: 2.0.0 (/usr/local/share/async_web_server_cpp/cmake)
+[0.718s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.74.0") found components: filesystem thread 
+[0.720s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.745s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.746s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.751s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.770s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.923s] -- Found image_transport: 3.1.8 (/opt/ros/humble/share/image_transport/cmake)
+[0.969s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.971s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.070s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.227s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[1.304s] -- Configuring done
+[1.326s] -- Generating done
+[1.328s] -- Build files have been written to: /home/iclab/Desktop/ros2/build/web_video_server
+[1.368s] [35m[1mConsolidate compiler generated dependencies of target web_video_server[0m
+[1.484s] [  9%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[1.486s] [ 18%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[1.487s] [ 27%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[1.488s] [ 36%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[1.494s] [ 63%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o[0m
+[1.494s] [ 63%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[1.494s] [ 63%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m
+[1.509s] [ 72%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o[0m
+[11.961s] [ 81%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o[0m
+[14.007s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:[m[K In constructor ‘[01m[Kweb_video_server::LibavStreamer::LibavStreamer(const async_web_server_cpp::HttpRequest&, async_web_server_cpp::HttpConnectionPtr, rclcpp::Node::SharedPtr, const string&, const string&, const string&)[m[K’:
+[14.008s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:65:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint av_lockmgr_register(int (*)(void**, AVLockOp))[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.008s]    65 |   [01;35m[Kav_lockmgr_register(&ffmpeg_boost_mutex_lock_manager)[m[K;
+[14.009s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.009s] In file included from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:11[m[K,
+[14.010s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.010s] [01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:4160:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.011s]  4160 | int [01;36m[Kav_lockmgr_register[m[K(int (*cb)(void **mutex, enum AVLockOp op));
+[14.012s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.012s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:66:18:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_register_all()[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.013s]    66 |   [01;35m[Kav_register_all()[m[K;
+[14.013s]       |   [01;35m[K~~~~~~~~~~~~~~~^~[m[K
+[14.014s] In file included from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:12[m[K,
+[14.014s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.015s] [01m[K/usr/include/x86_64-linux-gnu/libavformat/avformat.h:1955:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.015s]  1955 | void [01;36m[Kav_register_all[m[K(void);
+[14.016s]       |      [01;36m[K^~~~~~~~~~~~~~~[m[K
+[14.016s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:[m[K In member function ‘[01m[Kvirtual void web_video_server::LibavStreamer::initialize(const cv::Mat&)[m[K’:
+[14.017s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:160:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KAVStream::codec[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.017s]   160 |   codec_context_ = video_stream_->[01;35m[Kcodec[m[K;
+[14.018s]       |                                   [01;35m[K^~~~~[m[K
+[14.018s] In file included from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:12[m[K,
+[14.019s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.020s] [01m[K/usr/include/x86_64-linux-gnu/libavformat/avformat.h:888:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.020s]   888 |     AVCodecContext *[01;36m[Kcodec[m[K;
+[14.021s]       |                     [01;36m[K^~~~~[m[K
+[14.021s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:160:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KAVStream::codec[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.022s]   160 |   codec_context_ = video_stream_->[01;35m[Kcodec[m[K;
+[14.022s]       |                                   [01;35m[K^~~~~[m[K
+[14.023s] In file included from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:12[m[K,
+[14.023s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.024s] [01m[K/usr/include/x86_64-linux-gnu/libavformat/avformat.h:888:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.024s]   888 |     AVCodecContext *[01;36m[Kcodec[m[K;
+[14.025s]       |                     [01;36m[K^~~~~[m[K
+[14.025s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:160:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KAVStream::codec[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.026s]   160 |   codec_context_ = video_stream_->[01;35m[Kcodec[m[K;
+[14.026s]       |                                   [01;35m[K^~~~~[m[K
+[14.027s] In file included from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:12[m[K,
+[14.028s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.029s] [01m[K/usr/include/x86_64-linux-gnu/libavformat/avformat.h:888:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.030s]   888 |     AVCodecContext *[01;36m[Kcodec[m[K;
+[14.030s]       |                     [01;36m[K^~~~~[m[K
+[14.031s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:[m[K In member function ‘[01m[Kvirtual void web_video_server::LibavStreamer::sendImage(const cv::Mat&, const rclcpp::Time&)[m[K’:
+[14.031s] [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:294:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid av_init_packet(AVPacket*)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[14.032s]   294 |   [01;35m[Kav_init_packet(&pkt)[m[K;
+[14.032s]       |   [01;35m[K~~~~~~~~~~~~~~^~~~~~[m[K
+[14.033s] In file included from [01m[K/usr/include/x86_64-linux-gnu/libavcodec/bsf.h:30[m[K,
+[14.033s]                  from [01m[K/usr/include/x86_64-linux-gnu/libavcodec/avcodec.h:44[m[K,
+[14.034s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/include/web_video_server/libav_streamer.h:11[m[K,
+[14.034s]                  from [01m[K/home/iclab/Desktop/ros2/src/web_video_server/src/libav_streamer.cpp:1[m[K:
+[14.035s] [01m[K/usr/include/x86_64-linux-gnu/libavcodec/packet.h:488:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[14.035s]   488 | void [01;36m[Kav_init_packet[m[K(AVPacket *pkt);
+[14.036s]       |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[15.323s] [ 90%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o[0m
+[24.472s] [100%] [32m[1mLinking CXX executable web_video_server[0m
+[25.874s] [100%] Built target web_video_server
+[25.882s] Invoked command in '/home/iclab/Desktop/ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/web_video_server -- -j8 -l8
+[25.916s] Invoking command in '/home/iclab/Desktop/ros2/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/web_video_server
+[25.921s] -- Install configuration: ""
+[25.921s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/lib/web_video_server/web_video_server
+[25.925s] -- Set runtime path of "/home/iclab/Desktop/ros2/install/web_video_server/lib/web_video_server/web_video_server" to ""
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/h264_streamer.h
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp8_streamer.h
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/image_streamer.h
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/web_video_server.h
+[25.925s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/png_streamers.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/libav_streamer.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/vp9_streamer.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/ros_compressed_streamer.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/multipart_stream.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/include/web_video_server/jpeg_streamers.h
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.sh
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/environment/path.dsv
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.bash
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.sh
+[25.926s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.zsh
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/local_setup.dsv
+[25.926s] -- Installing: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.dsv
+[25.927s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
+[25.927s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
+[25.927s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
+[25.927s] -- Up-to-date: /home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.xml
+[25.927s] Invoked command in '/home/iclab/Desktop/ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/web_video_server

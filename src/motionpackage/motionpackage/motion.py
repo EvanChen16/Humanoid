@@ -700,7 +700,7 @@ class MyNode(Node):
         
         # for i in range(4):
         #     # print('fuck')
-        #     # print(buf[i])nnㄙ
+        #     # print(buf[i])
         #     if self.dio_tmpstatus == 0 and buf[i] == ord('S'):
         #         self.dio_tmpstatus = 1
         #         print('aa')

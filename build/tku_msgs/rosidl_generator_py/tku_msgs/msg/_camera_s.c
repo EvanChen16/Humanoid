@@ -95,13 +95,13 @@ bool tku_msgs__msg__camera__convert_from_py(PyObject * _pymsg, void * _ros_messa
     ros_message->autowhitebalance = (Py_True == field);
     Py_DECREF(field);
   }
-  {  // autoexposure
-    PyObject * field = PyObject_GetAttrString(_pymsg, "autoexposure");
+  {  // auto_exposure
+    PyObject * field = PyObject_GetAttrString(_pymsg, "auto_exposure");
     if (!field) {
       return false;
     }
     assert(PyBool_Check(field));
-    ros_message->autoexposure = (Py_True == field);
+    ros_message->auto_exposure = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -181,11 +181,11 @@ PyObject * tku_msgs__msg__camera__convert_to_py(void * raw_ros_message)
       }
     }
   }
-  {  // autoexposure
+  {  // auto_exposure
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->autoexposure ? 1 : 0);
+    field = PyBool_FromLong(ros_message->auto_exposure ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "autoexposure", field);
+      int rc = PyObject_SetAttrString(_pymessage, "auto_exposure", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

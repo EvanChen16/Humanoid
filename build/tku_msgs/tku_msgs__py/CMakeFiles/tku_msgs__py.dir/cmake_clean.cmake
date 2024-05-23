@@ -60,6 +60,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c"
   "../rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py"
   "../rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c"
+  "../rosidl_generator_py/tku_msgs/srv/_set_string.py"
+  "../rosidl_generator_py/tku_msgs/srv/_set_string_s.c"
   "CMakeFiles/tku_msgs__py"
 )
 

@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'image = imageprocess.image:main'
+            'image = imageprocess.image:main',
+            'image_test = imageprocess.image_test:main',
         ],
     },
 )

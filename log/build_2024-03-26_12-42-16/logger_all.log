@@ -1,0 +1,836 @@
+[0.701s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.701s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79725f8c5ab0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79725f8c6e00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79725f8c6e00>>)
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.739s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.739s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/iclab/Desktop/ros2'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'ignore_ament_install'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['colcon_pkg']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'colcon_pkg'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['colcon_meta']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'colcon_meta'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['ros']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'ros'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['cmake', 'python']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'cmake'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'python'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extensions ['python_setup_py']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface) by extension 'python_setup_py'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'ignore_ament_install'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['colcon_pkg']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'colcon_pkg'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['colcon_meta']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'colcon_meta'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['ros']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'ros'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['cmake', 'python']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'cmake'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'python'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extensions ['python_setup_py']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/css) by extension 'python_setup_py'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'ignore_ament_install'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['colcon_pkg']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'colcon_pkg'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['colcon_meta']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'colcon_meta'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['ros']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'ros'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['cmake', 'python']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'cmake'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'python'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extensions ['python_setup_py']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4) by extension 'python_setup_py'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'ignore_ament_install'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['colcon_pkg']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'colcon_pkg'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['colcon_meta']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'ros'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['cmake', 'python']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'cmake'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'python'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extensions ['python_setup_py']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external) by extension 'python_setup_py'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'ros'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['cmake', 'python']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'cmake'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'python'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extensions ['python_setup_py']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/external/jquery) by extension 'python_setup_py'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'ros'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['cmake', 'python']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'cmake'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'python'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extensions ['python_setup_py']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(interface/jquery-ui-1.11.4/images) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'colcon_pkg'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['colcon_meta']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'colcon_meta'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['ros']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'ros'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['cmake', 'python']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'cmake'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'python'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extensions ['python_setup_py']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'colcon_pkg'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['colcon_meta']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'colcon_meta'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['ros']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'ros'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['cmake', 'python']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'cmake'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'python'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extensions ['python_setup_py']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/js/roslib) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'ros'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['cmake', 'python']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'cmake'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'python'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extensions ['python_setup_py']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/picture) by extension 'python_setup_py'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'ignore'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'ros'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['cmake', 'python']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'cmake'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'python'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extensions ['python_setup_py']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources) by extension 'python_setup_py'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'ignore'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'ros'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['cmake', 'python']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'cmake'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'python'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extensions ['python_setup_py']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/resources/TKU_ICLab) by extension 'python_setup_py'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['ignore', 'ignore_ament_install']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'ignore'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'ignore_ament_install'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['colcon_pkg']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'colcon_pkg'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['colcon_meta']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'colcon_meta'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['ros']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'ros'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['cmake', 'python']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'cmake'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'python'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extensions ['python_setup_py']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs) by extension 'python_setup_py'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['ignore', 'ignore_ament_install']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'ignore'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'ignore_ament_install'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['colcon_pkg']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'colcon_pkg'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['colcon_meta']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'colcon_meta'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['ros']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'ros'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['cmake', 'python']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'cmake'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'python'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extensions ['python_setup_py']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/build) by extension 'python_setup_py'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'ignore'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'ignore_ament_install'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['colcon_pkg']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'colcon_pkg'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['colcon_meta']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'colcon_meta'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['ros']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'ros'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['cmake', 'python']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'cmake'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'python'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extensions ['python_setup_py']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/examples) by extension 'python_setup_py'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['ignore', 'ignore_ament_install']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'ignore'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'ignore_ament_install'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['colcon_pkg']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'colcon_pkg'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['colcon_meta']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'colcon_meta'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['ros']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'ros'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['cmake', 'python']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'cmake'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'python'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extensions ['python_setup_py']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src) by extension 'python_setup_py'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['ignore', 'ignore_ament_install']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'ignore'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'ignore_ament_install'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['colcon_pkg']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'colcon_pkg'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['colcon_meta']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'colcon_meta'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['ros']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'ros'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['cmake', 'python']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'cmake'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'python'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extensions ['python_setup_py']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/actionlib) by extension 'python_setup_py'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['ignore', 'ignore_ament_install']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'ignore'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'ignore_ament_install'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['colcon_pkg']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'colcon_pkg'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['colcon_meta']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'colcon_meta'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['ros']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'ros'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['cmake', 'python']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'cmake'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'python'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extensions ['python_setup_py']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/core) by extension 'python_setup_py'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['ignore', 'ignore_ament_install']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'ignore'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'ignore_ament_install'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['colcon_pkg']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'colcon_pkg'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['colcon_meta']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'colcon_meta'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['ros']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'ros'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['cmake', 'python']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'cmake'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'python'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extensions ['python_setup_py']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/math) by extension 'python_setup_py'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'colcon_pkg'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['colcon_meta']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'colcon_meta'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['ros']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'ros'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['cmake', 'python']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'cmake'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'python'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extensions ['python_setup_py']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/node) by extension 'python_setup_py'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'colcon_pkg'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['colcon_meta']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'colcon_meta'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['ros']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'ros'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['cmake', 'python']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'cmake'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'python'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extensions ['python_setup_py']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/tf) by extension 'python_setup_py'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'ignore'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'ignore_ament_install'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['colcon_pkg']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'colcon_pkg'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['colcon_meta']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'colcon_meta'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'ros'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['cmake', 'python']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'cmake'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'python'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extensions ['python_setup_py']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/urdf) by extension 'python_setup_py'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'ignore_ament_install'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['colcon_pkg']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'colcon_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['colcon_meta']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'colcon_meta'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'ros'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['cmake', 'python']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'cmake'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'python'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extensions ['python_setup_py']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util) by extension 'python_setup_py'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'ignore_ament_install'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['colcon_pkg']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'colcon_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['colcon_meta']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'colcon_meta'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['ros']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'ros'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['cmake', 'python']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'cmake'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'python'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extensions ['python_setup_py']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim) by extension 'python_setup_py'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['ignore', 'ignore_ament_install']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'ignore'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['ros']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'ros'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['cmake', 'python']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'cmake'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'python'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extensions ['python_setup_py']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/src/util/shim/@xmldom) by extension 'python_setup_py'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['ignore', 'ignore_ament_install']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'ignore'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['ros']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'ros'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['cmake', 'python']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'cmake'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'python'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extensions ['python_setup_py']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test) by extension 'python_setup_py'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'ignore_ament_install'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['colcon_pkg']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'colcon_pkg'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'ros'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['cmake', 'python']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'cmake'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'python'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extensions ['python_setup_py']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/examples) by extension 'python_setup_py'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'ignore_ament_install'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['colcon_pkg']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'colcon_pkg'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'ros'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['cmake', 'python']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'cmake'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'python'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extensions ['python_setup_py']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/tcp) by extension 'python_setup_py'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'ignore_ament_install'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['colcon_pkg']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'colcon_pkg'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['ros']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'ros'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['cmake', 'python']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'cmake'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'python'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extensions ['python_setup_py']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(interface/roslibjs/test/workersocket) by extension 'python_setup_py'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ignore', 'ignore_ament_install']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore_ament_install'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_pkg']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_pkg'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_meta']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_meta'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ros']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ros'
+[0.762s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imageprocess' with type 'ros.ament_python' and name 'imageprocess'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore_ament_install'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_pkg']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_pkg'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_meta']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_meta'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ros']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ros'
+[0.763s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motionpackage' with type 'ros.ament_python' and name 'motionpackage'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extensions ['ignore', 'ignore_ament_install']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extension 'colcon_meta'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extensions ['ros']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_libs) by extension 'ros'
+[0.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tku_libs' with type 'ros.ament_python' and name 'tku_libs'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore_ament_install'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_pkg']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_pkg'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_meta']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_meta'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ros']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ros'
+[0.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tku_msgs' with type 'ros.ament_cmake' and name 'tku_msgs'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.766s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extensions ['ignore', 'ignore_ament_install']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extension 'ignore'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extension 'ignore_ament_install'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extensions ['colcon_pkg']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extension 'colcon_pkg'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extensions ['colcon_meta']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extension 'colcon_meta'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extensions ['ros']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_server) by extension 'ros'
+[0.767s] DEBUG:colcon.colcon_core.package_identification:Package 'src/web_video_server' with type 'ros.ament_cmake' and name 'web_video_server'
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.767s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.839s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.860s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/iclab/Desktop/ros2/install
+[0.870s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 329 installed packages in /opt/ros/humble
+[0.871s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_cache' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_first' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_force_configure' from command line to 'False'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'ament_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_cmake_args' from command line to 'None'
+[0.937s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.937s] DEBUG:colcon.colcon_core.verb:Building package 'imageprocess' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/imageprocess', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/imageprocess', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/imageprocess', 'symlink_install': False, 'test_result_base': None}
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_args' from command line to 'None'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target' from command line to 'None'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_first' from command line to 'False'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_force_configure' from command line to 'False'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'ament_cmake_args' from command line to 'None'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.947s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.947s] DEBUG:colcon.colcon_core.verb:Building package 'motionpackage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/motionpackage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/motionpackage', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/motionpackage', 'symlink_install': False, 'test_result_base': None}
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_args' from command line to 'None'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target' from command line to 'None'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.957s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.957s] DEBUG:colcon.colcon_core.verb:Building package 'tku_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/tku_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/tku_msgs', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/tku_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_args' from command line to 'None'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target' from command line to 'None'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.967s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.967s] DEBUG:colcon.colcon_core.verb:Building package 'web_video_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/web_video_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/web_video_server', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/web_video_server', 'symlink_install': False, 'test_result_base': None}
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_args' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_target' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_clean_first' from command line to 'False'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'cmake_force_configure' from command line to 'False'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'ament_cmake_args' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.977s] Level 5:colcon.colcon_core.verb:set package 'tku_libs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.977s] DEBUG:colcon.colcon_core.verb:Building package 'tku_libs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/tku_libs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/tku_libs', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/tku_libs', 'symlink_install': False, 'test_result_base': None}
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.987s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/iclab/Desktop/ros2/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/iclab/Desktop/ros2/install/usb_cam', 'merge_install': False, 'path': '/home/iclab/Desktop/ros2/src/usb_cam', 'symlink_install': False, 'test_result_base': None}
+[0.997s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.008s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.008s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/iclab/Desktop/ros2/src/tku_msgs' with build type 'ament_cmake'
+[1.008s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/iclab/Desktop/ros2/src/tku_msgs'
+[1.025s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.056s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/iclab/Desktop/ros2/src/imageprocess' with build type 'ament_python'
+[1.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('imageprocess', 'ament_prefix_path')
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/ament_prefix_path.ps1'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/ament_prefix_path.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/ament_prefix_path.sh'
+[1.078s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.078s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.109s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/iclab/Desktop/ros2/src/motionpackage' with build type 'ament_python'
+[1.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('motionpackage', 'ament_prefix_path')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/ament_prefix_path.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/ament_prefix_path.dsv'
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/ament_prefix_path.sh'
+[1.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.162s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/iclab/Desktop/ros2/src/web_video_server' with build type 'ament_cmake'
+[1.162s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/iclab/Desktop/ros2/src/web_video_server'
+[1.173s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.173s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/tku_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/tku_msgs -- -j8 -l8
+[1.396s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/iclab/Desktop/ros2/src/imageprocess'
+[1.407s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.623s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/iclab/Desktop/ros2/src/motionpackage'
+[1.641s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/web_video_server -- -j8 -l8
+[2.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/src/imageprocess': PYTHONPATH=/home/iclab/Desktop/ros2/build/imageprocess/prefix_override:/home/iclab/Desktop/ros2/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/ros2/build/imageprocess/build install --record /home/iclab/Desktop/ros2/build/imageprocess/install.log --single-version-externally-managed
+[2.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/src/motionpackage': PYTHONPATH=/home/iclab/Desktop/ros2/build/motionpackage/prefix_override:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motionpackage build --build-base /home/iclab/Desktop/ros2/build/motionpackage/build install --record /home/iclab/Desktop/ros2/build/motionpackage/install.log --single-version-externally-managed
+[2.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/src/motionpackage' returned '0': PYTHONPATH=/home/iclab/Desktop/ros2/build/motionpackage/prefix_override:/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motionpackage build --build-base /home/iclab/Desktop/ros2/build/motionpackage/build install --record /home/iclab/Desktop/ros2/build/motionpackage/install.log --single-version-externally-managed
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage' for CMake module files
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage' for CMake config files
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage/lib'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage/bin'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage/lib/pkgconfig/motionpackage.pc'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage/lib/python3.10/site-packages'
+[2.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('motionpackage', 'pythonpath')
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/pythonpath.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/pythonpath.dsv'
+[2.363s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/hook/pythonpath.sh'
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/motionpackage/bin'
+[2.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motionpackage)
+[2.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/package.ps1'
+[2.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/package.dsv'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/package.sh'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/package.bash'
+[2.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/motionpackage/share/motionpackage/package.zsh'
+[2.378s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/motionpackage/share/colcon-core/packages/motionpackage)
+[2.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/src/imageprocess' returned '0': PYTHONPATH=/home/iclab/Desktop/ros2/build/imageprocess/prefix_override:/home/iclab/Desktop/ros2/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/ros2/build/imageprocess/build install --record /home/iclab/Desktop/ros2/build/imageprocess/install.log --single-version-externally-managed
+[2.391s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess' for CMake module files
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess' for CMake config files
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess/lib'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess/bin'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess/lib/pkgconfig/imageprocess.pc'
+[2.392s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess/lib/python3.10/site-packages'
+[2.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('imageprocess', 'pythonpath')
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/pythonpath.ps1'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/pythonpath.dsv'
+[2.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/hook/pythonpath.sh'
+[2.409s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/imageprocess/bin'
+[2.409s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imageprocess)
+[2.422s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/package.ps1'
+[2.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/package.dsv'
+[2.423s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/package.sh'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/package.bash'
+[2.424s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/imageprocess/share/imageprocess/package.zsh'
+[2.425s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/imageprocess/share/colcon-core/packages/imageprocess)
+[26.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/tku_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/tku_msgs -- -j8 -l8
+[27.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/web_video_server -- -j8 -l8
+[27.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/web_video_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/web_video_server
+[27.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(web_video_server)
+[27.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/web_video_server
+[27.105s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server' for CMake module files
+[27.105s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server' for CMake config files
+[27.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('web_video_server', 'cmake_prefix_path')
+[27.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.ps1'
+[27.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.dsv'
+[27.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.sh'
+[27.117s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib'
+[27.117s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/bin'
+[27.117s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib/pkgconfig/web_video_server.pc'
+[27.117s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib/python3.10/site-packages'
+[27.117s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/bin'
+[27.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.ps1'
+[27.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.dsv'
+[27.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.sh'
+[27.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.bash'
+[27.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.zsh'
+[27.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/web_video_server/share/colcon-core/packages/web_video_server)
+[27.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(web_video_server)
+[27.187s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server' for CMake module files
+[27.187s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server' for CMake config files
+[27.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('web_video_server', 'cmake_prefix_path')
+[27.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.ps1'
+[27.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.dsv'
+[27.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/hook/cmake_prefix_path.sh'
+[27.198s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib'
+[27.198s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/bin'
+[27.198s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib/pkgconfig/web_video_server.pc'
+[27.199s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/lib/python3.10/site-packages'
+[27.199s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/web_video_server/bin'
+[27.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.ps1'
+[27.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.dsv'
+[27.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.sh'
+[27.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.bash'
+[27.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/web_video_server/share/web_video_server/package.zsh'
+[27.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/web_video_server/share/colcon-core/packages/web_video_server)
+[27.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/tku_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/tku_msgs
+[27.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tku_msgs)
+[27.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/tku_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/tku_msgs
+[27.442s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs' for CMake module files
+[27.443s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs' for CMake config files
+[27.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_msgs', 'cmake_prefix_path')
+[27.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.ps1'
+[27.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.dsv'
+[27.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.sh'
+[27.455s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib'
+[27.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_msgs', 'ld_library_path_lib')
+[27.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.ps1'
+[27.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.dsv'
+[27.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.sh'
+[27.466s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/bin'
+[27.466s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib/pkgconfig/tku_msgs.pc'
+[27.466s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib/python3.10/site-packages'
+[27.466s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/bin'
+[27.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.ps1'
+[27.477s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.dsv'
+[27.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.sh'
+[27.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.bash'
+[27.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.zsh'
+[27.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/tku_msgs/share/colcon-core/packages/tku_msgs)
+[27.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tku_msgs)
+[27.835s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs' for CMake module files
+[27.836s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs' for CMake config files
+[27.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_msgs', 'cmake_prefix_path')
+[27.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.ps1'
+[27.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.dsv'
+[27.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/cmake_prefix_path.sh'
+[27.849s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib'
+[27.849s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_msgs', 'ld_library_path_lib')
+[27.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.ps1'
+[27.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.dsv'
+[27.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/hook/ld_library_path_lib.sh'
+[27.860s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/bin'
+[27.860s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib/pkgconfig/tku_msgs.pc'
+[27.860s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/lib/python3.10/site-packages'
+[27.860s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_msgs/bin'
+[27.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.ps1'
+[27.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.dsv'
+[27.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.sh'
+[27.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.bash'
+[27.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_msgs/share/tku_msgs/package.zsh'
+[27.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/tku_msgs/share/colcon-core/packages/tku_msgs)
+[27.873s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/iclab/Desktop/ros2/src/tku_libs' with build type 'ament_python'
+[27.873s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_libs', 'ament_prefix_path')
+[27.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/ament_prefix_path.ps1'
+[27.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/ament_prefix_path.dsv'
+[27.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/ament_prefix_path.sh'
+[27.894s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.894s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[27.925s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/iclab/Desktop/ros2/src/usb_cam' with build type 'ament_cmake'
+[27.925s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/iclab/Desktop/ros2/src/usb_cam'
+[27.936s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[27.936s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[28.155s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/iclab/Desktop/ros2/src/tku_libs'
+[28.165s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[28.165s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[28.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/usb_cam': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8
+[28.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/src/tku_libs': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/iclab/Desktop/ros2/build/tku_libs/prefix_override:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tku_libs build --build-base /home/iclab/Desktop/ros2/build/tku_libs/build install --record /home/iclab/Desktop/ros2/build/tku_libs/install.log --single-version-externally-managed
+[28.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/src/tku_libs' returned '0': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/iclab/Desktop/ros2/build/tku_libs/prefix_override:/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tku_libs build --build-base /home/iclab/Desktop/ros2/build/tku_libs/build install --record /home/iclab/Desktop/ros2/build/tku_libs/install.log --single-version-externally-managed
+[28.703s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs' for CMake module files
+[28.704s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs' for CMake config files
+[28.704s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs/lib'
+[28.704s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs/bin'
+[28.704s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs/lib/pkgconfig/tku_libs.pc'
+[28.704s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs/lib/python3.10/site-packages'
+[28.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('tku_libs', 'pythonpath')
+[28.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/pythonpath.ps1'
+[28.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/pythonpath.dsv'
+[28.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/hook/pythonpath.sh'
+[28.723s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/tku_libs/bin'
+[28.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tku_libs)
+[28.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/package.ps1'
+[28.734s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/package.dsv'
+[28.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/package.sh'
+[28.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/package.bash'
+[28.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/tku_libs/share/tku_libs/package.zsh'
+[28.735s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/tku_libs/share/colcon-core/packages/tku_libs)
+[38.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/iclab/Desktop/ros2/build/usb_cam -- -j8 -l8
+[38.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/iclab/Desktop/ros2/build/usb_cam': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/usb_cam
+[38.531s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[38.532s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/iclab/Desktop/ros2/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/home/iclab/Desktop/ros2/install/tku_msgs:/home/iclab/Desktop/ros2/install/web_video_server:/home/iclab/Desktop/ros2/install/usb_cam:/home/iclab/Desktop/ros2/install/serial:/home/iclab/Desktop/ros2/install/tku_libs:/home/iclab/Desktop/ros2/install/motionpackage:/home/iclab/Desktop/ros2/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/ros2/install/tku_msgs/lib:/home/iclab/Desktop/ros2/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/iclab/Desktop/ros2/build/usb_cam
+[38.542s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam' for CMake module files
+[38.542s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam' for CMake config files
+[38.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[38.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[38.553s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[38.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[38.554s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib'
+[38.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[38.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[38.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[38.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[38.564s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/bin'
+[38.564s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[38.564s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib/python3.10/site-packages'
+[38.565s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/bin'
+[38.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.ps1'
+[38.575s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.dsv'
+[38.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.sh'
+[38.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.bash'
+[38.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.zsh'
+[38.576s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/usb_cam/share/colcon-core/packages/usb_cam)
+[38.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usb_cam)
+[38.619s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam' for CMake module files
+[38.619s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam' for CMake config files
+[38.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'cmake_prefix_path')
+[38.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.ps1'
+[38.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.dsv'
+[38.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/cmake_prefix_path.sh'
+[38.630s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib'
+[38.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('usb_cam', 'ld_library_path_lib')
+[38.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.ps1'
+[38.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.dsv'
+[38.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/hook/ld_library_path_lib.sh'
+[38.640s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/bin'
+[38.640s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib/pkgconfig/usb_cam.pc'
+[38.640s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/lib/python3.10/site-packages'
+[38.640s] Level 1:colcon.colcon_core.environment:checking '/home/iclab/Desktop/ros2/install/usb_cam/bin'
+[38.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.ps1'
+[38.651s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.dsv'
+[38.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.sh'
+[38.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.bash'
+[38.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/iclab/Desktop/ros2/install/usb_cam/share/usb_cam/package.zsh'
+[38.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/iclab/Desktop/ros2/install/usb_cam/share/colcon-core/packages/usb_cam)
+[38.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[38.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[38.652s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[38.652s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[38.666s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[38.666s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[38.666s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[38.682s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[38.692s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/iclab/Desktop/ros2/install/local_setup.ps1'
+[38.692s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/iclab/Desktop/ros2/install/_local_setup_util_ps1.py'
+[38.693s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/iclab/Desktop/ros2/install/setup.ps1'
+[38.704s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/iclab/Desktop/ros2/install/local_setup.sh'
+[38.705s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/iclab/Desktop/ros2/install/_local_setup_util_sh.py'
+[38.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/iclab/Desktop/ros2/install/setup.sh'
+[38.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/iclab/Desktop/ros2/install/local_setup.bash'
+[38.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/iclab/Desktop/ros2/install/setup.bash'
+[38.726s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/iclab/Desktop/ros2/install/local_setup.zsh'
+[38.727s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/iclab/Desktop/ros2/install/setup.zsh'

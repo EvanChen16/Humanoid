@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Camera_autoexposure
+class Init_Camera_auto_exposure
 {
 public:
-  explicit Init_Camera_autoexposure(::tku_msgs::msg::Camera & msg)
+  explicit Init_Camera_auto_exposure(::tku_msgs::msg::Camera & msg)
   : msg_(msg)
   {}
-  ::tku_msgs::msg::Camera autoexposure(::tku_msgs::msg::Camera::_autoexposure_type arg)
+  ::tku_msgs::msg::Camera auto_exposure(::tku_msgs::msg::Camera::_auto_exposure_type arg)
   {
-    msg_.autoexposure = std::move(arg);
+    msg_.auto_exposure = std::move(arg);
     return std::move(msg_);
   }
 
@@ -43,10 +43,10 @@ public:
   explicit Init_Camera_autowhitebalance(::tku_msgs::msg::Camera & msg)
   : msg_(msg)
   {}
-  Init_Camera_autoexposure autowhitebalance(::tku_msgs::msg::Camera::_autowhitebalance_type arg)
+  Init_Camera_auto_exposure autowhitebalance(::tku_msgs::msg::Camera::_autowhitebalance_type arg)
   {
     msg_.autowhitebalance = std::move(arg);
-    return Init_Camera_autoexposure(msg_);
+    return Init_Camera_auto_exposure(msg_);
   }
 
 private:

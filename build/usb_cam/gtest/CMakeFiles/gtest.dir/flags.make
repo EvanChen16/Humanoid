@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/ros/humble/src/gtest_vendor/include -I/home/iclab/Desktop/ros2/src/usb_cam/include -I/opt/ros/humble/src/gtest_vendor/.
+CXX_INCLUDES = -I/home/iclab/Desktop/ros2/src/usb_cam/include -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
 CXX_FLAGS = -fPIC -Wno-missing-field-initializers -Wall -Wextra -Wpedantic -Werror -Wno-null-dereference -std=gnu++14
 

@@ -43,7 +43,7 @@ struct Camera_
       this->saturation = 0.0f;
       this->whitebalance = 0.0f;
       this->autowhitebalance = false;
-      this->autoexposure = false;
+      this->auto_exposure = false;
     }
   }
 
@@ -58,7 +58,7 @@ struct Camera_
       this->saturation = 0.0f;
       this->whitebalance = 0.0f;
       this->autowhitebalance = false;
-      this->autoexposure = false;
+      this->auto_exposure = false;
     }
   }
 
@@ -78,9 +78,9 @@ struct Camera_
   using _autowhitebalance_type =
     bool;
   _autowhitebalance_type autowhitebalance;
-  using _autoexposure_type =
+  using _auto_exposure_type =
     bool;
-  _autoexposure_type autoexposure;
+  _auto_exposure_type auto_exposure;
 
   // setters for named parameter idiom
   Type & set__brightness(
@@ -113,10 +113,10 @@ struct Camera_
     this->autowhitebalance = _arg;
     return *this;
   }
-  Type & set__autoexposure(
+  Type & set__auto_exposure(
     const bool & _arg)
   {
-    this->autoexposure = _arg;
+    this->auto_exposure = _arg;
     return *this;
   }
 
@@ -177,7 +177,7 @@ struct Camera_
     if (this->autowhitebalance != other.autowhitebalance) {
       return false;
     }
-    if (this->autoexposure != other.autoexposure) {
+    if (this->auto_exposure != other.auto_exposure) {
       return false;
     }
     return true;

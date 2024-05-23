@@ -25,7 +25,7 @@ typedef struct tku_msgs__msg__Camera
   float saturation;
   float whitebalance;
   bool autowhitebalance;
-  bool autoexposure;
+  bool auto_exposure;
 } tku_msgs__msg__Camera;
 
 // Struct for a sequence of tku_msgs__msg__Camera.

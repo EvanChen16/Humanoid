@@ -49,6 +49,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ReadMotion.srv"
   "srv/CheckSector.srv"
   "srv/SendHandSpeed.srv"
+  ##########  file path  ################
+  "srv/SetString.srv"
   DEPENDENCIES std_msgs
   # DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )

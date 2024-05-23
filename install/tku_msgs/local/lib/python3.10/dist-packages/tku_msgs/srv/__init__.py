@@ -6,3 +6,4 @@ from tku_msgs.srv._hsv_info import HSVInfo  # noqa: F401
 from tku_msgs.srv._read_motion import ReadMotion  # noqa: F401
 from tku_msgs.srv._save_hsv import SaveHSV  # noqa: F401
 from tku_msgs.srv._send_hand_speed import SendHandSpeed  # noqa: F401
+from tku_msgs.srv._set_string import SetString  # noqa: F401

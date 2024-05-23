@@ -108,10 +108,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__builder.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__struct.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp"
+  "rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp"
+  "rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp"
+  "rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/hsv_info.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/read_motion.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/save_hsv.hpp"
   "rosidl_generator_cpp/tku_msgs/srv/send_hand_speed.hpp"
+  "rosidl_generator_cpp/tku_msgs/srv/set_string.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

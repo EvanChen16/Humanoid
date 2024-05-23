@@ -89,7 +89,7 @@ class MyNode(Node):
         self.PIDpackage         = [0] * 14
         self.parameterpackage   = [0] * 31
         self.motorpackage       = [0] * 19
-        self.package_init()
+        # self.package_init()
         #########################
         self.sectorpackage      = [0] * 5
         #########################
@@ -140,7 +140,31 @@ class MyNode(Node):
         for i in range(1, 3):
             motor = TsRobotis(i, 2048, 511)
             self.RobotisList.append(motor)
-        print("aaaaa")
+        print("RobotisListini")
+
+    def package_init(self):
+        self.parameterpackage[0] = 0x53
+        self.parameterpackage[1] = 0x54
+        self.parameterpackage[2] = 0xF5
+        self.parameterpackage[5] = 6
+        self.parameterpackage[30] = 0x45
+
+        self.motorpackage[0] = 0x53
+        self.motorpackage[1] = 0x54
+        self.motorpackage[2] = 0xF5
+        self.motorpackage[3] = 1
+        self.motorpackage[5] = 3  # data length is 3 bytes
+        self.motorpackage[18] = 0x45
+
+        self.PIDpackage[0] = 0xFF
+        self.PIDpackage[1] = 0xFF
+        self.PIDpackage[2] = 0xFD
+        self.PIDpackage[3] = 0x00
+        # self.PIDpackage[4] = motorID
+        self.PIDpackage[5] = 0x07
+        self.PIDpackage[6] = 0
+        self.PIDpackage[7] = 0x3
+        print("package_init")
 
     def sync_write(self):
         ######  torque_package  #########
@@ -203,21 +227,15 @@ class MyNode(Node):
 
     def standini(self):
         # self.packageMotorData = [0] * 87  # 初始化 packageMotorData 數組
-
         print("Standini")
-
         pathend = "/sector/"
         pathend2 = "29.ini"
         path = tool.stand_path + pathend + pathend2
         print(path)
-
         try:
             with open(path, 'r') as fin:
-                # print("209")
                 packagecnt = int(tool.readvalue(fin, "PackageCnt", 0))
-                # print("211")
                 SendSectorPackage = int(tool.readvalue(fin, "Package", 2))
-                # print("213")
                 for i in range(1, packagecnt):
                     SendSectorPackage.append(int(tool.readvalue(fin, "|", 3)))
                 self.packageMotorData[0] = 0x53
@@ -682,7 +700,7 @@ class MyNode(Node):
         
         # for i in range(4):
         #     # print('fuck')
-        #     # print(buf[i])nnㄙ
+        #     # print(buf[i])
         #     if self.dio_tmpstatus == 0 and buf[i] == ord('S'):
         #         self.dio_tmpstatus = 1
         #         print('aa')
@@ -976,28 +994,7 @@ class MyNode(Node):
 
 ###########################################################################
 
-    def package_init(self):
-        self.parameterpackage[0] = 0x53
-        self.parameterpackage[1] = 0x54
-        self.parameterpackage[2] = 0xF5
-        self.parameterpackage[5] = 6
-        self.parameterpackage[30] = 0x45
 
-        self.motorpackage[0] = 0x53
-        self.motorpackage[1] = 0x54
-        self.motorpackage[2] = 0xF5
-        self.motorpackage[3] = 1
-        self.motorpackage[5] = 3  # data length is 3 bytes
-        self.motorpackage[18] = 0x45
-
-        self.PIDpackage[0] = 0xFF
-        self.PIDpackage[1] = 0xFF
-        self.PIDpackage[2] = 0xFD
-        self.PIDpackage[3] = 0x00
-        # self.PIDpackage[4] = motorID
-        self.PIDpackage[5] = 0x07
-        self.PIDpackage[6] = 0
-        self.PIDpackage[7] = 0x3
 
     def convert_to_bytes(self, value):
         value_int = int(value * 100.0)
@@ -1053,7 +1050,7 @@ class MyNode(Node):
         x_swing            = msg.x_swing_range
         y_swing            = msg.y_swing_range
         z_swing            = msg.z_swing_range
-        period_t1          = msg.period_t
+        period_t1          = msg.period_tdevs
         period_t2          = msg.period_t2
         sample_time        = msg.sample_time
         lock_range         = msg.osc_lockrange

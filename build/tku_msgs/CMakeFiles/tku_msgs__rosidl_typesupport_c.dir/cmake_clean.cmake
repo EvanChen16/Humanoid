@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/save_hsv__type_support.cpp.o.d"
   "CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp.o"
   "CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp.o.d"
+  "CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/set_string__type_support.cpp.o"
+  "CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/set_string__type_support.cpp.o.d"
   "libtku_msgs__rosidl_typesupport_c.pdb"
   "libtku_msgs__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/tku_msgs/msg/button_color_form__type_support.cpp"
@@ -85,6 +87,7 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_c/tku_msgs/srv/read_motion__type_support.cpp"
   "rosidl_typesupport_c/tku_msgs/srv/save_hsv__type_support.cpp"
   "rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp"
+  "rosidl_typesupport_c/tku_msgs/srv/set_string__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

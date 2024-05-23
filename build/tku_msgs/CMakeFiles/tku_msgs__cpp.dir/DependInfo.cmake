@@ -119,10 +119,14 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__builder.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__struct.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/send_hand_speed__traits.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/set_string__builder.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/set_string__struct.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/set_string__traits.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/hsv_info.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/read_motion.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/save_hsv.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/send_hand_speed.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/set_string.hpp" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp"
   )
 
 

@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c.o.d"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c.o"
   "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c.o.d"
+  "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_set_string_s.c.o"
+  "CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_set_string_s.c.o.d"
   "rosidl_generator_py/tku_msgs/libtku_msgs__rosidl_generator_py.pdb"
   "rosidl_generator_py/tku_msgs/libtku_msgs__rosidl_generator_py.so"
 )

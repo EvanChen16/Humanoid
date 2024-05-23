@@ -289,4 +289,7 @@ CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.h \
  /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__type_support.h \
  /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__struct.h \
- /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h
+ /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.h \
+ /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/set_string__type_support.h \
+ /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/set_string__struct.h \
+ /home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/set_string__functions.h

@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/save_hsv__type_support_c.cpp.o.d"
   "CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp.o"
   "CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp.o.d"
+  "CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/set_string__type_support_c.cpp.o"
+  "CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/set_string__type_support_c.cpp.o.d"
   "libtku_msgs__rosidl_typesupport_fastrtps_c.pdb"
   "libtku_msgs__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_fastrtps_c.h"
@@ -113,6 +115,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/save_hsv__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/set_string__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/set_string__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

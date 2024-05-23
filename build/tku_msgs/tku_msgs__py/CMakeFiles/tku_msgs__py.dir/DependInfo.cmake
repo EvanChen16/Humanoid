@@ -72,6 +72,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_send_hand_speed.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_set_string.py" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_set_string_s.c" "/home/iclab/Desktop/ros2/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 
